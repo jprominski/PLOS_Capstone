@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" article-type="rapid-communication"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS Curr</journal-id><journal-title-group><journal-title>PLoS Currents</journal-title></journal-title-group><issn pub-type="epub">2157-3999</issn><publisher><publisher-name>Public Library of Science</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">20066155</article-id><article-id pub-id-type="pmc">2803311</article-id><article-id pub-id-type="knolid">http://knol.google.com/k/-/-/1uji2pldf66z5/11</article-id><article-id pub-id-type="accession">PMC2803311</article-id><article-id pub-id-type="doi">10.1371/currents.RRN1138</article-id><article-categories><subj-group subj-group-type="heading"><subject>Influenza</subject></subj-group></article-categories><title-group><article-title>Absolute Humidity and the Seasonal Onset of Influenza in the Continental US</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Shaman</surname><given-names>Jeffrey</given-names></name><xref ref-type="aff">*</xref></contrib><contrib contrib-type="author"><name><surname>Pitzer</surname><given-names>Virginia</given-names></name><!--RAPIDD Postdoctoral Fellow--><xref ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author"><name><surname>Viboud</surname><given-names>Cecile</given-names></name><!--Research scientist, US National Institutes of Health--><xref ref-type="aff">&#x02021;</xref></contrib><contrib contrib-type="author"><name><surname>Lipsitch</surname><given-names>Marc</given-names></name></contrib><contrib contrib-type="author"><name><surname>Grenfell</surname><given-names>Bryan</given-names></name><xref ref-type="aff">&#x000a7;</xref></contrib></contrib-group><aff><sup>*</sup>Oregon State University; <sup>&#x02020;</sup>Princeton University and NIH/FIC; <sup>&#x02021;</sup>Fogarty International Center, National Institutes of Health, Bethesda, MD, USA and <sup>&#x000a7;</sup>Princeton University</aff><pub-date pub-type="epub"><day>19</day><month>4</month><year>2010</year></pub-date><volume>2</volume><elocation-id>RRN1138</elocation-id><history><date date-type="created"><day>15</day><month>12</month><year>2009</year></date><date date-type="accepted"><day>18</day><month>12</month><year>2009</year></date></history><permissions><license><license-p>This research note is distributed under the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License.</ext-link></license-p></license></permissions><abstract><!--WRITE-PARA--><p id="p1">Much of the observed wintertime increase of mortality in temperate regions is attributed to seasonal influenza.  A recent re-analysis of laboratory experiments indicates that absolute humidity strongly modulates the airborne survival and transmission of the influenza virus.  Here we extend these findings to the human population level, showing  that the onset of increased wintertime influenza-related mortality in the United States is associated with anomalously low absolute humidity levels during the prior weeks.  We then use an epidemiological model, in which observed absolute humidity conditions temper influenza transmission rates, to successfully simulate the seasonal cycle of observed influenza-related mortality.   The model results indicate that direct modulation of influenza transmissibility by absolute humidity alone is sufficient to produce this observed seasonality.    These findings provide epidemiological support for the hypothesis that absolute humidity drives seasonal variations of influenza transmission in temperate regions.</p></abstract></article-meta></front><body><!--WRITE-PARA--><p id="p2"> Note: The <ext-link ext-link-type="uri" xlink:href="http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1000316">final version</ext-link> of this work appears in <italic>PLoS Biology</italic>.&#x000a0; </p><!--WRITE-PARA--><p id="p3"> &#x000a0;<bold>Introduction</bold> </p><!--WRITE-PARA--><p id="p4">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;In temperate regions, wintertime influenza epidemics are responsible for considerable morbidity and mortality<xref ref-type="bibr" rid="ref-1543505149">[1]</xref>.&#x000a0; These seasonal epidemics are maintained by the gradual antigenic drift of surface antigens, which enables the influenza virus to evade host immune response<xref ref-type="bibr" rid="ref-4178339808">[2]</xref>.&#x000a0; Recent influenza epidemics have resulted from the co-circulation of three virus (sub)types, A/H1N1, A/H3N2 and B, with one generally predominant locally in a given winter <xref ref-type="bibr" rid="ref-3178268852">[3]</xref><xref ref-type="bibr" rid="ref-3387864119">[4]</xref><xref ref-type="bibr" rid="ref-135853391">[5]</xref>.&#x000a0; In contrast, influenza pandemic activity can occur any time of year, including during spring or summer months, in the rare instances when a novel virus to which humans have little or no immunity jumps from avian or mammalian hosts into the human population, as in the on-going H1N1v pandemic <xref ref-type="bibr" rid="ref-2893118090">[6]</xref><xref ref-type="bibr" rid="ref-3547846437">[7]</xref><xref ref-type="bibr" rid="ref-917339580">[8]</xref><xref ref-type="bibr" rid="ref-4055939030">[9]</xref>. Despite numerous reports describing wintertime transmission of epidemic influenza in temperate regions <xref ref-type="bibr" rid="ref-2595314710">[10]</xref>, our understanding of the mechanisms underlying influenza seasonal variation remains very limited.</p><!--WRITE-PARA--><p id="p5">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Experimental studies suggest that influenza virus survival within aerosolized droplets is strongly associated with the absolute humidity (AH) of the ambient air, such that virus survival improves markedly as AH levels decrease <xref ref-type="bibr" rid="ref-2165221512">[11]</xref>.&#x000a0; A similar relationship is observed between AH and airborne influenza virus transmission among laboratory guinea pigs, in that transmission increases markedly as AH levels decrease (Figure 1).&#x000a0; Within temperate regions of the world, AH conditions are minimal in winter and maximal in summer (Figure 1d).&#x000a0; This seasonal cycle favors a wintertime increase of both influenza virus survival and transmission, and may explain the observed seasonal peak of influenza morbidity and mortality during winter. Annual wintertime mortality peaks are evident in the long-term mortality records of excess pneumonia and influenza (P&#x00026;I) in the US, a robust indicator of the timing and impact of epidemics at national and local scales <xref ref-type="bibr" rid="ref-3387864119">[4]</xref> (Figure S1). &#x02028; </p><!--WRITE-PARA--><p id="p7"><bold>Figure 1.&#x000a0; </bold> Analyses of laboratory data, environmental data, and SIRS model simulations.&#x000a0; a) Linear and log-linear regression of guinea pig airborne influenza virus transmission data <xref ref-type="bibr" rid="ref-1864101339">[12]</xref><xref ref-type="bibr" rid="ref-1127630928">[13]</xref> on specific humidity (a measure of AH);&#x000a0; b) Log-linear regression of 1-hour influenza virus survival data <xref ref-type="bibr" rid="ref-1724043903">[14]</xref> on specific humidity; c) Functional relationship between <inline-formula><tex-math id="d20e126">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>  and  <inline-formula><tex-math id="d20e131">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}q(t)\end{equation*}\end{document}</tex-math></inline-formula> per Equation 4; d) 1972-2002 daily climatology of 2-meter above-ground NCEP-NCAR reanalysis specific humidity <xref ref-type="bibr" rid="ref-3774123746">[15]</xref> for Arizona, Florida, Illinois, New York state and Washington state;&#x000a0; e) 1972-2002 average daily values of <inline-formula><tex-math id="d20e140">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>  derived from the specific humidity climatology using the best-fit parameter combination from SIRS simulations ( <inline-formula><tex-math id="d20e145">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0max}\end{equation*}\end{document}</tex-math></inline-formula>= 3.52; <inline-formula><tex-math id="d20e150">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0max}\end{equation*}\end{document}</tex-math></inline-formula>= 1.12) and the functional form (Figure 1c and Equation 4); f) Average<inline-formula><tex-math id="d20e155">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{E} (t)\end{equation*}\end{document}</tex-math></inline-formula>   for all wintertime outbreaks in the 10 best-fit simulations at each state shown for 100 days prior through 150 days post outbreak onset (minimum 400 infections/day during 2 weeks prior; minimum 5000 infections/day at least one day during subsequent 30 days).&#x000a0; Figures 1a and b are redrawn from Shaman and Kohn<xref ref-type="bibr" rid="ref-2165221512">[11]</xref>using specific humidity as the measure of AH.&#x000a0;</p><!--WRITE-PARA--><p id="p8">
+            <fig id="d20e165"><graphic xlink:href="fig-one-knol-paint"/></fig>
+        </p><!--WRITE-PARA--><p id="p9">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Here we develop epidemiological support for these previous laboratory-based findings implicating AH as a driver of seasonal influenza transmission. First, we analyze the spatial and temporal variation of epidemic influenza onset across the continental US, 1972-2002, and correlate this observed variability with records of AH for the same period and locations.&#x000a0; Second, we show that a mathematical model of influenza transmission in the US can reproduce the spatial and temporal variation of epidemic influenza when daily AH conditions within each state are used to modulate the basic reproductive number,<sub>
+            <inline-formula><tex-math id="d20e174">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula></sub>, of the influenza virus.</p><!--WRITE-PARA--><p id="p10">
+            <bold>Results</bold>
+        </p><sec id="sec1"><title>AH and the Onset of Wintertime Influenza Outbreaks</title><!--WRITE-PARA--><p id="p11">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Our first test of the hypothesis that low AH drives wintertime increases of influenza transmission is to assess whether the onset of the influenza epidemic each winter &#x02013;&#x000a0;which shows substantial annual variation (Supplementary Figure S1; supplementary figures and text can be found <ext-link ext-link-type="uri" xlink:href="http://people.oregonstate.edu/%7Eshamanj/pubs/shaman_etal_PLoSCurrInf_SI.pdf">here</ext-link>)&#x02014;corresponds to a period of unusually low AH.&#x000a0; We define the onset of wintertime influenza as the date at which, for the 2 weeks prior, observed excess P&#x00026;I mortality had been at or above a prescribed threshold level (e.g. 0.01 deaths/100,000 people).&#x000a0; This onset date was identified separately for each of the 30 winters in the 1972-2002 observational record at each of the 48 contiguous states plus the District of Columbia (DC).&#x000a0; We then examined the anomalous AH (<inline-formula><tex-math id="d20e195">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>) conditions prior to and following these onset dates. <inline-formula><tex-math id="d20e200">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0; is the local&#x000a0; daily deviation of AH from its 31-year mean for each day (as shown for 5 states in Figure 1d), defined as:</p><p> &#x000a0;&#x000a0; &#x000a0;&#x000a0; &#x000a0; &#x000a0;<bold>&#x000a0;&#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0;</bold><disp-formula><tex-math id="d20e209">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH' = AH - \bar{AH}\end{equation*}\end{document}</tex-math></disp-formula>&#x000a0;&#x000a0; &#x000a0;&#x000a0;<bold>(1)&#x000a0;</bold> </p><!--WRITE-PARA--><p id="p13">
+                <bold>
+                    &#x02028;
+                </bold>
+            </p><!--WRITE-PARA--><p id="p14">where <inline-formula><tex-math id="d20e226">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}\bar{AH}\end{equation*}\end{document}</tex-math></inline-formula>  denotes the 1972-2002 daily average value.&#x000a0; At temperate latitudes, such as in the US, wintertime AH levels are already much lower than summer (Figure 1d).&#x000a0;&#x000a0; By using <inline-formula><tex-math id="d20e231">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula> , we can determine whether the onset of wintertime influenza occurs when AH is above or below typical local daily AH levels.&#x000a0; </p><!--WRITE-PARA--><p id="p15">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Negative <sub><inline-formula><tex-math id="d20e239">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0; </sub> values are typically observed beginning 4 weeks prior to the onset of influenza epidemics (Figure 2), with the largest excursion occurring 17 days prior to onset. This result is robust to the choice of the mortality threshold level used to define onset date (from 0.001 to 0.02 excess P&#x00026;I deaths/100,000 people). To assess the statistical significance of the association between negative wintertime <inline-formula><tex-math id="d20e245">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula> and epidemic onset, we bootstrapped the distribution of observed wintertime <inline-formula><tex-math id="d20e250">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>   records and found strong statistical support (<italic>p</italic>&#x0003c;0.0005, see Supporting Information, available <ext-link ext-link-type="uri" xlink:href="http://people.oregonstate.edu/%7Eshamanj/pubs/shaman_etal_PLoSCurrInf_SI.pdf">here</ext-link>).&#x000a0; Depending on the threshold used to define onset, 55-60% of onset dates demonstrate negative <inline-formula><tex-math id="d20e262">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>   averaged over the 4 weeks prior to onset.&#x000a0; While highly statistically significant, this shift from the expected 50% likelihood is small.&#x000a0; These findings indicate that negative <inline-formula><tex-math id="d20e267">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>   are not necessary for wintertime influenza onset but instead presage an increased likelihood of these onset events.&#x000a0; In effect, negative <inline-formula><tex-math id="d20e272">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0; in the weeks prior to onset provide an additional increase of influenza virus survival and transmission over typical local wintertime levels and may further facilitate the spread of the virus. &#x02028; </p><!--WRITE-PARA--><p id="p18"><bold>Figure 2. </bold>(top) Plots of  <inline-formula><tex-math id="d20e291">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>  averaged for the site-winters with an influenza outbreak showing the 6 weeks prior and 4 weeks following outbreak onset. The conditions at each of the site-winters are defined based on the onset date for that site-winter.&#x000a0; The onset dates are defined as the date at which wintertime observed excess P&#x00026;I mortality had been at or above a prescribed threshold level for two continuous weeks&#x000a0; (e.g. 0.01 deaths/100,000 people).&#x000a0; Not every site-winter produced an outbreak as defined by a particular onset threshold.&#x000a0; Depending on the threshold level used, 1181-1420 epidemics were identified among 1470 possible (30 winters each for the 48 contiguous states plus DC).&#x000a0; Each solid line is the&#x000a0;   averaged <inline-formula><tex-math id="d20e296">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula> associated with influenza onset as defined by a different threshold mortality rate. The dashed line shows  <inline-formula><tex-math id="d20e301">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula> <inline-formula><tex-math id="d20e306">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}=0\end{equation*}\end{document}</tex-math></inline-formula>. (bottom) Plot of <inline-formula><tex-math id="d20e311">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>   anomalies using the above  <inline-formula><tex-math id="d20e317">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>  values. The   <inline-formula><tex-math id="d20e322">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula> anomalies are calculated using the best combined fit estimates of   <inline-formula><tex-math id="d20e327">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0max}\end{equation*}\end{document}</tex-math></inline-formula> and <inline-formula><tex-math id="d20e332">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0min}\end{equation*}\end{document}</tex-math></inline-formula>    (Table 1). The dashed line shows <inline-formula><tex-math id="d20e337">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)' = 0\end{equation*}\end{document}</tex-math></inline-formula>  .&#x000a0;</p><!--WRITE-PARA--><p id="p20">
+                <fig id="d20e348"><graphic xlink:href="fig-2-knol"/></fig>
+            </p><!--WRITE-PARA--><p id="p22">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Regional differences in the association of negative    <inline-formula><tex-math id="d20e360">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula> with onset date are also evident.&#x000a0; The association is strongest in the eastern US, in particular the Gulf region and the northeast (Figures S2-S3).&#x000a0; While the association does not reach statistically significance in much of the western US, <inline-formula><tex-math id="d20e365">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>   are typically negative during the weeks prior to onset in this region as well.</p><!--WRITE-PARA--><p id="p23">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Next, we used the same approach to examine whether other potential environmental drivers of influenza are associated with wintertime influenza onset.&#x000a0;&#x000a0; The findings indicate that negative relative humidity (RH) and temperature anomalies, as well as positive solar insolation anomalies, are also associated with onset date (Table 1). However, the direction of the associations of the daily wintertime anomalies of solar insolation and RH with epidemic onset are contrary to the association between these environmental factors and epidemic activity at the seasonal time scale.&#x000a0; Decreased solar insolation during the winter months is posited to increase influenza activity by decreasing host melatonin and vitamin D levels and thus host resistance<xref ref-type="bibr" rid="ref-2472388546">[16]</xref><xref ref-type="bibr" rid="ref-3141276417">[17]</xref>; however, our findings indicate that influenza onset is associated with <italic>increased</italic> daily solar insolation anomalies. Similarly, RH is highest in winter <xref ref-type="bibr" rid="ref-2165221512">[11]</xref>, but influenza onset is associated with <italic>low</italic> RH anomalies.</p><!--WRITE-PARA--><p id="p24"><bold> Table 1.&#x000a0; </bold>Association of daily anomalies in various environmental variables with wintertime influenza onset during 1972-2002 for the contiguous US.&#x000a0;&#x000a0; 4 different onset thresholds are shown.&#x000a0; Average values for each variable are for the period 4 to 0 weeks prior to onset.&#x000a0; Significance estimates based on bootstrapping are also shown in parentheses.&#x000a0; NS = not significant.&#x000a0;&#x02028; </p><!--WRITE-PARA--><p id="p25">
+                <table-wrap id="d20e394"><table border="2" cellspacing="0" width="576"><tbody><tr valign="top"><td rowspan="1" colspan="1">
+                                    <bold>Onset Threshold</bold>
+                                <break/>
+                                    <bold>(Deaths/100,000)</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>AH&#x02019;&#x000a0;</bold>
+                                <break/>
+                                    <bold>(1000*kg/kg)</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>RH&#x02019;</bold>
+                                <break/>
+                                    <bold>(%)</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>Temperature&#x02019;</bold>
+                                <break/>
+                                    <bold>(Kelvin)</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>Solar Radiation&#x02019;</bold>
+                                <break/>
+                                    <bold>(W/m</bold>
+                                    <sup>
+                                        <bold>2</bold>
+                                    </sup>
+                                    <bold>)</bold>
+                                </td></tr><tr valign="top"><td rowspan="1" colspan="1">0.005</td><td rowspan="1" colspan="1">-0.138  <break/>(&#x0003c;0.00002)</td><td rowspan="1" colspan="1">-0.420 <break/>(0.00166)</td><td rowspan="1" colspan="1">-0.221 <break/>(0.00004)</td><td rowspan="1" colspan="1">0.431 <break/>(0.0397)</td></tr><tr valign="top"><td rowspan="1" colspan="1">0.01</td><td rowspan="1" colspan="1">-0.124 <break/>(&#x0003c;0.00002)</td><td rowspan="1" colspan="1">-0.586 <break/>(0.00006)</td><td rowspan="1" colspan="1">-0.212 <break/>(0.00044)</td><td rowspan="1" colspan="1">0.547 <break/>(0.0068)</td></tr><tr valign="top"><td rowspan="1" colspan="1">0.015</td><td rowspan="1" colspan="1">-0.114 <break/>(&#x0003c;0.00002)</td><td rowspan="1" colspan="1">-0.709 <break/>(&#x0003c;0.00002)</td><td rowspan="1" colspan="1">-0.178 <break/>(0.00398)</td><td rowspan="1" colspan="1">0.594 <break/>(0.0051)</td></tr><tr valign="top"><td rowspan="1" colspan="1">0.02</td><td rowspan="1" colspan="1">-0.107 <break/>(&#x0003c;0.00002)</td><td rowspan="1" colspan="1">-0.639 <break/>(&#x0003c;0.00002)</td><td rowspan="1" colspan="1">-0.184 <break/>(0.00402)</td><td rowspan="1" colspan="1">0.316 <break/>(NS)</td></tr></tbody></table></table-wrap>
+            </p><!--WRITE-PARA--><p id="p74">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Specific weather patterns may explain the observed correlations between these meteorological anomalies and influenza onset.&#x000a0; Anomalously low AH over the continental US is typically associated with excursions of colder air masses from the north.&#x000a0; These air masses, which often follow a cold front, bring cloud-free skies (i.e. increased solar insolation) and reduced surface temperature and humidity levels.&#x000a0; As the air mass moves southward, it slowly warms; however, unless it traverses a large open water source, AH does not increase substantially.&#x000a0; As a consequence, anomalously low RH levels can develop within these air masses as well.&#x000a0; Thus, the anomalies of solar insolation and RH could be non-causally linked with influenza outbreaks through their association with weather conditions that bring negative <inline-formula><tex-math id="d20e568">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>  to a region.&#x000a0;&#x000a0; </p><!--WRITE-PARA--><p id="p75">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Temperature and AH are strongly correlated (Table S1); both are minimal in winter when influenza transmission is maximal and have negative anomalies associated with influenza onset, tendencies which agree with the associations determined from laboratory data <xref ref-type="bibr" rid="ref-2165221512">[11]</xref><xref ref-type="bibr" rid="ref-1864101339">[12]</xref><xref ref-type="bibr" rid="ref-1127630928">[13]</xref>.&#x000a0;&#x000a0; To establish which of these variables is most critical for onset, we rely on previous laboratory analyses exploring the impact of both environmental factors that indicate AH is the essential determinant of influenza virus survival and transmission <xref ref-type="bibr" rid="ref-2165221512">[11]</xref>.&#x000a0; Furthermore,<sub>&#x000a0; </sub><inline-formula><tex-math id="d20e587">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula> is the only anomaly variable whose association with onset is significant at <italic>p </italic>&#x0003c; 0.00002 for all 4 onset threshold levels (Table 1).&#x000a0; </p><!--WRITE-PARA--><p id="p76">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;In addition, it should be noted that seasonal temperature conditions are often highly managed indoors, where most of the U.S. population spends the bulk of its time.&#x000a0; Average daily outdoors temperatures can differ over 20&#x000b0;C from winter to summer, but seasonal heating and air conditioning greatly reduce this temperature cycle indoors. In contrast, AH possesses a large seasonal cycle both outdoors and indoors <xref ref-type="bibr" rid="ref-2165221512">[11]</xref>. </p></sec><sec id="sec2"><title>Model Simulations of Influenza Seasonality</title><!--WRITE-PARA--><p id="p77">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;To further assess the hypothesis that AH is a fundamental driver of influenza seasonality, we examined whether a population-level model of influenza transmission forced by AH conditions could reproduce the observed seasonal patterns of P&#x00026;I mortality. We simulated influenza transmission for 5 states representative of different climates within the US: Arizona, Florida, Illinois, New York and Washington. The model considers 3 disease classes: susceptible, infected, recovered; to integrate the impact of waning immunity following antigenic drift, we allow individuals to go back to the susceptible class at a defined rate (SIRS model). Observed 1972-2002 daily AH conditions within each state are used to modulate the basic reproductive number,<inline-formula><tex-math id="d20e608">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>, of the influenza virus, i.e. the per generation transmission rate in a fully susceptible population. These daily fluctuations of  <inline-formula><tex-math id="d20e613">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula> alter the transmission probability per contact within the SIRS model and thus affect influenza transmission dynamics.&#x000a0; The SIRS model contains 4 free parameters: 2 (<sub><inline-formula><tex-math id="d20e619">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0max}\end{equation*}\end{document}</tex-math></inline-formula></sub> and <inline-formula><tex-math id="d20e624">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0min}\end{equation*}\end{document}</tex-math></inline-formula>) that define the range of  <inline-formula><tex-math id="d20e629">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>, 1 for the duration of immunity (<italic>D</italic>), and 1 for the duration of infectiousness (<italic>L</italic>).</p><!--WRITE-PARA--><p id="p78">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;If absolute humidity controls influenza seasonality, best-fit simulations with the AH-driven transmission model should meet the following criteria: 1) the mean annual model cycle of infection should match observations in each state; 2) these simulations should converge to similar parameter values, i.e. the virus response to AH should be consistent among states; and 3) AH modulation of transmission rates ( <inline-formula><tex-math id="d20e643">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>) within the model must match the large range implied by the laboratory data (Figure 1). </p><!--WRITE-PARA--><p id="p79">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Multiple 31-year (1972-2002) simulations were run at each of the 5 states with randomly chosen parameter combinations. We then compared the mean annual cycle of daily infection from each simulation with a similar average of 1972-2002 observed excess P&#x00026;I mortality rates <xref ref-type="bibr" rid="ref-3178268852">[3]</xref><xref ref-type="bibr" rid="ref-3387864119">[4]</xref>.&#x000a0; Best-fit model simulations at each site capture the observed seasonal cycle of influenza (Figure 3).&#x000a0; These simulations not only produce the late-year rise in transmission and infection, but also the wintertime peak during early January, typically followed by a secondary peak during late February/early March.&#x000a0; In both models and observations, the dual winter peaks are not typically seen in individual years; rather these epidemic trajectories reflect the averaging of individual wintertime outbreaks that peak anytime between December and April (Figure S5).</p><!--WRITE-PARA--><p id="p81"><bold>Figure 3.&#x000a0; </bold> Mean annual cycles for the best-fit SIRS model simulations at the 5 state sites.&#x000a0; Here, best-fit simulations were selected individually for each state based on RMS error after scaling the 31-year mean daily infection number to the 31-year mean observed daily excess P&#x00026;I mortality rate.&#x000a0; Thick blue line shows the best-fit simulation; thinner green lines show the next 9 best simulations.&#x000a0;</p><!--WRITE-PARA--><p id="p83">
+                <fig id="d20e669"><graphic xlink:href="fig-3-knol"/></fig>
+            </p><!--WRITE-PARA--><p id="p86">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;We also searched for the best-fit parameter combinations for all 5 sites evaluated together.&#x000a0; The parameter combinations of these best &#x02018;combined fits&#x02019; are characterized by high <inline-formula><tex-math id="d20e684">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0max}\end{equation*}\end{document}</tex-math></inline-formula>   (generally &#x0003e;2.8), high <inline-formula><tex-math id="d20e689">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0min}\end{equation*}\end{document}</tex-math></inline-formula>   (&#x0003e;1) and low mean infectious period (2&#x0003c;<italic>D</italic>&#x0003c;4.2 days) (Table 2, Figure S6).&#x000a0; Best-fit simulations at each of the 5 sites individually occupy a similar parameter space (Table S2, Figures S7-S11).&#x000a0; In particular, these simulations converge to high <inline-formula><tex-math id="d20e697">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0max}\end{equation*}\end{document}</tex-math></inline-formula>  , which indicates a similar response to AH variability (see Supporting Information).&#x000a0; &#x02028; </p><!--WRITE-PARA--><p id="p88"><bold> Table 2.&#x000a0; </bold>Parameter combinations for the 10 best-fit simulations at the Arizona, Florida, Illinois New York, and Washington state sites.&#x000a0; 5000 simulations were performed at each site with the parameters <inline-formula><tex-math id="d20e713">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0max}\end{equation*}\end{document}</tex-math></inline-formula>, <inline-formula><tex-math id="d20e718">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0min}\end{equation*}\end{document}</tex-math></inline-formula>, <italic>D </italic> and <italic>L</italic> randomly chosen from within specified ranges.&#x000a0; Best-fit simulations were selected for the 5 sites in aggregate based on RMS error after scaling the 31-year mean daily infection number to the 31-year mean observed daily excess P&#x00026;I mortality rate at each site.&#x000a0; The scaling factor itself, representing mortality per infection is also shown. &#x000a0;&#x02028; </p><!--WRITE-PARA--><p id="p89">
+                <table-wrap id="d20e733"><table border="2" cellspacing="0" width="590"><tbody><tr valign="top"><td rowspan="1" colspan="1">
+                                    <bold>Rank</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>RMS Error</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>Correlation Coefficient</bold>
+                                <break/>
+                                    <bold>(r)</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>L (years)</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>D (days)</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold><inline-formula><tex-math id="d20e775">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0max}\end{equation*}\end{document}</tex-math></inline-formula>&#x02028; (persons/person)</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold><inline-formula><tex-math id="d20e786">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0min}\end{equation*}\end{document}</tex-math></inline-formula>&#x02028; (persons/person)</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>Scaling   Factor</bold>
+                                <break/>
+                                    <bold>(x1e-4)</bold>
+                                </td></tr><tr valign="top"><td rowspan="1" colspan="1">1</td><td rowspan="1" colspan="1">0.0070</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">5.35</td><td rowspan="1" colspan="1">3.24</td><td rowspan="1" colspan="1">3.52</td><td rowspan="1" colspan="1">1.12</td><td rowspan="1" colspan="1">1.70</td></tr><tr valign="top"><td rowspan="1" colspan="1">2</td><td rowspan="1" colspan="1">0.0070</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">5.40</td><td rowspan="1" colspan="1">2.41</td><td rowspan="1" colspan="1">2.89</td><td rowspan="1" colspan="1">1.16</td><td rowspan="1" colspan="1">1.92</td></tr><tr valign="top"><td rowspan="1" colspan="1">3</td><td rowspan="1" colspan="1">0.0075</td><td rowspan="1" colspan="1">0.83</td><td rowspan="1" colspan="1">3.28</td><td rowspan="1" colspan="1">4.18</td><td rowspan="1" colspan="1">3.40</td><td rowspan="1" colspan="1">1.22</td><td rowspan="1" colspan="1">1.04</td></tr><tr valign="top"><td rowspan="1" colspan="1">4</td><td rowspan="1" colspan="1">0.0075</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">3.70</td><td rowspan="1" colspan="1">2.03</td><td rowspan="1" colspan="1">2.05</td><td rowspan="1" colspan="1">1.15</td><td rowspan="1" colspan="1">1.85</td></tr><tr valign="top"><td rowspan="1" colspan="1">5</td><td rowspan="1" colspan="1">0.0075</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">7.77</td><td rowspan="1" colspan="1">2.59</td><td rowspan="1" colspan="1">3.69</td><td rowspan="1" colspan="1">1.30</td><td rowspan="1" colspan="1">2.28</td></tr><tr valign="top"><td rowspan="1" colspan="1">6</td><td rowspan="1" colspan="1">0.0076</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">6.23</td><td rowspan="1" colspan="1">2.37</td><td rowspan="1" colspan="1">2.71</td><td rowspan="1" colspan="1">1.23</td><td rowspan="1" colspan="1">2.28</td></tr><tr valign="top"><td rowspan="1" colspan="1">7</td><td rowspan="1" colspan="1">0.0076</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">6.05</td><td rowspan="1" colspan="1">2.56</td><td rowspan="1" colspan="1">3.79</td><td rowspan="1" colspan="1">1.06</td><td rowspan="1" colspan="1">1.83</td></tr><tr valign="top"><td rowspan="1" colspan="1">8</td><td rowspan="1" colspan="1">0.0076</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">4.61</td><td rowspan="1" colspan="1">2.71</td><td rowspan="1" colspan="1">2.61</td><td rowspan="1" colspan="1">1.29</td><td rowspan="1" colspan="1">1.70</td></tr><tr valign="top"><td rowspan="1" colspan="1">9</td><td rowspan="1" colspan="1">0.0076</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">7.39</td><td rowspan="1" colspan="1">2.85</td><td rowspan="1" colspan="1">3.69</td><td rowspan="1" colspan="1">1.27</td><td rowspan="1" colspan="1">2.22</td></tr><tr valign="top"><td rowspan="1" colspan="1">10</td><td rowspan="1" colspan="1">0.0076</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">3.58</td><td rowspan="1" colspan="1">3.61</td><td rowspan="1" colspan="1">3.19</td><td rowspan="1" colspan="1">1.20</td><td rowspan="1" colspan="1">1.18</td></tr></tbody></table></table-wrap>
+            </p><!--WRITE-PARA--><p id="p181">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;There is some correlation among SIRS model parameter values in simulations that fit the observed excess P&#x00026;I mortality well.&#x000a0; For instance, among better-fit simulations, <italic>L </italic> and <italic>D </italic>tend to be inversely related (Figures S6-S11).&#x000a0; In addition, broad regions of parameter space appear capable of producing high-quality, low-RMS-error simulations (Figure S6).&#x000a0; The stochastic components of the SIRS model may contribute in part to this behavior.&#x000a0; The flat goodness-of-fit within model parameter space indicates that no one parameter combination is strictly &#x02018;best&#x02019;; rather, a range of parameter combinations may produce good simulations of influenza transmission.&#x000a0; These parameter ranges are: <italic>L</italic> = 3-8 years, <italic>D</italic> = 2-3.75 days, <inline-formula><tex-math id="d20e1073">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0max}\end{equation*}\end{document}</tex-math></inline-formula>  = 2.6-4, and <inline-formula><tex-math id="d20e1079">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0min}\end{equation*}\end{document}</tex-math></inline-formula> = 1.05-1.30.&#x000a0; We re-ran the SIRS model repeatedly sampling this approximate subset range of parameter space.&#x000a0; Best-fit simulations from this subset range of parameter space (Table S3) were of similar quality and exhibited the same flat goodness-of-fit within model parameter space as the best-fit simulations presented in Table 2.</p><!--WRITE-PARA--><p id="p184">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Because the SIRS model simulates only influenza-related infections, not deaths, a scaling factor is needed to compare model-simulated rates of infection with the observed excess P&#x00026;I mortality rates.&#x000a0; This scaling factor can be understood as the case fatality ratio, i.e. the probability of mortality given infection.&#x000a0; Reassuringly, all best-fit simulations produce a scaling factor of the same order of magnitude and roughly consistent with the expected value of the case fatality ratio for P&#x00026;I-related deaths (see Supporting Information).&#x000a0; </p><!--WRITE-PARA--><p id="p185">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;The model also explains regional variations in influenza dynamics.&#x000a0; Due to the modeled nonlinear relationship between <inline-formula><tex-math id="d20e1096">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula> and AH (Figure 1c), the seasonal cycle of <inline-formula><tex-math id="d20e1101">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0; is sensitive to both AH seasonal cycle amplitude and mean AH levels (Figures 1d-e).&#x000a0;&#x000a0; In Florida, mean AH levels are higher than for the other 4 states, but the seasonal AH cycle remains large and produces a seasonal <inline-formula><tex-math id="d20e1106">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0;cycle of sufficient amplitude to generate an effective reproductive number, <inline-formula><tex-math id="d20e1111">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{E} (t)\end{equation*}\end{document}</tex-math></inline-formula> =  <inline-formula><tex-math id="d20e1116">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula><inline-formula><tex-math id="d20e1120">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}*S(t)/N\end{equation*}\end{document}</tex-math></inline-formula> , greater than 1 (Figure 1f) and organize influenza epidemics preferentially during winter.&#x000a0; Outbreak dynamics reinforce this phase organization in that wintertime epidemics confer immunity to a large proportion of the model population, which then reduces population-level susceptibility during the following summer when <inline-formula><tex-math id="d20e1126">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0; is low.&#x000a0; In Arizona and Washington state, the seasonal AH cycle is less than for the other 3 states, but average AH levels are low, where laboratory findings indicate sensitivity to variation in AH is greater; consequently <inline-formula><tex-math id="d20e1131">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>   retains a sizeable seasonal cycle (Figure 1e).&#x000a0; For all 5 states the AH-driven seasonal variation of <inline-formula><tex-math id="d20e1136">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>   is large enough that <inline-formula><tex-math id="d20e1141">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{E} (t)\end{equation*}\end{document}</tex-math></inline-formula>   is strongly modulated by AH conditions and exceeds 1 during winter as outbreaks develop (Figure 1f).&#x000a0; </p><!--WRITE-PARA--><p id="p186">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;The humidity-driven SIRS simulations satisfy our 3 criteria for supporting the hypothesis that AH controls influenza seasonality in temperate regions.&#x000a0; The simulations produce a consistent response in the 5 climatologically diverse US states using similar parameter values.&#x000a0; The large sensitivity of simulated influenza transmission to AH is consistent with the analysis of laboratory experiments that show large changes in influenza virus survival and transmission in response to AH variability (Figures 1a,b).&#x000a0; </p><!--WRITE-PARA--><p id="p187">
+                <italic>Cross Validation of the Model Findings</italic>
+            </p><!--WRITE-PARA--><p id="p188">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;To further validate the SIRS model findings, we determined whether the best-fit simulations derived from the 5 selected states could reproduce the seasonal cycles of influenza elsewhere in the US.&#x000a0; The 10 best combined-fit parameter combinations (Table 2) were used to perform 31-year (1972-2002) SIRS simulations at each of the contiguous 48 states plus DC.&#x000a0; </p><!--WRITE-PARA--><p id="p189">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;The results of this cross-validation demonstrate good simulations of observed excess P&#x00026;I mortality for a majority of states (average <italic>r</italic> &#x0003e; 0.7, minimum <italic>r </italic>&#x0003e; 0.5, see Methods and Table 3).&#x000a0; Some states, particularly the sparsely populated western states perform less well.&#x000a0; These states often have low workflow <xref ref-type="bibr" rid="ref-3387864119">[4]</xref>, which may reduce the rate of introduction of the virus each winter. In addition, heterogeneous AH fields across some states (particularly large ones) create some error due to simulation with a single average statewide AH value. 13 states in the continental US, including Arizona, possess low workflow rates <xref ref-type="bibr" rid="ref-3387864119">[4]</xref>.&#x000a0; 6 of these 13 states are among the 10 worst cross-validation performers; such a clustering is unlikely to occur by chance alone (<italic>p</italic> &#x0003c; 0.005).&#x000a0;&#x000a0; In addition, 7 of the 10 worst performers are states with the 10 lowest population densities (<italic>p </italic>&#x0003c; 0.0001).&#x000a0; &#x02028; </p><!--WRITE-PARA--><p id="p191"><bold>Table 3.</bold> Correlation coefficients for the contiguous US and District of Columbia of SIRS-simulated 1972-2002 influenza incidence with 1972-2002 observed excess P&#x00026;I mortality.&#x000a0; The 10 best common-fit parameter combinations (Table 1) were used for these hindcast projections. Results are ordered based on best average correlation (among the 10 simulations for each state).&#x000a0; States marked with an asterisk are low workflow states.&#x000a0; The 10 states with lowest 1972-2002 population density are shown in bold.</p><!--WRITE-PARA--><p id="p192">
+                <table-wrap id="d20e1189"><table border="2" cellspacing="0" width="590"><tbody><tr valign="top"><td rowspan="1" colspan="1">&#x000a0;</td><td rowspan="1" colspan="1">
+                                    <bold>10-Run</bold>
+                                </td><td colspan="10" rowspan="1">
+                                    <bold>Table 1 Ranked   Parameter Combination</bold>
+                                </td></tr><tr valign="top"><td rowspan="1" colspan="1">
+                                    <bold>State</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>Average</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>1</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>2</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>3</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>4</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>5</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>6</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>7</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>8</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>9</bold>
+                                </td><td rowspan="1" colspan="1">
+                                    <bold>10</bold>
+                                </td></tr><tr valign="top"><td rowspan="1" colspan="1">MO</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.93</td><td rowspan="1" colspan="1">0.95</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.93</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.93</td><td rowspan="1" colspan="1">0.95</td><td rowspan="1" colspan="1">0.97</td></tr><tr valign="top"><td rowspan="1" colspan="1">OK*</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.94</td><td rowspan="1" colspan="1">0.95</td><td rowspan="1" colspan="1">0.05</td><td rowspan="1" colspan="1">0.96</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.93</td></tr><tr valign="top"><td rowspan="1" colspan="1">KS</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.96</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.91</td></tr><tr valign="top"><td rowspan="1" colspan="1">KY</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.83</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.95</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.92</td></tr><tr valign="top"><td rowspan="1" colspan="1">AR</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.93</td><td rowspan="1" colspan="1">0.86</td></tr><tr valign="top"><td rowspan="1" colspan="1">IA</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.87</td></tr><tr valign="top"><td rowspan="1" colspan="1">PA</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.96</td><td rowspan="1" colspan="1">0.93</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.87</td></tr><tr valign="top"><td rowspan="1" colspan="1">NH*</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.95</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.93</td></tr><tr valign="top"><td rowspan="1" colspan="1">NY</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.78</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.94</td><td rowspan="1" colspan="1">0.95</td><td rowspan="1" colspan="1">0.96</td><td rowspan="1" colspan="1">0.81</td></tr><tr valign="top"><td rowspan="1" colspan="1">IL</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.95</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.95</td><td rowspan="1" colspan="1">0.73</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.95</td><td rowspan="1" colspan="1">0.94</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.79</td></tr><tr valign="top"><td rowspan="1" colspan="1">MA</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.93</td><td rowspan="1" colspan="1">0.69</td><td rowspan="1" colspan="1">0.77</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.97</td></tr><tr valign="top"><td rowspan="1" colspan="1">IN</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.95</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.78</td><td rowspan="1" colspan="1">0.95</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.86</td></tr><tr valign="top"><td rowspan="1" colspan="1">VA</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.75</td><td rowspan="1" colspan="1">0.83</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.93</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.93</td><td rowspan="1" colspan="1">0.79</td><td rowspan="1" colspan="1">0.94</td><td rowspan="1" colspan="1">0.94</td></tr><tr valign="top"><td rowspan="1" colspan="1">NC</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.75</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.95</td><td rowspan="1" colspan="1">0.74</td><td rowspan="1" colspan="1">0.96</td></tr><tr valign="top"><td rowspan="1" colspan="1">AL</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.83</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.97</td><td rowspan="1" colspan="1">0.69</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.97</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.85</td></tr><tr valign="top"><td rowspan="1" colspan="1">MI</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.74</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.72</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.89</td></tr><tr valign="top"><td rowspan="1" colspan="1">WV</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.83</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.79</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.75</td></tr><tr valign="top"><td rowspan="1" colspan="1">WI</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.73</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.70</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.78</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.91</td></tr><tr valign="top"><td rowspan="1" colspan="1">
+                                    <bold>NE</bold>
+                                </td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.78</td><td rowspan="1" colspan="1">0.78</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.94</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.67</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.93</td><td rowspan="1" colspan="1">0.81</td></tr><tr valign="top"><td rowspan="1" colspan="1">ME*</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.72</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.79</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.86</td></tr><tr valign="top"><td rowspan="1" colspan="1">TN</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.83</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.78</td><td rowspan="1" colspan="1">0.72</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.83</td></tr><tr valign="top"><td rowspan="1" colspan="1">AZ*</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">0.69</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.84</td></tr><tr valign="top"><td rowspan="1" colspan="1">CO*</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.90</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.60</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.72</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.91</td></tr><tr valign="top"><td rowspan="1" colspan="1">MS</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">0.78</td><td rowspan="1" colspan="1">0.60</td><td rowspan="1" colspan="1">0.97</td><td rowspan="1" colspan="1">0.78</td><td rowspan="1" colspan="1">0.83</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.88</td><td rowspan="1" colspan="1">0.89</td></tr><tr valign="top"><td rowspan="1" colspan="1">OH</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.79</td><td rowspan="1" colspan="1">0.79</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.66</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.91</td></tr><tr valign="top"><td rowspan="1" colspan="1">TX</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.66</td><td rowspan="1" colspan="1">0.78</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.78</td><td rowspan="1" colspan="1">0.75</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.79</td></tr><tr valign="top"><td rowspan="1" colspan="1">
+                                    <bold>SD*</bold>
+                                </td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.69</td><td rowspan="1" colspan="1">0.83</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.83</td><td rowspan="1" colspan="1">0.66</td><td rowspan="1" colspan="1">0.79</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.84</td></tr><tr valign="top"><td rowspan="1" colspan="1">MN</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.72</td><td rowspan="1" colspan="1">0.74</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.83</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.84</td></tr><tr valign="top"><td rowspan="1" colspan="1">MD</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.74</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.79</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.80</td></tr><tr valign="top"><td rowspan="1" colspan="1">SC</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.92</td><td rowspan="1" colspan="1">0.55</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.74</td></tr><tr valign="top"><td rowspan="1" colspan="1">WA</td><td rowspan="1" colspan="1">0.78</td><td rowspan="1" colspan="1">0.91</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.60</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.74</td><td rowspan="1" colspan="1">0.67</td><td rowspan="1" colspan="1">0.79</td><td rowspan="1" colspan="1">0.73</td></tr><tr valign="top"><td rowspan="1" colspan="1">VT</td><td rowspan="1" colspan="1">0.77</td><td rowspan="1" colspan="1">0.68</td><td rowspan="1" colspan="1">0.84</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.72</td><td rowspan="1" colspan="1">0.73</td><td rowspan="1" colspan="1">0.64</td><td rowspan="1" colspan="1">0.82</td></tr><tr valign="top"><td rowspan="1" colspan="1">GA</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.69</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.81</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.86</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.68</td><td rowspan="1" colspan="1">0.59</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.79</td></tr><tr valign="top"><td rowspan="1" colspan="1">CT</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.75</td><td rowspan="1" colspan="1">0.75</td><td rowspan="1" colspan="1">0.83</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.71</td><td rowspan="1" colspan="1">0.66</td><td rowspan="1" colspan="1">0.87</td><td rowspan="1" colspan="1">0.80</td><td rowspan="1" colspan="1">0.65</td><td rowspan="1" colspan="1">0.83</td></tr><tr valign="top"><td rowspan="1" colspan="1">LA</td><td rowspan="1" colspan="1">0.74</td><td rowspan="1" colspan="1">0.45</td><td rowspan="1" colspan="1">0.72</td><td rowspan="1" colspan="1">0.75</td><td rowspan="1" colspan="1">0.58</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.76</td><td rowspan="1" colspan="1">0.85</td><td rowspan="1" colspan="1">0.79</td><td rowspan="1" colspan="1">0.73</td></tr><tr valign="top"><td rowspan="1" colspan="1">
+                                    <bold>NM*</bold>
+                                </td><td rowspan="1" colspan="1">0.73</td><td rowspan="1" colspan="1">0.77</td><td rowspan="1" colspan="1">0.89</td><td rowspan="1" colspan="1">0.53</td><td rowspan="1" colspan="1">0.73</td><td rowspan="1" colspan="1">0.71</td><td rowspan="1" colspan="1">0.77</td><td rowspan="1" colspan="1">0.77</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">0.64</td><td rowspan="1" colspan="1">0.71</td></tr><tr valign="top"><td rowspan="1" colspan="1">FL</td><td rowspan="1" colspan="1">0.71</td><td rowspan="1" colspan="1">0.64</td><td rowspan="1" colspan="1">0.75</td><td rowspan="1" colspan="1">0.74</td><td rowspan="1" colspan="1">0.73</td><td rowspan="1" colspan="1">0.57</td><td rowspan="1" colspan="1">0.73</td><td rowspan="1" colspan="1">0.78</td><td rowspan="1" colspan="1">0.71</td><td rowspan="1" colspan="1">0.70</td><td rowspan="1" colspan="1">0.77</td></tr><tr valign="top"><td rowspan="1" colspan="1">DC</td><td rowspan="1" colspan="1">0.69</td><td rowspan="1" colspan="1">0.72</td><td rowspan="1" colspan="1">0.73</td><td rowspan="1" colspan="1">0.69</td><td rowspan="1" colspan="1">0.72</td><td rowspan="1" colspan="1">0.65</td><td rowspan="1" colspan="1">0.71</td><td rowspan="1" colspan="1">0.74</td><td rowspan="1" colspan="1">0.68</td><td rowspan="1" colspan="1">0.71</td><td rowspan="1" colspan="1">0.59</td></tr><tr valign="top"><td rowspan="1" colspan="1">CA</td><td rowspan="1" colspan="1">0.68</td><td rowspan="1" colspan="1">0.74</td><td rowspan="1" colspan="1">0.57</td><td rowspan="1" colspan="1">0.63</td><td rowspan="1" colspan="1">0.61</td><td rowspan="1" colspan="1">0.69</td><td rowspan="1" colspan="1">0.78</td><td rowspan="1" colspan="1">0.52</td><td rowspan="1" colspan="1">0.67</td><td rowspan="1" colspan="1">0.79</td><td rowspan="1" colspan="1">0.77</td></tr><tr valign="top"><td rowspan="1" colspan="1">
+                                    <bold>UT*</bold>
+                                </td><td rowspan="1" colspan="1">0.68</td><td rowspan="1" colspan="1">0.68</td><td rowspan="1" colspan="1">0.74</td><td rowspan="1" colspan="1">0.66</td><td rowspan="1" colspan="1">0.59</td><td rowspan="1" colspan="1">0.68</td><td rowspan="1" colspan="1">0.77</td><td rowspan="1" colspan="1">0.75</td><td rowspan="1" colspan="1">0.63</td><td rowspan="1" colspan="1">0.55</td><td rowspan="1" colspan="1">0.73</td></tr><tr valign="top"><td rowspan="1" colspan="1">NJ</td><td rowspan="1" colspan="1">0.67</td><td rowspan="1" colspan="1">0.74</td><td rowspan="1" colspan="1">0.67</td><td rowspan="1" colspan="1">0.82</td><td rowspan="1" colspan="1">0.56</td><td rowspan="1" colspan="1">0.69</td><td rowspan="1" colspan="1">0.48</td><td rowspan="1" colspan="1">0.71</td><td rowspan="1" colspan="1">0.60</td><td rowspan="1" colspan="1">0.62</td><td rowspan="1" colspan="1">0.85</td></tr><tr valign="top"><td rowspan="1" colspan="1">RI</td><td rowspan="1" colspan="1">0.64</td><td rowspan="1" colspan="1">0.78</td><td rowspan="1" colspan="1">0.68</td><td rowspan="1" colspan="1">0.73</td><td rowspan="1" colspan="1">0.75</td><td rowspan="1" colspan="1">0.51</td><td rowspan="1" colspan="1">0.49</td><td rowspan="1" colspan="1">0.69</td><td rowspan="1" colspan="1">0.34</td><td rowspan="1" colspan="1">0.67</td><td rowspan="1" colspan="1">0.76</td></tr><tr valign="top"><td rowspan="1" colspan="1">
+                                    <bold>OR</bold>
+                                </td><td rowspan="1" colspan="1">0.62</td><td rowspan="1" colspan="1">0.79</td><td rowspan="1" colspan="1">0.58</td><td rowspan="1" colspan="1">0.59</td><td rowspan="1" colspan="1">0.73</td><td rowspan="1" colspan="1">0.63</td><td rowspan="1" colspan="1">0.44</td><td rowspan="1" colspan="1">0.68</td><td rowspan="1" colspan="1">0.79</td><td rowspan="1" colspan="1">0.56</td><td rowspan="1" colspan="1">0.43</td></tr><tr valign="top"><td rowspan="1" colspan="1">
+                                    <bold>ID*</bold>
+                                </td><td rowspan="1" colspan="1">0.62</td><td rowspan="1" colspan="1">0.65</td><td rowspan="1" colspan="1">0.74</td><td rowspan="1" colspan="1">0.62</td><td rowspan="1" colspan="1">0.63</td><td rowspan="1" colspan="1">0.75</td><td rowspan="1" colspan="1">0.61</td><td rowspan="1" colspan="1">0.30</td><td rowspan="1" colspan="1">0.63</td><td rowspan="1" colspan="1">0.69</td><td rowspan="1" colspan="1">0.53</td></tr><tr valign="top"><td rowspan="1" colspan="1">
+                                    <bold>WY*</bold>
+                                </td><td rowspan="1" colspan="1">0.59</td><td rowspan="1" colspan="1">0.69</td><td rowspan="1" colspan="1">0.57</td><td rowspan="1" colspan="1">0.55</td><td rowspan="1" colspan="1">0.59</td><td rowspan="1" colspan="1">0.71</td><td rowspan="1" colspan="1">0.67</td><td rowspan="1" colspan="1">0.43</td><td rowspan="1" colspan="1">0.65</td><td rowspan="1" colspan="1">0.43</td><td rowspan="1" colspan="1">0.64</td></tr><tr valign="top"><td rowspan="1" colspan="1">DE</td><td rowspan="1" colspan="1">0.56</td><td rowspan="1" colspan="1">0.44</td><td rowspan="1" colspan="1">0.66</td><td rowspan="1" colspan="1">0.55</td><td rowspan="1" colspan="1">0.47</td><td rowspan="1" colspan="1">0.65</td><td rowspan="1" colspan="1">0.65</td><td rowspan="1" colspan="1">0.41</td><td rowspan="1" colspan="1">0.52</td><td rowspan="1" colspan="1">0.52</td><td rowspan="1" colspan="1">0.68</td></tr><tr valign="top"><td rowspan="1" colspan="1">
+                                    <bold>MT*</bold>
+                                </td><td rowspan="1" colspan="1">0.55</td><td rowspan="1" colspan="1">0.54</td><td rowspan="1" colspan="1">0.55</td><td rowspan="1" colspan="1">0.37</td><td rowspan="1" colspan="1">0.75</td><td rowspan="1" colspan="1">0.50</td><td rowspan="1" colspan="1">0.63</td><td rowspan="1" colspan="1">0.59</td><td rowspan="1" colspan="1">0.61</td><td rowspan="1" colspan="1">0.47</td><td rowspan="1" colspan="1">0.52</td></tr><tr valign="top"><td rowspan="1" colspan="1">
+                                    <bold>ND*</bold>
+                                </td><td rowspan="1" colspan="1">0.55</td><td rowspan="1" colspan="1">0.61</td><td rowspan="1" colspan="1">0.67</td><td rowspan="1" colspan="1">0.53</td><td rowspan="1" colspan="1">0.62</td><td rowspan="1" colspan="1">0.37</td><td rowspan="1" colspan="1">0.60</td><td rowspan="1" colspan="1">0.47</td><td rowspan="1" colspan="1">0.64</td><td rowspan="1" colspan="1">0.42</td><td rowspan="1" colspan="1">0.57</td></tr><tr valign="top"><td rowspan="1" colspan="1"><bold>NV</bold>*</td><td rowspan="1" colspan="1">0.40</td><td rowspan="1" colspan="1">0.33</td><td rowspan="1" colspan="1">0.46</td><td rowspan="1" colspan="1">0.26</td><td rowspan="1" colspan="1">0.42</td><td rowspan="1" colspan="1">0.54</td><td rowspan="1" colspan="1">0.67</td><td rowspan="1" colspan="1">0.17</td><td rowspan="1" colspan="1">0.19</td><td rowspan="1" colspan="1">0.50</td><td rowspan="1" colspan="1">0.47</td></tr></tbody></table></table-wrap>
+            </p><!--WRITE-PARA--><p id="p797">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Overall, the cross validation shows that the best combined-fit parameter combinations can simulate influenza seasonality throughout the country. Future use of higher resolution AH and observed P&#x00026;I data that better represent local conditions may improve these model results.</p><!--WRITE-PARA--><p id="p798">
+                <italic>Additional SIRS Model Results</italic>
+            </p><!--WRITE-PARA--><p id="p799">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;We also used SIRS model simulations to provide additional support for the association between negative    <inline-formula><tex-math id="d20e3190">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula> and epidemic onset (Figure 2).&#x000a0; Best-fit SIRS model runs reveal a comparable effect in which large negative <inline-formula><tex-math id="d20e3195">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>   develop about 2 weeks prior to onset as defined by SIRS model infection rates (Figure 4). The 1-week difference in lag between this analysis with model infection rates (2 weeks) and the analysis with observed excess P&#x00026;I mortality rates (3 weeks) roughly corresponds to the mediantime from infection to mortality<xref ref-type="bibr" rid="ref-159731578">[18]</xref><xref ref-type="bibr" rid="ref-3433762509">[19]</xref><xref ref-type="bibr" rid="ref-3668910189">[20]</xref>.&#x000a0; The broader peak of negative <inline-formula><tex-math id="d20e3207">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula> seen in Figure 2 is likely due to other, real-world factors that affect onset response and are not represented in the SIRS model (see Supporting Information).</p><!--WRITE-PARA--><p id="p800">
+                <bold>
+                    &#x02028;
+                </bold>
+            </p><!--WRITE-PARA--><p id="p801"> <bold>Figure 4.</bold> Plots of average <inline-formula><tex-math id="d20e3224">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>  associated with wintertime influenza onset for 10 best-fit SIRS model simulations at the 5 state sites (Arizona, Florida, Illinois, New York and Washington).&#x000a0; The onset dates are defined as the date on which wintertime infection rates have been at or above a prescribed level for two continuous weeks&#x000a0; (e.g. 50 infections/100,000 people).&#x000a0; Each solid line is the averaged <inline-formula><tex-math id="d20e3229">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>    associated with influenza onset as defined by a different threshold infection rate. The dashed line shows  <inline-formula><tex-math id="d20e3234">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula><inline-formula><tex-math id="d20e3238">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}=0\end{equation*}\end{document}</tex-math></inline-formula>. bottom) Plots of   <inline-formula><tex-math id="d20e3243">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula> anomalies using the <inline-formula><tex-math id="d20e3249">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>  values.&#x000a0; The <inline-formula><tex-math id="d20e3254">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0; anomalies are calculated using the parameters  <inline-formula><tex-math id="d20e3259">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0max}\end{equation*}\end{document}</tex-math></inline-formula> and  <inline-formula><tex-math id="d20e3264">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0min}\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0; from each best-fit simulation (Table S3). The dashed line shows <inline-formula><tex-math id="d20e3269">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)' = 0\end{equation*}\end{document}</tex-math></inline-formula>. </p><!--WRITE-PARA--><p id="p802">
+                <fig id="d20e3277"><graphic xlink:href="fig-4-knol"/></fig>
+            </p><!--WRITE-PARA--><p id="p805">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Finally, we examined whether the school calendar, which alters person-to-person contact rates, could provide a better simulation of seasonal influenza than AH.&#x000a0; School holidays have been estimated to lead to changes of ~25% in influenza transmission <xref ref-type="bibr" rid="ref-3450516867">[21]</xref>and occur during summer in the US, as well as at the end of the calendar year and again in spring.&#x000a0; A number of SIRS model simulations were performed that included a step-wise increase of  <inline-formula><tex-math id="d20e3295">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula> during the school year (see Supporting Information). Simulations in which school closure was the only modulation of <inline-formula><tex-math id="d20e3300">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0; were able to reproduce the seasonal cycle of influenza; however, these simulations did not reproduce observed excess P&#x00026;I mortality as well as those with AH alone (see Supporting Information, Table S5, Figures S14-S15).&#x000a0; In addition, a 40-90% change in influenza transmission (<inline-formula><tex-math id="d20e3305">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>) was needed to effect this seasonality (Table S5).&#x000a0; This range of <inline-formula><tex-math id="d20e3310">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula> changes is slightly larger than the previously estimated modulation of ~25%; however, these previous estimates were derived from an age-structured population model, so direct comparison is difficult.&#x000a0; </p></sec><sec id="sec3"><title>
+                <bold>Discussion</bold>
+            </title><!--WRITE-PARA--><p id="p806">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Distinguishing among potential environmental drivers of influenza seasonality, such as AH, RH, temperature, solar insolation, and the school calendar, is difficult since all demonstrate a similarly strong annual periodicity.&#x000a0; Nevertheless, our findings indicate that AH is a major (and likely the predominant) determinant of influenza seasonality due to: 1) the empirical association of negative <inline-formula><tex-math id="d20e3324">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>   with the onset of wintertime influenza outbreaks (Figure 2), which is statistically stronger than for RH, temperature or solar insolation (Table 1); 2) the relative consistency of the response to AH among the 5 states modeled in detail (i.e. similar parameter space; Supplementary Table S2); and 3) the SIRS cross validation showing that the same best-fit parameters (Table 2) can produce successful simulations of influenza seasonality throughout much of the US (Table 3).</p><!--WRITE-PARA--><p id="p807">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;In addition, several findings undermine the hypothesis that the association between the seasonal influenza cycle and AH is in fact due to confounding by other potential drivers.&#x000a0; The case for solar insolation is weakened by its implausible positive association with wintertime influenza onset.&#x000a0; While laboratory analyses find that low RH favors influenza virus survival and transmission, RH is in fact typically incorrectly phased in the outdoor environment (i.e. maximal during winter, minimal during summer) and cannot explain peak wintertime influenza incidence.&#x000a0; The case for temperature is weakened by the small amplitude of its seasonal cycle in most indoor environments. Finally, re-analyses of laboratory experiments indicate that AH is the best single-variable constraint of influenza virus survival and transmission<xref ref-type="bibr" rid="ref-2165221512">[11]</xref>; associations with temperature and RH likely merely reflect their positive covariability with AH at various time scales.&#x000a0; Still, a role for temperature or other (possibly multiple) covariable factors cannot be entirely discounted.&#x000a0; Further laboratory investigation is needed to determine the effects of humidity, evaporation and temperature on virus protein structure and survival.</p><!--WRITE-PARA--><p id="p808">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;SIRS model simulations also indicate that while the school calendar can explain seasonal epidemic influenza, the correspondence with observations is not as good as for simulations driven by AH (Figures S14-S15).&#x000a0; The required increase in transmissibility during school terms is greater than estimated previously; with such large variation in transmission, inclusion of non-summer breaks creates a noticeable decline in transmission in the Christmas and spring periods that is not observed in data (see Supporting Information). Nonetheless, an effect of school closure on influenza transmission rates is well-documented <xref ref-type="bibr" rid="ref-3450516867">[21]</xref><xref ref-type="bibr" rid="ref-156597417">[22]</xref> and cannot be discounted.&#x000a0; It is certainly possible that the effects of AH and the school calendar on influenza transmission act in concert with one another; however, our statistical and SIRS model findings indicate that AH variability provides a more parsimonious explanation for the seasonality of epidemic influenza in temperate regions, and, in addition, is associated with the onset date of individual wintertime outbreaks. The argument that AH at least partly determines influenza seasonality is supported by: 1) laboratory evidence <xref ref-type="bibr" rid="ref-2165221512">[11]</xref>; 2) the much weaker seasonality in the tropics where humidity is high year-round, but a school calendar exists; 3) the  <inline-formula><tex-math id="d20e3344">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}AH'\end{equation*}\end{document}</tex-math></inline-formula>-onset analysis (Figures 2 and 4); 4) the plausibility of parameter combinations and the effect size for AH within SIRS model simulations (Tables 2; Figures 1 and 3); and 5) the superior overall quality of AH-forced simulations (Figure S14) and their reduced sensitivity to stochastic processes within the SIRS model (Figure S15).</p><!--WRITE-PARA--><p id="p809">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;There are minor differences among the sites in the best-fit parameter values for the SIRS model (Table S2 and Figures S7-S11), some of which could be host mediated.&#x000a0; For instance, Florida and New York show a tendency toward lower duration of immunity.&#x000a0; This difference could be derived from a number of host-mediated factors specific to these states.&#x000a0; The findings presented here do not preclude an influence of such factors on influenza transmission and seasonality<italic>.</italic>&#x000a0; Differences in population susceptibility and infectivity (e.g. population age and general health), seasonal variations of host behavior (e.g. more time indoors in close contact during winter <xref ref-type="bibr" rid="ref-3450516867">[21]</xref>), and host resistance (e.g. wintertime melatonin or vitamin D deficiencies <xref ref-type="bibr" rid="ref-2472388546">[16]</xref><xref ref-type="bibr" rid="ref-3141276417">[17]</xref>) may still affect influenza transmission rates<italic>.</italic></p><!--WRITE-PARA--><p id="p810">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Among states there are also differences of average peak SIRS-simulated <inline-formula><tex-math id="d20e3366">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{E} (t)\end{equation*}\end{document}</tex-math></inline-formula>  (Figure 1f); however, there is no systematic relationship between rates of observed excess P&#x00026;I deaths and those peak <inline-formula><tex-math id="d20e3371">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{E} (t)\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0; values among these sites.&#x000a0; For instance, Florida and New York have similar rates of observed excess mortality per 100,000 persons, but different peak <inline-formula><tex-math id="d20e3376">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{E} (t)\end{equation*}\end{document}</tex-math></inline-formula> levels.&#x000a0; State-to-state differences in contact rates and population age and structure, in particular the proportion of seniors, who are at highest risk of influenza-related death during seasonal epidemics, undoubtedly affect influenza infection and mortality rates and modulate the amplitude and duration of individual outbreaks.&#x000a0; In addition, the influenza dominant subtype is a key predictor of influenza-related mortality rate each season; A/H3N2-dominant seasons are associated with 2-3 times higher death rates than H1N1 and B-dominant <xref ref-type="bibr" rid="ref-3178268852">[3]</xref><xref ref-type="bibr" rid="ref-3387864119">[4]</xref>. These other factors are not accounted for in our SIRS model; hence, there is not a good, one-to-one correspondence between the average peak size of  <inline-formula><tex-math id="d20e3386">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{E} (t)\end{equation*}\end{document}</tex-math></inline-formula> and rates of observed excess P&#x00026;I deaths.&#x000a0; However, within the SIRS model a relationship between <inline-formula><tex-math id="d20e3392">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{E} (t)\end{equation*}\end{document}</tex-math></inline-formula> and simulated infection rates does exist.<italic>&#x000a0; </italic> Among the 10 best-fit simulations at each site, the average maximum <inline-formula><tex-math id="d20e3400">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{E} (t)\end{equation*}\end{document}</tex-math></inline-formula>  rank (from greatest to least) as: NY, IL, WA, AZ, FL.&#x000a0; Similarly among these runs, the average maximum epidemic size ranks (from greatest to least) as: NY, WA, IL, AZ, FL.&#x000a0; This more direct response is not unexpected as within the SIRS model, higher  <inline-formula><tex-math id="d20e3405">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{E} (t)\end{equation*}\end{document}</tex-math></inline-formula> directly corresponds to greater transmission and, consequently, more rapidly developing, larger outbreaks.</p><!--WRITE-PARA--><p id="p811">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;It should be noted that observed excess P&#x00026;I mortality is an imperfect indicator of influenza incidence, as other respiratory illnesses exhibit similar seasonal periodicities.&#x000a0; No doubt these other diseases contribute to the seasonality of the observational time series used here (Figure 3, Figure S1).&#x000a0; However, excess P&#x00026;I mortality generally shows a strong correspondence with other indicators of influenza incidence, such as hospitalization data and laboratory notifications <xref ref-type="bibr" rid="ref-3387864119">[4]</xref>.&#x000a0; A clearer picture of the environmental determinants of influenza seasonality and onset will emerge when the effects of AH and other environmental variables on these potentially confounding, seasonal respiratory pathogens are also elucidated.&#x000a0; </p><!--WRITE-PARA--><p id="p812">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;The initial evidence demonstrating that AH affects influenza virus survival and transmission was derived from laboratory experiments studying the airborne transmission of influenza; however, our SIRS model uses no specific mode of transmission.&#x000a0; Thus other modes of transmission, in particular indirect transmission via fomites, if similarly affected by AH, might also have a role determining the seasonality of influenza in temperate regions.&#x000a0; In addition, the SIRS model is highly idealized and fails to represent many factors in the real world that can affect transmission rates, including clustered populations, structured interactions, variation in host infectiousness, and multiple influenza strains conferring various levels of cross-immunity.&#x000a0; Future work could incorporate these effects into a more realistic influenza model that also accounts for the effects of AH.&#x000a0; Such efforts would also enable better discrimination between the effects of school terms and AH. Also, the effects of AH on influenza transmission should be incorporated into models accounting for travel and workflow <xref ref-type="bibr" rid="ref-3387864119">[4]</xref><xref ref-type="bibr" rid="ref-777635391">[23]</xref><xref ref-type="bibr" rid="ref-1807315314">[24]</xref> to explain the seasonal geographic spread of influenza.&#x000a0; </p><!--WRITE-PARA--><p id="p813">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;The analyses presented here need to be extended elsewhere, including the tropics where AH is high year-round and the seasonality of influenza is often less clearly defined.&#x000a0; High AH does not preclude but merely reduces influenza virus survival and transmission, so it is possible a role for AH also exists in the tropics.&#x000a0; However, the findings presented here suggest that <inline-formula><tex-math id="d20e3426">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>   would be less sensitive to AH variability in areas of very high year-round AH, such as the tropics, which may allow for other, possibly host-mediated, factors to play a more predominant role in generating seasonal variability in influenza incidence.</p><!--WRITE-PARA--><p id="p814">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Laboratory studies provided the initial evidence that AH may determine the seasonality of influenza in temperate regions <xref ref-type="bibr" rid="ref-2165221512">[11]</xref>.&#x000a0; The model and statistical results presented here indicate that the effects of AH observed in the laboratory are sufficient to explain patterns observed at the population level and illustrate the power of epidemiological modeling rooted in individual-level experiments.&#x000a0; The results indicate that AH affects both the seasonality of influenza incidence and the timing of individual wintertime influenza outbreaks in temperate regions.&#x000a0; The association of negative   with wintertime influenza outbreak onset is remarkable given the noise in the data and suggests that skillful, short-term probabilistic forecasts of epidemic influenza could be developed.</p><!--WRITE-PARA--><p id="p815">
+                <bold>Materials and Methods</bold>
+            </p></sec><sec id="sec4"><title>SIRS Model and Methods</title><!--WRITE-PARA--><p id="p817">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;The SIRS model equations are:</p><p><disp-formula><tex-math id="d20e3453">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}\frac{dS}{dt} =\frac{N-S-I}{L} -\frac{\beta(t)IS }{N}\end{equation*}\end{document}</tex-math></disp-formula>&#x000a0;&#x000a0; &#x000a0; &#x000a0; &#x000a0;&#x000a0;<bold>(2) &#x000a0;&#x000a0;</bold></p><!--WRITE-PARA--><p id="p819">
+                <sub> &#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; <inline-formula><tex-math id="d20e3464">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}\frac{dl}{dt} =\frac{\beta (t)IS}{N} -\frac{I}{D}\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;</sub>
+                <bold>&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; (3)</bold>
+            </p><!--WRITE-PARA--><p id="p820">where <italic>S </italic> is the number of susceptible people in the population, <italic>t </italic> is time in years, <italic>N </italic>is the population size, <italic>I </italic> is the number of infectious people, <italic>N</italic>-<italic>S</italic>-<italic>I </italic> is the number of resistant individuals, <sub>
+                <inline-formula><tex-math id="d20e3499">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}\beta (t)\end{equation*}\end{document}</tex-math></inline-formula></sub> is the contact rate at time <italic>t</italic>, <italic>L </italic> is the average duration of immunity in years, and <italic>D </italic> is the mean infectious period in years. The basic reproductive number at time <italic>t </italic>is <inline-formula><tex-math id="d20e3517">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula> <inline-formula><tex-math id="d20e3522">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}=\beta (t) D\end{equation*}\end{document}</tex-math></inline-formula>.</p><!--WRITE-PARA--><p id="p821">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Observed AH conditions were derived from NCEP-NCAR reanalysis <xref ref-type="bibr" rid="ref-3774123746">[15]</xref>.&#x000a0; For each state (Arizona, Florida, Illinois, New York and Washington), a daily 1972-2002 time series of 2-m above-ground specific humidity,&#x000a0;<inline-formula><tex-math id="d20e3532">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}q(t)\end{equation*}\end{document}</tex-math></inline-formula> , was constructed by averaging all grid cells with &#x02265;10% of their area within that state.&#x000a0; The equation relating&#x000a0; <inline-formula><tex-math id="d20e3537">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}q(t)\end{equation*}\end{document}</tex-math></inline-formula>  to <inline-formula><tex-math id="d20e3542">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula> uses a exponential functional form similar to the relationships between AH and both influenza virus survival and transmission, derived from laboratory experiments (Figure 1):</p><!--WRITE-PARA--><p id="p822">  &#x000a0;&#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0;&#x000a0;<bold><inline-formula><tex-math id="d20e3550">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)= exp (a \times q(t)+ b) +R_{0min}\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0;(4)</bold> </p><!--WRITE-PARA--><p id="p823">
+                <bold>&#x000a0;&#x000a0; &#x000a0; &#x000a0;&#x02028; </bold>
+            </p><!--WRITE-PARA--><p id="p824">where , <italic>a </italic>= -180,&#x000a0;<inline-formula><tex-math id="d20e3568">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}b= log( R_{0max} -R_{0min} )\end{equation*}\end{document}</tex-math></inline-formula>, &#x000a0; &#x000a0;<inline-formula><tex-math id="d20e3573">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0max}\end{equation*}\end{document}</tex-math></inline-formula> is the maximum daily basic reproductive number, and  <inline-formula><tex-math id="d20e3578">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0min}\end{equation*}\end{document}</tex-math></inline-formula> is the minimum daily basic reproductive number.&#x000a0; The value of <italic>a </italic>is estimated from the laboratory regression of influenza virus survival upon AH (Figure 1a).&#x000a0; Equation 4 dictates that </p><!--WRITE-PARA--><p id="p825"><inline-formula><tex-math id="d20e3587">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0;<inline-formula><tex-math id="d20e3592">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}=\end{equation*}\end{document}</tex-math></inline-formula> <inline-formula><tex-math id="d20e3597">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0max}\end{equation*}\end{document}</tex-math></inline-formula>  when <inline-formula><tex-math id="d20e3602">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}q(t) = 0 \frac{kg}{kg}\end{equation*}\end{document}</tex-math></inline-formula> and that <inline-formula><tex-math id="d20e3607">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula> approaches  <inline-formula><tex-math id="d20e3612">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0min}\end{equation*}\end{document}</tex-math></inline-formula>asymptotically as <inline-formula><tex-math id="d20e3618">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}q(t)\end{equation*}\end{document}</tex-math></inline-formula> increases.</p><!--WRITE-PARA--><p id="p826">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;For simulations, we use a stochastic Markov chain formulation in which individuals are treated as discrete entities, and transitions between model states (i.e. susceptible, infected, recovered) are determined by random draws corresponding to rates determined from Equations 2 and 3.&#x000a0;&#x000a0; Using the daily time series of <inline-formula><tex-math id="d20e3626">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}q(t)\end{equation*}\end{document}</tex-math></inline-formula>, which alters <inline-formula><tex-math id="d20e3631">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>, daily influenza transmission was simulated for each of the 5 state sites during 1972-2002 for a model population of 500,000 individuals.&#x000a0; Initial conditions included 50,000 susceptible persons and 100 infected persons; however, results were not sensitive to these numbers.&#x000a0; Simulations were performed with daily random seeding of infected individuals (i.e. each day there is a 10% probability that a single susceptible individual becomes infected), meant to represent re-introduction of the virus in the model domain due to travel.&#x000a0; The model is perfectly mixed and simulations were performed with two influenza virus subtypes: A-H1N1/B and A-H3N2.&#x000a0;&#x000a0; No cross immunity was conferred within the model between these virus subtypes.&#x000a0; Each year beginning in May, the random seeding of infectious individuals in the population (representing emigration/travel) is fixed to the dominant recorded subtype for the US (i.e. either A-H1N1/B or A-H3N2), based on CDC/MMWR laboratory and antigenic surveillance data <xref ref-type="bibr" rid="ref-3178268852">[3]</xref><xref ref-type="bibr" rid="ref-3387864119">[4]</xref>.</p><!--WRITE-PARA--><p id="p827">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;5000 simulations at each site were run using combinations of the 4 model parameters: <inline-formula><tex-math id="d20e3643">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0max}\end{equation*}\end{document}</tex-math></inline-formula>,<inline-formula><tex-math id="d20e3648">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0min}\end{equation*}\end{document}</tex-math></inline-formula>, <italic>D </italic>and <italic>L </italic>chosen using a Latin hypercube sampling structure with uniform distribution.&#x000a0; The ranges of these parameters were specified to reflect known influenza dynamics.&#x000a0; Estimates of <inline-formula><tex-math id="d20e3659">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0}\end{equation*}\end{document}</tex-math></inline-formula> derived or used by many authors ranges from 1.3 to 3 <xref ref-type="bibr" rid="ref-159731578">[18]</xref><xref ref-type="bibr" rid="ref-777635391">[23]</xref><xref ref-type="bibr" rid="ref-1807315314">[24]</xref><xref ref-type="bibr" rid="ref-3594431192">[25]</xref><xref ref-type="bibr" rid="ref-3914333687">[26]</xref><xref ref-type="bibr" rid="ref-2702222053">[27]</xref><xref ref-type="bibr" rid="ref-1724043903">[14]</xref>.&#x000a0; To effect this range, given Equation 3 and variations of <inline-formula><tex-math id="d20e3680">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}q(t)\end{equation*}\end{document}</tex-math></inline-formula>, we used an <inline-formula><tex-math id="d20e3685">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0max}\end{equation*}\end{document}</tex-math></inline-formula> ranging from 1.3 to 4. <inline-formula><tex-math id="d20e3691">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0min}\end{equation*}\end{document}</tex-math></inline-formula> provides the <inline-formula><tex-math id="d20e3696">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0}\end{equation*}\end{document}</tex-math></inline-formula>  below which the model cannot fall. This minimum recognizes that other modes of influenza transmission exist that may not modulated by absolute humidity.  <inline-formula><tex-math id="d20e3701">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0min}\end{equation*}\end{document}</tex-math></inline-formula> values range from 0.8 to 1.3.&#x000a0; Per Equation 4, decreasing humidity increases <inline-formula><tex-math id="d20e3706">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0} (t)\end{equation*}\end{document}</tex-math></inline-formula>.&#x000a0; The range of this non-linear increase is set by the randomly-chosen <inline-formula><tex-math id="d20e3711">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0max}\end{equation*}\end{document}</tex-math></inline-formula>  and <inline-formula><tex-math id="d20e3716">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_{0min}\end{equation*}\end{document}</tex-math></inline-formula> parameters.&#x000a0; Estimates of <italic>D </italic> range from 2 to 7 days <xref ref-type="bibr" rid="ref-159731578">[18]</xref><xref ref-type="bibr" rid="ref-380820521">[28]</xref>, and estimates of <italic>L </italic> range from 2 to 10 years.&#x000a0; Both influenza virus subtypes used the same 4 randomly-chosen parameters during each simulation, though results were similar when each subtype was assigned different parameters (8 in total).&#x000a0; </p><!--WRITE-PARA--><p id="p828">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;The quality of each simulation at each site was evaluated based on RMS error with observed excess pneumonia and influenza (P&#x00026;I) mortality <xref ref-type="bibr" rid="ref-3178268852">[3]</xref><xref ref-type="bibr" rid="ref-3387864119">[4]</xref> (Figure S1<bold>)</bold>, lagged 2 weeks.&#x000a0; The lag accounts for mean time from infection to mortality.&#x000a0; Prior to determining the RMS error each model run was scaled to enable comparison of simulated infections with observed mortality rates (see Supporting Information).
+            </p><!--WRITE-PARA--><p id="p829">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;Prior to the model cross-validation throughout the contiguous U.S., we first determined the effect that stochasticity within each SIRS simulation has on the quality of fit with observations.&#x000a0; We re-ran the 10 best common-fit parameter combinations 100 times each for New York, each time with different random seeding, and found that correlations to observed P&#x00026;I mortality ranged from <italic>r </italic> = 0.65 to <italic>r </italic>= 0.97 with an average of <italic>r </italic> = 0.87.&#x000a0; In contrast, multiple simulations with the 4500<sup>th</sup> best parameter combination, out of 5000, produced correlations that ranged from <italic>r </italic>= -0.18 to <italic>r </italic> = 0.34. Thus, random seeding within a particular model run produces a range of correlation coefficient outcomes; however, good model runs should produce high positive correlation with observations (average <italic> r</italic> &#x0003e; 0.7, minimum <italic>r </italic>&#x0003e; 0.5).</p><!--WRITE-PARA--><p id="p831">
+                <italic>NOTE: Supporting Information including tables and figures (whose numbers include the letter S) is available by clicking <ext-link ext-link-type="uri" xlink:href="http://people.oregonstate.edu/%7Eshamanj/pubs/shaman_etal_PLoSCurrInf_SI.pdf">here</ext-link>. Warning: the file is large and will take some time to download over slow connections.</italic>
+                &#x02028;
+            </p><!--WRITE-PARA--><p id="p833">
+                <bold> Funding</bold>
+            </p><!--WRITE-PARA--><p id="p834">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;This work was supported in part by the US National Institutes of Health Models of Infectious Disease Agent Study program through cooperative agreements 5U01GM076497 (M. L.) and 1U54GM088588 (M. L. and J. S.).&#x000a0; V. E. P. and B. G. were supported by NIH grant R01GM083983-01, the Bill and Melinda Gates Foundation, the RAPIDD program of the Science and Technology Directorate, US Department of Homeland Security, and the Fogarty International Center, NIH.&#x000a0; The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. &#x02028; </p><!--WRITE-PARA--><p id="p836">
+                <bold>Competing Interests</bold>
+                &#x02028;
+            </p><!--WRITE-PARA--><p id="p837">  M.L. discloses consulting income from the Avian/Pandemic Flu Registry (Outcome Sciences, funded in part by Roche) and from Novartis Vaccines and Diagnostics. The other authors declare no competing interests.&#x02028; </p></sec></body><back><ref-list><ref id="ref-1543505149"><mixed-citation>Reichert TA, et al. (2004) Influenza and the winter increase in mortality in the United States, 1959-1999. Am J Epidemiology 160: 492-502.</mixed-citation></ref><ref id="ref-4178339808"><mixed-citation>Smith DJ, et al. (2004) Mapping the antigenic and genetic evolution of influenza virus. Science 305: 371-376.</mixed-citation></ref><ref id="ref-3178268852"><mixed-citation>Simonsen L, et al. (2005) Impact of influenza vaccination on seasonal mortality in the US elderly population. Arch Intern Med 165: 265-272.</mixed-citation></ref><ref id="ref-3387864119"><mixed-citation>Viboud C, et al. (2006) Synchrony, waves, and spatial hierarchies in the spread of influenza. Science 312: 447-451.</mixed-citation></ref><ref id="ref-135853391"><mixed-citation>Centers for Disease Control and Prevention (2009).  Influenza. www.cdc.gov/flu/.</mixed-citation></ref><ref id="ref-2893118090"><mixed-citation>Gething MJ, Bye J, Skehel J, Waterfield M (1980) Cloning and DNA sequence of double-stranded copies of haemagglutinin genes from H2 and H3 strains elucidates antigenic shift and drift in human influenza virus. Nature 287: 301&#x02013;306.</mixed-citation></ref><ref id="ref-3547846437"><mixed-citation>Fang R, Jou WM, Huylebroeck D, Devos R, Fiers W (1981) Complete structure of A/duck/Ukraine/63 influenza hemagglutinin gene: Animal virus as progenitor of human H3 Hong Kong 1968 influenza hemagglutinin. Cell 25: 315&#x02013;323.</mixed-citation></ref><ref id="ref-917339580"><mixed-citation>Smith GJD, et al. (2009) Origins and evolutionary genomics of the 2009 swine-origin H1N1 influenza A epidemic. Nature 459: 1122-1125.</mixed-citation></ref><ref id="ref-4055939030"><mixed-citation>Miller MA, Viboud C, Balinska M, Simonsen L (2009) The signature features of influenza pandemics&#x02014;implications for policy.  New Engl J Med 360: 2595-2598.</mixed-citation></ref><ref id="ref-2595314710"><mixed-citation>Lipsitch M, Viboud C (2009)  Influenza seasonality: Lifting the fog. Proc Natl Acad Sci U S A 106: 3645-3646.</mixed-citation></ref><ref id="ref-2165221512"><mixed-citation>Shaman J, Kohn MA (2009) Absolute humidity modulates influenza survival, transmission and seasonality. Proc Natl Acad Sci U S A 106: 3243-3248.</mixed-citation></ref><ref id="ref-1864101339"><mixed-citation>Lowen AC, Mubareka S, Steel  J, Palese P (2007) Influenza virus transmission is dependent on relative humidity and temperature. PLoS Pathogens 3: 1470-1476.</mixed-citation></ref><ref id="ref-1127630928"><mixed-citation>Lowen AC, Steel  J, Mubareka S, Palese P (2008) High Temperature (30&#x000b0;C) blocks aerosol but not contact transmission of influenza virus. J Virology 82: 5650-5652.</mixed-citation></ref><ref id="ref-1724043903"><mixed-citation>Harper GJ (1961) Airborne micro-organisms: survival tests with four viruses. J Hygiene 59: 479-486.</mixed-citation></ref><ref id="ref-3774123746"><mixed-citation>Kalnay E, et al. (1996) NCEP/NCAR 40-year reanalysis project. Bull Amer Met Soc, 77: 437-471.</mixed-citation></ref><ref id="ref-2472388546"><mixed-citation>Cannell JJ, et al. (2006) Epidemic influenza and vitamin D. Epidemiol Infect 134: 1129-1140.</mixed-citation></ref><ref id="ref-3141276417"><mixed-citation>Cannell JJ, Zasloff M, Garland CF, Scragg R, Giovannucci E (2008) On the epidemiology of influenza. Virology Journal  5: doi:10.1186/1743-422X-5-29.</mixed-citation></ref><ref id="ref-159731578"><mixed-citation>Mills CE, Robins JM, Lipsitch M (2004) Transmissibility of 1918 pandemic influenza. Nature 432: 904-906.</mixed-citation></ref><ref id="ref-3433762509"><mixed-citation>Brundage JF, Shanks GD (2008) Deaths from bacterial pneumonia during 1918-19 influenza pandemic. Emerg Infect Dis 14: 1193-1199.</mixed-citation></ref><ref id="ref-3668910189"><mixed-citation>Ho YC, et al. (2009)  Prognostic factors for fatal adult influenza pneumonia.  J Infection 58: 439-445.</mixed-citation></ref><ref id="ref-3450516867"><mixed-citation>Cauchemez S, Valleron AJ, Boelle PY, Flahault A, Ferguson NM (2008) Estimating the impact of school closure on influenza transmission from Sentinel data. Nature 452: 750-754.</mixed-citation></ref><ref id="ref-156597417"><mixed-citation>Cauchemez S, et al. (2009) Closure of schools during an influenza pandemic. Lancet Inf Dis 9: 473-481.</mixed-citation></ref><ref id="ref-777635391"><mixed-citation>Ferguson N, et al. (2005) Strategies for containing an emerging influenza pandemic in southeast asia. Nature 437: 209-214.</mixed-citation></ref><ref id="ref-1807315314"><mixed-citation>Ferguson N, et al. (2006) Strategies for mitigating an influenza pandemic. Nature 442: 448-452.</mixed-citation></ref><ref id="ref-3594431192"><mixed-citation>Longini IM, et al. (2005) Containing pandemic influenza at the source. Science 309: 1083-1087.</mixed-citation></ref><ref id="ref-3914333687"><mixed-citation>Gani R, et al. (2005) Potential impact of antiviral drug use during influenza pandemic. Emerg Infect Dis 11: 1355-1362.</mixed-citation></ref><ref id="ref-2702222053"><mixed-citation>Germann TC, Kadau K, Longini IM, Macken CA (2006) Mitigation strategies for pandemic influenza in the United States. Proc Natl Acad Sci U S A 103: 5935-5940.</mixed-citation></ref><ref id="ref-380820521"><mixed-citation>Longini IM, Halloran ME, Nizam A, Yang Y (2004) Containing pandemic influenza with antiviral agents. Am J Epidemiology 159: 623-633.</mixed-citation></ref></ref-list></back></article>

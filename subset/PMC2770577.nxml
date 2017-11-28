@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" article-type="rapid-communication"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS Curr</journal-id><journal-title-group><journal-title>PLoS Currents</journal-title></journal-title-group><issn pub-type="epub">2157-3999</issn><publisher><publisher-name>Public Library of Science</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">20029661</article-id><article-id pub-id-type="pmc">2770577</article-id><article-id pub-id-type="knolid">http://knol.google.com/k/-/-/2te1jx0382flg/4</article-id><article-id pub-id-type="doi">10.1371/currents.RRN1123</article-id><article-categories><subj-group subj-group-type="heading"><subject>Influenza</subject></subj-group></article-categories><title-group><article-title>Rapid Development of an Efficacious Swine Vaccine for Novel H1N1</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Vander Veen</surname><given-names>Ryan</given-names></name><!--Research Associate--><xref ref-type="aff">*</xref></contrib><contrib contrib-type="author"><name><surname>Kamrud</surname><given-names>Kurt</given-names></name><!--Scientist--><xref ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author"><name><surname>Mogler</surname><given-names>Mark</given-names></name><!--Research Associate--><xref ref-type="aff">&#x02021;</xref></contrib><contrib contrib-type="author"><name><surname>Loynachan</surname><given-names>Alan T.</given-names></name><!--Veterinary pathologist--><xref ref-type="aff">&#x000a7;</xref></contrib><contrib contrib-type="author"><name><surname>McVicker</surname><given-names>Jerry</given-names></name><!--COO--><xref ref-type="aff">*</xref></contrib><contrib contrib-type="author"><name><surname>Berglund</surname><given-names>Peter</given-names></name><!--Scientist--><xref ref-type="aff">#</xref></contrib><contrib contrib-type="author"><name><surname>Owens</surname><given-names>Gary</given-names></name><!--Discovery Scientest--><xref ref-type="aff">**</xref></contrib><contrib contrib-type="author"><name><surname>Timberlake</surname><given-names>Sarah</given-names></name><!--Discovery Associate--><xref ref-type="aff">&#x02020;&#x02020;</xref></contrib><contrib contrib-type="author"><name><surname>Lewis</surname><given-names>Whitney</given-names></name><xref ref-type="aff">**</xref></contrib><contrib contrib-type="author"><name><surname>Smith</surname><given-names>Jonathan</given-names></name><!--Chief Scientific Officer--><xref ref-type="aff">&#x000a7;&#x000a7;</xref></contrib><contrib contrib-type="author"><name><surname>Harris</surname><given-names>DL Hank</given-names></name><!--Professor--><xref ref-type="aff">&#x000b6;&#x000b6;</xref></contrib></contrib-group><aff><sup>*</sup>Harrisvaccines, Inc.; <sup>&#x02020;</sup>AlphaVax, Inc; <sup>&#x02021;</sup>Harrisvaccines Inc., Ames, IA; <sup>&#x000a7;</sup>University of Kentucky, Livestock Disease Diagnostic Center; <sup>#</sup>Alphavax Human Vaccines; <sup>**</sup>Alphavax; <sup>&#x02020;&#x02020;</sup>AlphaVax Human Vaccines; <sup>&#x000a7;&#x000a7;</sup>AlphaVax and <sup>&#x000b6;&#x000b6;</sup>Iowa State University</aff><pub-date pub-type="epub"><day>29</day><month>10</month><year>2009</year></pub-date><volume>1</volume><elocation-id>RRN1123</elocation-id><history><date date-type="created"><day>29</day><month>9</month><year>2009</year></date><date date-type="accepted"><day>29</day><month>10</month><year>2009</year></date></history><permissions><license><license-p>This research note is distributed under the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License.</ext-link></license-p></license></permissions><abstract><!--WRITE-PARA--><p id="p1">Recombinant hemagglutinin (HA) from a novel H1N1 influenza strain was produced using
+                an alphavirus replicon expression system. The recombinant HA vaccine was produced
+                more rapidly than traditional vaccines, and was evaluated as a swine vaccine
+                candidate at different doses in a challenge model utilizing the homologous influenza
+                A/California/04/2009 (H1N1) strain. Vaccinated animals showed significantly higher
+                specific antibody response, reduced lung lesions and viral shedding, and higher
+                average daily gain when compared to non-vaccinated control animals. These data
+                demonstrate that the swine vaccine candidate was efficacious at all of the evaluated
+                doses.</p></abstract></article-meta></front><body><sec id="sec1"><title>Introduction</title><!--WRITE-PARA--><p id="p2">&#x000a0;&#x000a0;&#x000a0;&#x000a0;The recent outbreak of pandemic or novel H1N1 in the global human population
+                highlights the zoonotic potential of influenza viruses. The current novel H1N1 virus
+                has been shown to be of swine origin<xref ref-type="bibr" rid="ref-3740210950">[1]</xref>.&#x000a0;&#x000a0;&#x000a0;Even before this current pandemic, numerous cases of zoonotic
+                transmission of swine influenza viruses to humans have been identified.&#x000a0;&#x000a0; A review
+                of the literature in 2006 identified 37 civilian cases and 13 military cases of
+                human influenza associated with swine influenza strains, spanning from 1958-2005<xref ref-type="bibr" rid="ref-789238949">[2]</xref>.&#x000a0;&#x000a0;Fourteen percent&#x000a0;of these cases were documented as fatal.&#x000a0; A more
+                recent study reviewed reported cases of triple-reassortant swine influenza subtype
+                H1 in humans from 2005-February 2009<xref ref-type="bibr" rid="ref-4200946210">[3]</xref>.&#x000a0; They found 11 sporadic cases, and all 11 patients recovered after
+                showing clinical influenza symptoms.&#x000a0; Nine of these 11 patients had known exposure
+                to pigs, most of which were ill, either at agricultural fairs or at hog farms.&#x000a0;
+                These results mirror studies showing increased antibody titers to swine influenza
+                viruses among hog farm workers and family members<xref ref-type="bibr" rid="ref-1635623084">[4]</xref><xref ref-type="bibr" rid="ref-3710113505">[5]</xref>.&#x000a0; This demonstrates the role that human and swine interaction can play
+                in the creation of novel influenza viruses, and thus the need for efficacious swine
+                influenza vaccines.&#x000a0; Currently, novel H1N1 influenza has been detected in swine
+                in&#x000a0;several different countries, including Canada, Argentina, Australia, Singapore,
+                United Kingdom, Ireland, Norway, and Japan.<xref ref-type="bibr" rid="ref-1484745119">[6]</xref><xref ref-type="bibr" rid="ref-3405097026">[7]</xref>.&#x000a0; Recently, the novel H1N1 appeared in the United States in a pig
+                exhibited at a fair in Minnesota<xref ref-type="bibr" rid="ref-2049069213">[8]</xref>.&#x000a0; Thus, the need for an efficacious novel H1N1 swine vaccine is
+                evident.&#x000a0; Novel H1N1 vaccination can reduce clinical disease in pigs, and may reduce
+                transmission among the swine population and decrease the zoonotic potential.</p><!--WRITE-PARA--><p id="p3">&#x000a0;&#x000a0;&#x000a0;&#x000a0;Many vaccines have been evaluated using alphavirus replicon technology (reviewed
+                in <xref ref-type="bibr" rid="ref-2891633452">[9]</xref>).&#x000a0; In this study, the alphavirus replicon is derived from the TC-83
+                strain of the alphavirus Venezuelan Equine Encephalitis Virus (VEEV).&#x000a0; In a previous
+                study, a VEEV replicon vaccine expressing the HA gene from a human H5N1 isolate
+                protected chickens from lethal challenge<xref ref-type="bibr" rid="ref-2062135564">[10]</xref>.&#x000a0; Recently, our group became the first to evaluate VEEV replicon
+                particle vaccines in swine<xref ref-type="bibr" rid="ref-2890121698">[11]</xref>.&#x000a0; However, no studies have been published using replicon-expressed
+                recombinant proteins as vaccine candidates for swine.&#x000a0; The objective of this study
+                was to evaluate replicon-expressed recombinant novel H1N1 HA protein as a swine
+                vaccine in a vaccination-challenge model. </p><!--WRITE-PARA--></sec><sec id="sec2"><title>Materials and Methods</title><sec id="sec3"><title>Novel H1N1 HA Replicon Subunit Vaccine Production</title><!--WRITE-PARA--><p id="p5">The&#x000a0; Influenza A/California/04/2009 hemagglutinin (HA) nucleotide sequence was
+                retrieved from the Global Initiative on Sharing Avian Influenza Data (GISAID)
+                database. The gene was synthesized by a commercial company (DNA2.0, Menlo Park, CA,
+                USA) with unique AscI and PacI restriction sites engineered at the 5&#x02019; and 3&#x02019; ends,
+                respectively.&#x000a0; The HA gene was cloned into the AscI/PacI sites of the pVEK (TC-83)
+                replicon vector<xref ref-type="bibr" rid="ref-2121263681">[12]</xref> and an optimized construct was selected as previously described<xref ref-type="bibr" rid="ref-1640956506">[13]</xref>.&#x000a0; The HA gene was then sequenced to ensure the proper sequence was
+                maintained through the cloning process.&#x000a0; RNA transcripts were produced <italic>in
+                vitro</italic> as previously described<xref ref-type="bibr" rid="ref-1640956506">[13]</xref>.&#x000a0; Replicon RNA was mixed with Vero cells in electroporation cuvettes
+                and pulsed.&#x000a0; Cells were incubated overnight and then lysed using RIPA buffer
+                (Pierce, Rockford, IL, USA).&#x000a0; Resulting lysate was tested for protein expression by
+                Western blot and HA protein concentration was determined by a novel H1N1 HA-specific
+                ELISA.&#x000a0;&#x000a0; Lysate was diluted to the specified HA concentration and vaccine was
+                adjuvanted with Emulsigen-D (MVP Technologies, Omaha, NE, USA).</p><!--WRITE-PARA--></sec><sec id="sec4"><title>Western Blot Analysis</title><!--WRITE-PARA--><p id="p7">Vero cell lysate containing recombinant HA protein&#x000a0;was separated by running on a&#x000a0;12%
+                SDS-PAGE gel (Invitrogen, Carlsbad, CA, USA) and was then transferred to a&#x000a0;PVDF
+                membrane (Invitrogen, Carlsbad, CA).&#x000a0; The&#x000a0; ladder used was the SeeBlue
+                Plus2&#x000a0;Pre-Stained Standard (Invitrogen, Carlsbad, CA, USA).&#x000a0;After transfer, membrane
+                was blocked with 5% non-fat dry milk at room temperature.&#x000a0; Membrane was incubated
+                with swine polyclonal anti-novel H1N1 HA for two hours, washed three times, followed
+                by incubation with goat anti-swine IgG horseradish peroxidase conjugate
+                (ImmunoJackson Research Laboratories, Inc, West Grove, PA, USA) for one hour, and
+                washed three times.&#x000a0;&#x000a0;Detection was performed&#x000a0;using TMB substrate (KPL, Gaithersburg,
+                MD, USA).</p><!--WRITE-PARA--></sec><sec id="sec5"><title>Direct Antigen Capture ELISA</title><!--WRITE-PARA--><p id="p9">Unknown samples, negative controls,&#x000a0; and purified novel H1 protein (Protein Sciences,
+                Meriden, CT, USA) were directly captured to NUNC Maxisorp (Rochester, NY, USA)
+                96-well microplates by diluting with capture buffer (50 mM Carbonate/Bicarbonate, pH
+                9.6) and incubated overnight at 4&#x000b0;C (100 &#x000b5;l/well).&#x000a0; The microplates were washed four
+                times with wash buffer (20 mM Phosphate Buffered Saline, 0.05% Tween-20, pH 7.2).&#x000a0;
+                The plates were blocked with 1.25% non-fat dry milk in capture buffer for 1 hour at
+                37&#x000b0;C (200 &#x000b5;l/well).&#x000a0; After four washes, pig polyclonal anti-novel H1N1 HA was added
+                to wells (100 &#x000b5;l) and incubated for 1 hour at 37&#x000b0;C (diluted 1/500 in wash buffer
+                containing 1.25% NFDM).&#x000a0; Following four washes, goat ant-pig IgG-HRP labeled
+                (Jackson ImmunoResearch, West Grove, PA, USA) was added to the wells (100 &#x000b5;l) and
+                incubated for 1 hour at 37&#x000b0;C (diluted 1/2000 in was buffer containing 1.25% NFDM).&#x000a0;
+                Four final washes were performed prior to the addition of 100 &#x000b5;l of TMB substrate
+                (KPL, Gaithersburg, MD, USA) and incubation at 37&#x000b0;C for 20 minutes.&#x000a0; Absorbance
+                values were measured at 620 nm and a standard curve was plotted with the purified
+                novel H1 protein.&#x000a0; Linear regression analysis of the standard curve was used to
+                calculate the novel H1 concentrations in the unknowns.</p><!--WRITE-PARA--></sec><sec id="sec6"><title>Animal Studies</title><!--WRITE-PARA--><p id="p11">Pigs free of swine influenza virus (SIV) and porcine reproductive and respiratory
+                syndrome virus (PRRSV) were obtained at three weeks of age.&#x000a0; Pigs were randomized
+                and separated into 4 groups of 5 pigs each (table 1).&#x000a0; Prior to vaccination, serum
+                was collected and tested by the homologous hemagglutination inhibition (HI) assay
+                against the novel H1N1 A/California/04/2009 strain to confirm negative antibody
+                status.&#x000a0; Sera were collected throughout the study and tested by this same HI assay
+                to monitor seroconversion post-vaccination.&#x000a0; A prime/boost vaccination schedule was
+                followed.&#x000a0; The first dose of vaccine was given to pigs at approximately 4 weeks of
+                age on day 0.&#x000a0; On day 21 pigs received booster vaccination, with challenge on day 47
+                and necropsy on day 52.&#x000a0; Pigs received either phosphate buffered saline (PBS)
+                (Placebo, Group 1) or different concentrations of novel H1 HA recombinant protein
+                (Groups 2-4, Table 1).&#x000a0; Pigs were challenged intratracheally with virulent
+                A/California/04/2009 (CDC# 2009712047) at a dose of 2x10<sup>5</sup>
+                TCID<sub>50</sub>/ml.&#x000a0; Nasal swabs were collected daily for live virus isolation
+                beginning on day of challenge and continuing until study completion 5 days
+                post-challenge.&#x000a0; Pigs were weighed immediately before challenge and again at
+                necropsy for determination of average daily gain (ADG).&#x000a0; At necropsy, gross lung
+                lesion consolidation was determined by a board-certified pathologist.&#x000a0; Lung tissue
+                was fixed in formalin for SIV immunohistochemistry (IHC) and histopathological
+                analysis.&#x000a0; Bronchoalveolar lavage fluid (BALF) was collected from lungs for live
+                virus isolation.&#x000a0; This animal study was approved by the Iowa State University
+                Institutional Animal Care and Use Committee.</p><!--WRITE-PARA--></sec><sec id="sec7"><title>Hemaglutination Inhibition Assay</title><!--WRITE-PARA--><p id="p13">Antibodies to influenza virus were measured by HI assay run by the University of
+                Minnesota Veterinary Diagnostic Laboratory following standard laboratory protocol.
+                Briefly, sera were treated with receptor-destroying enzyme, heat inactivated,
+                adsorbed with 20% turkey erythrocytes, and centrifuged. Supernatants were then
+                serially diluted in V-shaped well microtiter plates with an equal volume containing
+                4-8 agglutinating units of A/California/04/2009 and plates were incubated at room
+                temperature before addition of 0.5% turkey erythrocytes.&#x000a0; Titer was defined as the
+                reciprocal of the maximal dilution at which hemagglutination was inhibited.</p><!--WRITE-PARA--></sec><sec id="sec8"><title>Gross Lung Lesion Scoring, Histopathology, and SIV Immunohistochemistry</title><!--WRITE-PARA--><p id="p15">A single board-certified veterinary pathologist who was blinded to group treatments,
+                performed gross lung scoring, histopathological analysis, and SIV
+                Immunohistochemistry (IHC) analysis.&#x000a0; At necropsy, each lung lobe affected by
+                pneumonia was visually estimated, and a total percentage for the entire lung was
+                calculated based on weighted proportions of each lobe to the total lung volume<xref ref-type="bibr" rid="ref-1501057364">[14]</xref>.&#x000a0; Tissue samples from the trachea and all lung lobes were collected
+                and fixed in 10% formalin.&#x000a0; Tissues were routinely processed and stained with
+                hematoxylin and eosin.&#x000a0; Lung samples were scored according to the method used by
+                Vincent et al<xref ref-type="bibr" rid="ref-3803711290">[15]</xref>. Swine influenza virus IHC was done according to the method described
+                by Vincent et al<xref ref-type="bibr" rid="ref-3276089922">[16]</xref>.&#x000a0; All tissue preparation and staining was done by the Iowa State
+                University Veterinary Diagnostic Laboratory.</p><!--WRITE-PARA--></sec><sec id="sec9"><title>Live Virus Isolation</title><!--WRITE-PARA--><p id="p17">Live virus titers were determined from nasal swabs and live virus isolation performed
+                on BALF samples.&#x000a0; Briefly, nasal swabs and BALF samples were thawed and centrifuged
+                to remove cellular debris.&#x000a0; The resulting supernatant was diluted 10-fold in 96 well
+                plates in Dulbecco&#x02019;s Modified Eagle Medium (DMEM) (Gibco, Carlsbad, CA, USA)
+                containing 1% antibiotic-antimycotic (Gibco, Carlsbad, CA, USA) and 1% L-glutamine
+                (Mediatech, Manassas, VA, USA).&#x000a0; After dilutions were made, 100&#x000b5;l was transferred
+                from each well into respective wells of a 96 well plate which contained a monolayer
+                of swine testicle (ST) cells.&#x000a0; Plates were incubated at 37&#x000b0;C until no further CPE
+                was observed, typically 3-5 days.&#x000a0; Wells displaying CPE were considered positive,
+                and titers were calculated using the TCID<sub>50</sub>/ml method of Reed-Meunch<xref ref-type="bibr" rid="ref-2787179564">[17]</xref>.</p><!--WRITE-PARA--></sec><sec id="sec10"><title>Statistical Analysis</title><!--WRITE-PARA--><p id="p19">Single factor analysis of variance (ANOVA) was used to analyze homologous HI titers,
+                macroscopic and histopathological lung scores, IHC and BALF results, log10
+                transformed nasal swab viral titers, and ADG (JMP 8.0.1, SAS Institute Inc., Cary,
+                NC, USA). &#x000a0;Statistical significance was set at p &#x0003c; 0.05.</p><!--WRITE-PARA--></sec></sec><sec id="sec11"><title>Results</title><sec id="sec12"><title>Vaccine Preparation</title><!--WRITE-PARA--><p id="p21">&#x000a0;&#x000a0;&#x000a0;&#x000a0;The novel H1N1 HA gene was inserted into the alphavirus replicon platform
+                according to the methods listed previously.&#x000a0; Nucleotide sequencing after insertion
+                confirmed the correct HA gene sequence had been maintained throughout the cloning
+                process.&#x000a0; Western blotting performed on protein lysate confirmed expression of the
+                novel HA protein at all the varying HA doses (Figure 1) used in vaccine preparation
+                for the animal study. The HA concentration was determined by novel HA ELISA and
+                diluted to the specified HA concentration (Table 1).&#x000a0; </p><!--WRITE-PARA--><!--WRITE-PARA--><p id="p23">Figure 1: Western blot confirming recombinant HA&#x000a0; expression.</p><!--WRITE-PARA--><p id="p24">
+                <fig id="d20e272"><graphic xlink:href="hs04-lysate-dilutions-good-09302009"/></fig>
+            </p><!--WRITE-PARA--><!--WRITE-PARA--><p id="p26">Lane 1: Ladder</p><!--WRITE-PARA--><p id="p27">Lane 2: Vero lysate (negative control)</p><!--WRITE-PARA--><p id="p28">Lane 3: Recombinant HA (28.5&#x000b5;g/ml)</p><!--WRITE-PARA--><p id="p29">Lane 4: Recombinant HA (1.14&#x000b5;g/ml)</p><!--WRITE-PARA--><p id="p30">Lane 5: Recombinant HA (0.57&#x000b5;g/ml)</p><!--WRITE-PARA--><p id="p31">Lane 6: Recombinant HA (0.38&#x000b5;g/ml)</p><!--WRITE-PARA--><!--WRITE-PARA--><!--WRITE-PARA--><!--WRITE-PARA--><!--WRITE-PARA--><!--WRITE-PARA--><!--WRITE-PARA--><!--WRITE-PARA--><!--WRITE-PARA--><!--WRITE-PARA--><!--WRITE-PARA--><!--WRITE-PARA--><!--WRITE-PARA--><p id="p44">Table 1: Design of novel H1N1 recombinant HA vaccine study.&#x000a0; Pigs received
+                either&#x000a0;placebo vaccine (PBS, Group 1) or varying doses of HA antigen (Groups 2-4).&#x000a0;
+                All vaccines were given intramuscularly as 2ml doses on days 0 and 21.</p><!--WRITE-PARA--><p id="p45">
+                <table-wrap id="d20e321"><table border="0" cellspacing="0" cellpadding="0" width="383"><tbody><tr><td valign="top" rowspan="1" colspan="1" style="background-color:transparent;width:57pt">Group</td><td valign="top" rowspan="1" colspan="1" style="background-color:transparent;width:99pt">Vaccine</td><td valign="top" rowspan="1" colspan="1" style="background-color:transparent;width:131pt">HA concentration/dose</td></tr><tr><td valign="top" rowspan="1" colspan="1" style="background-color:transparent;width:57pt">1</td><td valign="top" rowspan="1" colspan="1" style="background-color:transparent;width:99pt">Sham</td><td valign="top" rowspan="1" colspan="1" style="background-color:transparent;width:131pt">NA</td></tr><tr><td valign="top" rowspan="1" colspan="1" style="background-color:transparent;width:57pt">2</td><td valign="top" rowspan="1" colspan="1" style="background-color:transparent;width:99pt">Recombinant HA </td><td valign="top" rowspan="1" colspan="1" style="background-color:transparent;width:131pt">1.14&#x000b5;g</td></tr><tr><td valign="top" rowspan="1" colspan="1" style="background-color:transparent;width:57pt">3</td><td valign="top" rowspan="1" colspan="1" style="background-color:transparent;width:99pt">Recombinant HA </td><td valign="top" rowspan="1" colspan="1" style="background-color:transparent;width:131pt">0.57&#x000b5;g</td></tr><tr><td valign="top" rowspan="1" colspan="1" style="background-color:transparent;width:57pt">4</td><td valign="top" rowspan="1" colspan="1" style="background-color:transparent;width:99pt">Recombinant HA </td><td valign="top" rowspan="1" colspan="1" style="background-color:transparent;width:131pt">0.38&#x000b5;g</td></tr></tbody></table></table-wrap>
+            </p><!--WRITE-PARA--></sec><sec id="sec13"><title>Antibody&#x000a0;Titers&#x000a0;&#x000a0;&#x000a0; </title><!--WRITE-PARA--><p id="p62">&#x000a0;&#x000a0;&#x000a0;&#x000a0;Post-vaccination sera were tested for specific antibody response by the
+                homologous HI assay.&#x000a0; Hemagglutination inhibition titers were not seen in vaccinated
+                pigs after one dose, but were all positive (&#x02265;1:40), except for a single pig in Group
+                2, at 7 and 14 days post-boost vaccination (data not shown).&#x000a0; On the day of
+                challenge, homologous HI titers were significantly higher in Groups 2-4 when
+                compared to Group 1 (Table 2).&#x000a0; </p><!--WRITE-PARA--><!--WRITE-PARA--><p id="p64">Table 2.&#x000a0; Summary of hemagglutination inhibition (HI) titers, average macroscopic and
+                microscopic lung involvement, immunohistochemistry (IHC), and average daily gain
+                (ADG).</p><!--WRITE-PARA--><p id="p65">
+                <table-wrap id="d20e387"><table border="0" cellspacing="0" cellpadding="0" width="577"><tbody><tr><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:48pt">Group</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">HI Titers<sup>a</sup></td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">% Pneumonia<sup>b</sup></td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">HistopathologicScore<sup>c</sup></td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">Lung IHC<sup>d</sup></td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">ADG<sup>e</sup></td></tr><tr><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:48pt">1</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">&#x0003c;10</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">15.6 &#x000b1; 5.4</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">1.8 &#x000b1; 0.1</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">5/5</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">1.76 &#x000b1; 0.2</td></tr><tr><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:48pt">2</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">121*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">1.4 &#x000b1; 0.9*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">0.8 &#x000b1; 0.2*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">1/5*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">2.56 &#x000b1; 0.68</td></tr><tr><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:48pt">3</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">184*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">0.2 &#x000b1; 0.2*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">0.6 &#x000b1; 0.2*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">0/5*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">2.64 &#x000b1; 0.22*</td></tr><tr><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:48pt">4</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">106*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">1.8 &#x000b1; 1.1*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">0.8 &#x000b1; 0.2*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">1/5*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77pt">2.45 &#x000b1; 0.34*</td></tr></tbody></table></table-wrap>
+            </p><!--WRITE-PARA--><p id="p96"><sup>a</sup>Geometric mean homologous HI titers</p><!--WRITE-PARA--><p id="p97"><sup>b</sup>Group mean &#x000b1; standard error</p><!--WRITE-PARA--><p id="p98"><sup>c</sup>0-3, group mean &#x000b1; standard error</p><!--WRITE-PARA--><p id="p99"><sup>d</sup>Number of positive samples per group</p><!--WRITE-PARA--><p id="p100"><sup>e</sup>ADG post-challenge in pounds, group mean &#x000b1; standard error</p><!--WRITE-PARA--><p id="p101">*Values are significantly different from non-vaccinates (Group 1) within a column at
+                p &#x0003c; 0.05</p><!--WRITE-PARA--></sec><sec id="sec14"><title>Pathological Evaluation</title><!--WRITE-PARA--><p id="p103">&#x000a0;&#x000a0;&#x000a0;&#x000a0;At necropsy, lungs exhibited macroscopic dark purplish-red consolidated lesions
+                located mainly in the cranioventral lobes.&#x000a0; Lungs taken from Groups 2-4 exhibited
+                significantly lower lesion scores and consolidation than pigs in Group 1 (Table 2).&#x000a0;
+                There was also a significant reduction in pathological scores in all vaccinated
+                groups compared to the non-vaccinated group (Table 2).&#x000a0; The lung sections taken from
+                non-vaccinated Group 1 pigs had approximately 50% of the airways affected by
+                bronchiolar epithelial disruption and peribronchiolar lymphocytic cuffing.&#x000a0; The
+                vaccinated Groups 2-4 demonstrated only occasional affected airways with light
+                cuffing.&#x000a0; Swine influenza virus IHC was also performed on lung sections. All 5 lungs
+                taken from non-vaccinated Group 1 pigs were positive for influenza antigen, while
+                only 2 pigs in total from the vaccinated Groups 2-4 were positive.&#x000a0; &#x000a0;Additionally,
+                SIV IHC was done on trachea samples taken from each pig at necropsy (data not
+                shown).&#x000a0; Although there were positive trachea IHC samples in all groups, there was
+                no significant differences between vaccinated and non-vaccinated groups.&#x000a0; Positive
+                trachea IHC results correlate with what was previously reported on pathogenesis of
+                novel H1N1 in ferrets<xref ref-type="bibr" rid="ref-1002982521">[18]</xref>.&#x000a0;&#x000a0;&#x000a0;</p><!--WRITE-PARA--></sec><sec id="sec15"><title>Average Daily Gain</title><!--WRITE-PARA--><p id="p105">&#x000a0;&#x000a0;&#x000a0;&#x000a0;All pigs were weighed on the day of challenge and again at necropsy.&#x000a0; Groups 3
+                and 4 had significantly higher ADG over the 5 day period following challenge than
+                did Group 1 (Table 2).&#x000a0; Group 2 did exhibit higher ADG but was not significantly
+                higher than Group 1 (p=0.08).&#x000a0; </p><!--WRITE-PARA--></sec><sec id="sec16"><title>Virus Isolation</title><!--WRITE-PARA--><p id="p107">&#x000a0;&#x000a0;&#x000a0;&#x000a0;No live influenza virus was detected one day post-challenge from nasal swabs
+                (Table 3).&#x000a0; On day 2 post challenge live influenza virus was detected in Groups 1,
+                3, and 4, although there were no significant differences between mean group viral
+                titers.&#x000a0; On day 3 post-challenge Groups 2 and 4 had significantly lower titers than
+                did Group 1.&#x000a0; On both days 4 and 5 Groups 2-4 all exhibited lower titers than Group
+                1.&#x000a0; No live virus was detected in nasal swabs from any pigs in Group 2 for the
+                duration of the challenge period.&#x000a0; Similarly, there was a significant reduction in
+                the number of positive BALF samples between groups (Table 3).&#x000a0; By 5 days post-
+                challenge, only a total of 3 vaccinated pigs had detectable live virus in BALF
+                samples, while all 5 pigs in the non-vaccinated group were virus isolation positive.</p><!--WRITE-PARA--><!--WRITE-PARA--><p id="p109">Table 3. Summary of live virus isolation from nasal swabs and bronchoalveolar lavage
+                fluid(BALF).</p><!--WRITE-PARA--><p id="p110">
+                <table-wrap id="d20e550"><table border="0" cellspacing="0" cellpadding="0" width="612"><tbody><tr><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:47pt">&#x000a0;</td><td valign="bottom" colspan="5" rowspan="1" style="background-color:transparent;width:345.05pt">Nasal Swab<sup>a</sup></td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:67pt">BAL<sup>b</sup></td></tr><tr><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:47pt">Group</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:52.75pt">1 DPC<sup>c</sup>
+                                </td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:65.9pt">2 DPC</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:70.5pt">3 DPC</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77.95pt">4 DPC</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77.95pt">5 DPC</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:67pt">5 DPC</td></tr><tr><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:47pt">1</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:52.75pt">0</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:65.9pt">0.85 &#x000b1; 0.53</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:70.5pt">2.55 &#x000b1; 0.66</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77.95pt">3.05 &#x000b1; 0.18</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77.95pt">3.05 &#x000b1; 0.24</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:67pt">5/5</td></tr><tr><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:47pt">2</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:52.75pt">0</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:65.9pt">0</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:70.5pt">0*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77.95pt">0*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77.95pt">0*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:67pt">2/5*</td></tr><tr><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:47pt">3</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:52.75pt">0</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:65.9pt">1.05 &#x000b1; 0.07</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:70.5pt">0.65 &#x000b1; 0.65</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77.95pt">0.9 &#x000b1; 0.57*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77.95pt">1.0 &#x000b1; 0.62*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:67pt">0/5*</td></tr><tr><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:47pt">4</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:52.75pt">0</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:65.9pt">0.45 &#x000b1; 0.45</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:70.5pt">0.5 &#x000b1; 0.5*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77.95pt">0.65 &#x000b1; 0.65*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:77.95pt">0.65 &#x000b1; 0.65*</td><td valign="bottom" rowspan="1" colspan="1" style="background-color:transparent;width:67pt">1/5*</td></tr></tbody></table></table-wrap>
+            </p><!--WRITE-PARA--><p id="p149"><sup>a</sup>Log<sub>10</sub> mean virus titers &#x000b1; standard error in nasal swabs
+                post-challenge</p><!--WRITE-PARA--><p id="p150"><sup>b</sup>Number of positive BALF samples per group</p><!--WRITE-PARA--><p id="p151"><sup>c</sup>Days post-challenge (DPC)</p><!--WRITE-PARA--><p id="p152">* Values are significantly different from non-vaccinates (Group 1) within a column at
+                p &#x0003c; 0.05</p><!--WRITE-PARA--></sec></sec><sec id="sec17"><title>Discussion</title><!--WRITE-PARA--><p id="p154">&#x000a0;&#x000a0;&#x000a0;&#x000a0;The recent outbreak of novel H1N1 in the human population has highlighted the
+                zoonotic potential that influenza viruses possess.&#x000a0; Even before the current
+                pandemic, there were many reported cases of swine to human transmission of
+                influenza.&#x000a0; As such, part of controlling this zoonotic threat is vaccination of
+                swine against swine influenza viruses.&#x000a0; In this study, we demonstrate how rapidly an
+                efficacious swine influenza vaccine based on the alphavirus replicon expression
+                system can be produced in response to an outbreak of a novel zoonotic strain.</p><!--WRITE-PARA--><p id="p155">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;This study&#x000a0;deomnstrated the quickness and flexibility with which a vaccine can
+                be produced using the alphavirus replicon expression system.&#x000a0; It took less than two
+                months from the time the novel HA sequence was retrieved from GISAID database until
+                pigs were administered the first vaccine dose.&#x000a0; Traditional methods for producing
+                influenza vaccines take much longer and are dependent on viral replication in
+                embryonated eggs or on tissue culture cells with subsequent inactivation.&#x000a0; In the
+                face of an influenza epidemic, a quick turnaround is important in preventing further
+                transmission and decreasing the zoonotic potential.&#x000a0; The alphavirus replicon
+                platform allows for rapid insertion of any influenza HA (or other) gene, making it
+                an attractive influenza vaccine technology due to constant antigenic shift and drift
+                among influenza viruses.&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; </p><!--WRITE-PARA--><p id="p156">&#x000a0;&#x000a0;&#x000a0;&#x000a0;This is the first report of immunization of swine with a recombinant protein
+                produced via an alphavirus replicon expression system.&#x000a0; Replicon particle (RP)
+                vaccines produced with this system have recently been utilized to induce protection
+                against swine influenza virus (SIV) and porcine reproductive and respiratory
+                syndrome virus (PRRSV) in swine<xref ref-type="bibr" rid="ref-2890121698">[11]</xref><xref ref-type="bibr" rid="ref-1361391363">[19]</xref><xref ref-type="bibr" rid="ref-184477080">[20]</xref>.&#x000a0; The first proof of concept study demonstrated that a replicon
+                particle vaccine administered to swine was able to induce high antibody HI titers
+                against a human influenza strain. A subsequent study using an RP vaccine expressing
+                the HA gene of a clade IV H3N2 SIV isolate confirmed that influenza HA RP vaccines
+                given to swine are not only able to induce an antibody response, but also provide
+                significant protection against a homologous viral challenge.&#x000a0; In contrast to these
+                earlier studies, this study used an alphavirus replicon expression system to produce
+                recombinant HA protein<italic> in vitro</italic>; however, similar antibody response and
+                protection from viral challenge was demonstrated. </p><!--WRITE-PARA--><p id="p157">&#x000a0;&#x000a0;&#x000a0;&#x000a0;The results demonstrate that influenza infection in swine with
+                A/California/04/2009 is able to induce clinical symptoms and gross lesions
+                comparable to other strains of SIV<xref ref-type="bibr" rid="ref-3803711290">[15]</xref><xref ref-type="bibr" rid="ref-1445159275">[21]</xref><xref ref-type="bibr" rid="ref-2785736750">[22]</xref>. In contrast with a previous study, several pigs (primarily in the
+                non-vaccinated group) in this study exhibited clinical signs, mainly coughing and
+                sneezing.&#x000a0; This discrepancy may be due to the miniature pig model used in
+                the&#x000a0;previous study<xref ref-type="bibr" rid="ref-772926556">[23]</xref>.&#x000a0; In this study, vaccine administration induced specific antibody
+                titers, reduced macroscopic and histopathologic lung lesions, and reduced viral load
+                in both the nose and lung.&#x000a0; Vaccinated pigs also demonstrated a higher average daily
+                gain than non-vaccinates. These results demonstrate that this recombinant novel HA
+                protein is efficacious when used as a vaccine against novel H1N1 swine influenza.</p><!--WRITE-PARA--><p id="p158">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;To date, novel H1N1 has been confirmed to exist in swine in several countries,
+                including the United States<xref ref-type="bibr" rid="ref-1484745119">[6]</xref><xref ref-type="bibr" rid="ref-3405097026">[7]</xref><xref ref-type="bibr" rid="ref-2049069213">[8]</xref>.&#x000a0;&#x000a0; Several recent studies have already reported the successful
+                transmission of novel H1N1 virus from infected to na&#x000ef;ve contact &#x000a0;pigs<xref ref-type="bibr" rid="ref-2598463077">[24]</xref><xref ref-type="bibr" rid="ref-3761053113">[25]</xref>.&#x000a0; The successful transmission of this virus among pigs and recent
+                confirmation of its' presence in the United States demonstrates the need for an
+                efficacious novel H1N1 vaccine.&#x000a0; This paper shows that vaccination of pigs against
+                novel H1N1 can&#x000a0;reduce both clinical symptoms and virus shedding&#x000a0;in pigs, which may
+                lead to decreased transmission.</p></sec><sec id="sec18"><title>Acknowledgements</title><!--WRITE-PARA--><p id="p159">The authors wish to thank Drs. Matthew Erdman and&#x000a0;J. Dustin&#x000a0;Loy for critical
+                    reading of this manuscript.&#x000a0; Thanks also to Brandon Russell for his assistance,
+                    and to the&#x000a0;Iowa State University&#x000a0;and&#x000a0;University of Minnesota&#x000a0;Veterinary
+                    Diagnostic Labs, including Al Ducommun and Ling Tong.</p><!--WRITE-PARA--></sec><sec id="sec19"><title>Funding Information</title><!--WRITE-PARA--><p id="p161">&#x000a0;This work was supported by the Grow Iowa Values Fund.</p><!--WRITE-PARA--></sec><sec id="sec20"><title>Competing Interests</title><!--WRITE-PARA--><!--WRITE-PARA--><p id="p164">Harris is the founder and president of Harrisvaccines, Inc.&#x000a0; Vander Veen, Mogler,
+                    and McVicker are employees of Harrisvaccines, Inc.&#x000a0; Kamrud, Berglund, Owens,
+                    Timberlake, Lewis, and Smith are employees of AlphaVax.&#x000a0; Alphavax provided the
+                    novel H1N1 HA replicon vector and Harrisvaccines, Inc. provided the vaccine used
+                    in this study.&#x000a0; Neither Harrisvaccines, Inc.&#x000a0;nor AlphaVax have patents
+                    associated with this replicon.&#x000a0; Harrisvaccines, Inc. is submitting documents to
+                    the USDA in support of conditional licensure for the vaccine. </p><!--WRITE-PARA--></sec></body><back><ref-list><ref id="ref-3740210950"><mixed-citation publication-type="journal">Garten RJ, Davis CT, Russell CA, Shu B, Lindstrom
+            S, Balish A, Sessions WM, Xu&#x0000d; X, Skepner E, Deyde V, Okomo-Adhiambo M, Gubareva
+            L, Barnes J, Smith CB, Emery&#x0000d; SL, Hillman MJ, Rivailler P, Smagala J, de Graaf
+            M, Burke DF, Fouchier RA, Pappas&#x0000d; C, Alpuche-Aranda CM, L&#x000f3;pez-Gatell H, Olivera
+            H, L&#x000f3;pez I, Myers CA, Faix D, Blair&#x0000d; PJ, Yu C, Keene KM, Dotson PD Jr, Boxrud D,
+            Sambol AR, Abid SH, St George K,&#x0000d; Bannerman T, Moore AL, Stringer DJ, Blevins P,
+            Demmler-Harrison GJ, Ginsberg M,&#x0000d; Kriner P, Waterman S, Smole S, Guevara HF,
+            Belongia EA, Clark PA, Beatrice ST,&#x0000d; Donis R, Katz J, Finelli L, Bridges CB,
+            Shaw M, Jernigan DB, Uyeki TM, Smith DJ, &#x0000d; Klimov AI, Cox NJ. Antigenic and
+            genetic characteristics of swine-origin 2009&#x0000d; A(H1N1) influenza viruses
+            circulating in humans. Science. 2009 Jul&#x0000d; 10;325(5937):197-201. Epub 2009 May
+            22. <pub-id pub-id-type="pmid">19465683</pub-id></mixed-citation></ref><ref id="ref-789238949"><mixed-citation publication-type="journal">Myers KP, Olsen CW, Gray GC. Cases of swine
+            influenza in humans: a review of&#x0000d; the literature. Clin Infect Dis. 2007 Apr
+            15;44(8):1084-8. Epub 2007 Mar 6.&#x0000d; Review. <pub-id pub-id-type="pmid">17366454</pub-id><pub-id pub-id-type="pmcid">PMC1973337</pub-id></mixed-citation></ref><ref id="ref-4200946210"><mixed-citation publication-type="journal">Shinde V, Bridges CB, Uyeki TM, Shu B, Balish A, Xu
+            X, Lindstrom S, Gubareva&#x0000d; LV, Deyde V, Garten RJ, Harris M, Gerber S, Vagasky S,
+            Smith F, Pascoe N, Martin &#x0000d; K, Dufficy D, Ritger K, Conover C, Quinlisk P,
+            Klimov A, Bresee JS, Finelli L.&#x0000d; Triple-reassortant swine influenza A (H1) in
+            humans in the United States,&#x0000d; 2005-2009. N Engl J Med. 2009 Jun
+            18;360(25):2616-25. Epub 2009 May 7. Erratum&#x0000d; in: N Engl J Med. 2009 Jul
+            2;361(1):102. <pub-id pub-id-type="pmid">19423871</pub-id></mixed-citation></ref><ref id="ref-1635623084"><mixed-citation publication-type="journal">Olsen CW, Brammer L, Easterday BC, Arden N, Belay
+            E, Baker I, Cox NJ.&#x0000d; Serologic evidence of H1 swine Influenza virus infection in
+            swine farm residents &#x0000d; and employees. Emerg Infect Dis. 2002 Aug;8(8):814-9. <pub-id pub-id-type="pmid">12141967</pub-id><pub-id pub-id-type="pmcid">PMC2732505</pub-id></mixed-citation></ref><ref id="ref-3710113505"><mixed-citation publication-type="journal">Gray GC, McCarthy T, Capuano AW, Setterquist SF,
+            Olsen CW, Alavanja MC. Swine &#x0000d; workers and swine influenza virus infections.
+            Emerg Infect Dis. 2007&#x0000d; Dec;13(12):1871-8. <pub-id pub-id-type="pmid">18258038</pub-id></mixed-citation></ref><ref id="ref-1484745119"><mixed-citation>ProMED-mail. Influenza Pandemic (H1N1) 2009, Animal health (08):
+            Singapore, Swine. ProMED-mail; 04 Sept: 20090904.3114. www.promedmail.org. 2009.</mixed-citation></ref><ref id="ref-3405097026"><mixed-citation publication-type="journal">OIE World Animal Health Information Database. Vol
+            22 Nos. 18-43. April 30-October 22, 2009.
+            http://www.oie.int/wahis/public.php?page=weekly_report_index&#x00026;admin=0. 2009. <pub-id pub-id-type="pmid">18258038</pub-id></mixed-citation></ref><ref id="ref-2049069213"><mixed-citation>United States Department of Agriculture press release No. 0514.09.
+            USDA Confirms 2009 Pandemic H1N1 Influenza Sample Present in Minnesota Fair Pig Sample.
+                10/19/2009.</mixed-citation></ref><ref id="ref-2891633452"><mixed-citation publication-type="journal">Rayner JO, Dryga SA, Kamrud KI. Alphavirus vectors
+            and vaccination. Rev Med&#x0000d; Virol. 2002 Sep-Oct;12(5):279-96. Review. <pub-id pub-id-type="pmid">12211042</pub-id></mixed-citation></ref><ref id="ref-2062135564"><mixed-citation publication-type="journal">Schultz-Cherry S, Dybing JK, Davis NL, Williamson
+            C, Suarez DL, Johnston R,&#x0000d; Perdue ML. Influenza virus (A/HK/156/97)
+            hemagglutinin expressed by an alphavirus&#x0000d; replicon system protects chickens
+            against lethal infection with Hong Kong-origin &#x0000d; H5N1 viruses. Virology. 2000
+            Dec 5;278(1):55-9. <pub-id pub-id-type="pmid">11112481</pub-id></mixed-citation></ref><ref id="ref-2890121698"><mixed-citation>Erdman MM, Kamrud KI, Harris DL, Smith J. Alphavirus Vector
+            Vaccines Developed for Use in Humans Induce High Levels of Antibodies to Influenza Virus
+            Hemagglutinin in Swine: Proof of Concept. Vaccine (manuscript accepted). 2009.</mixed-citation></ref><ref id="ref-2121263681"><mixed-citation>Hooper JW, Ferro AM, Golden JW, Sivera P, Dudek J, Alterson K,
+            Custer M, Rivers B, Morris J, Owens G, Smith JF, Kamrud KI. Molecular Smallpox Vaccine
+            Delivered by Alphavirus Replicons Elicits Protective Immunity in Mice and Non-human
+            Primates. Vaccine (manuscript accepted). 2009.</mixed-citation></ref><ref id="ref-1640956506"><mixed-citation publication-type="journal">Kamrud KI, Custer M, Dudek JM, Owens G, Alterson
+            KD, Lee JS, Groebner JL,&#x0000d; Smith JF. Alphavirus replicon approach to promoterless
+            analysis of IRES elements.&#x0000d; Virology. 2007 Apr 10;360(2):376-87. Epub 2006 Dec
+            6. <pub-id pub-id-type="pmid">17156813</pub-id><pub-id pub-id-type="pmcid">PMC1885372</pub-id></mixed-citation></ref><ref id="ref-1501057364"><mixed-citation publication-type="journal">Halbur PG, Paul PS, Frey ML, Landgraf J, Eernisse K,
+            Meng XJ, Lum MA, Andrews &#x0000d; JJ, Rathje JA. Comparison of the pathogenicity of two
+            US porcine reproductive and&#x0000d; respiratory syndrome virus isolates with that of
+            the Lelystad virus. Vet Pathol. &#x0000d; 1995 Nov;32(6):648-60. <pub-id pub-id-type="pmid">8592800</pub-id></mixed-citation></ref><ref id="ref-3803711290"><mixed-citation publication-type="journal">Vincent AL, Ma W, Lager KM, Janke BH, Webby RJ,
+            Garc&#x000ed;a-Sastre A, Richt JA.&#x0000d; Efficacy of intranasal administration of a truncated
+            NS1 modified live influenza &#x0000d; virus vaccine in swine. Vaccine. 2007 Nov
+            19;25(47):7999-8009. Epub 2007 Sep 29. <pub-id pub-id-type="pmid">17933442</pub-id><pub-id pub-id-type="pmcid">PMC2099695</pub-id></mixed-citation></ref><ref id="ref-3276089922"><mixed-citation>Vincent LL, Janke BH, Paul PS, Halbur PG. Demonstration of swine
+            influenza virus in formalin-fixed, paraffin-embedded tissues by use of an
+            immunohistochemical test. Proceedings of the 14th IPVS Congress. 1996;97.</mixed-citation></ref><ref id="ref-2787179564"><mixed-citation>Reed LJ and Muench H. A simple method of estimation of 50% end
+            points. American journal of Hygiene. 27;493-497. 1938.</mixed-citation></ref><ref id="ref-1002982521"><mixed-citation publication-type="journal">Munster VJ, de Wit E, van den Brand JM, Herfst S,
+            Schrauwen EJ, Bestebroer TM,&#x0000d; van de Vijver D, Boucher CA, Koopmans M,
+            Rimmelzwaan GF, Kuiken T, Osterhaus AD, &#x0000d; Fouchier RA. Pathogenesis and
+            transmission of swine-origin 2009 A(H1N1) influenza&#x0000d; virus in ferrets. Science.
+            2009 Jul 24;325(5939):481-3. Epub 2009 Jul 2. <pub-id pub-id-type="pmid">19574348</pub-id></mixed-citation></ref><ref id="ref-1361391363"><mixed-citation>Ermdan MM, Kamrud KI, Smith J, Harris DL. Vaccination of pigs with
+            alphavirus replicon particles expressing ORFs 5 and 6 from porcine reproductive and
+            respiratory syndrome virus reduces viremia after challenge. Vaccine (manuscript
+            submitted). 2009.</mixed-citation></ref><ref id="ref-184477080"><mixed-citation>Bosworth B, Erdman M, Stine D, Harris I, Irwin C, Jens M, Loynachan
+            A, Owens G, Kamrud K, Harris DL. Viral replicon particle vaccine protects pigs against
+            influenza. Veterinary Therapeutics (manuscript submitted). 2009.</mixed-citation></ref><ref id="ref-1445159275"><mixed-citation publication-type="journal">Vincent AL, Lager KM, Ma W, Lekcharoensuk P, Gramer
+            MR, Loiacono C, Richt JA. &#x0000d; Evaluation of hemagglutinin subtype 1 swine
+            influenza viruses from the United&#x0000d; States. Vet Microbiol. 2006 Dec
+            20;118(3-4):212-22. Epub 2006 Aug 1. <pub-id pub-id-type="pmid">16962262</pub-id></mixed-citation></ref><ref id="ref-2785736750"><mixed-citation publication-type="journal">Sreta D, Kedkovid R, Tuamsang S, Kitikoon P,
+            Thanawongnuwech R. Pathogenesis&#x0000d; of swine influenza virus (Thai isolates) in
+            weanling pigs: an experimental trial.&#x0000d; Virol J. 2009 Mar 25;6:34. PubMed Central PMCID:&#x0000d; PMC2678088. <pub-id pub-id-type="pmid">19317918</pub-id><pub-id pub-id-type="pmcid">PMC2678088</pub-id></mixed-citation></ref><ref id="ref-772926556"><mixed-citation publication-type="journal">Itoh Y, Shinya K, Kiso M, Watanabe T, Sakoda Y,
+            Hatta M, Muramoto Y, Tamura D,&#x0000d; Sakai-Tagawa Y, Noda T, Sakabe S, Imai M, Hatta
+            Y, Watanabe S, Li C, Yamada S,&#x0000d; Fujii K, Murakami S, Imai H, Kakugawa S, Ito M,
+            Takano R, Iwatsuki-Horimoto K,&#x0000d; Shimojima M, Horimoto T, Goto H, Takahashi K,
+            Makino A, Ishigaki H, Nakayama M,&#x0000d; Okamatsu M, Takahashi K, Warshauer D, Shult
+            PA, Saito R, Suzuki H, Furuta Y,&#x0000d; Yamashita M, Mitamura K, Nakano K, Nakamura M,
+            Brockman-Schneider R, Mitamura H, &#x0000d; Yamazaki M, Sugaya N, Suresh M, Ozawa M,
+            Neumann G, Gern J, Kida H, Ogasawara K, &#x0000d; Kawaoka Y. In vitro and in vivo
+            characterization of new swine-origin H1N1&#x0000d; influenza viruses. Nature. 2009 Aug
+            20;460(7258):1021-5. <pub-id pub-id-type="pmid">19672242</pub-id><pub-id pub-id-type="pmcid">PMC2748827</pub-id></mixed-citation></ref><ref id="ref-2598463077"><mixed-citation publication-type="journal">Brookes SM, Irvine RM, Nunez A, Clifford D, Essen
+            S, Brown IH, Van Reeth K,&#x0000d; Kuntz-Simon G, Loeffen W, Foni E, Larsen L,
+            Matrosovich M, Bublot M, Maldonado J,&#x0000d; Beer M, Cattoli G. Influenza A (H1N1)
+            infection in pigs. Vet Rec. 2009 Jun&#x0000d; 13;164(24):760-1. <pub-id pub-id-type="pmid">19525527</pub-id></mixed-citation></ref><ref id="ref-3761053113"><mixed-citation publication-type="journal">Lange E, Kalthoff D, Blohm U, Teifke JP, Breithaupt
+            A, Maresch C, Starick E,&#x0000d; Fereidouni S, Hoffmann B, Mettenleiter TC, Beer M,
+            Vahlenkamp TW. Pathogenesis&#x0000d; and transmission of the novel swine-origin
+            influenza virus A/H1N1 after&#x0000d; experimental infection of pigs. J Gen Virol. 2009
+            Sep;90(Pt 9):2119-23. Epub 2009&#x0000d; Jul 10. <pub-id pub-id-type="pmid">19592456</pub-id></mixed-citation></ref></ref-list></back></article>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" article-type="rapid-communication"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS Curr</journal-id><journal-title-group><journal-title>PLoS Currents</journal-title></journal-title-group><issn pub-type="epub">2157-3999</issn><publisher><publisher-name>Public Library of Science</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">20025200</article-id><article-id pub-id-type="pmc">2762763</article-id><article-id pub-id-type="knolid">http://knol.google.com/k/-/-/3dlkzz2pptrbi/2</article-id><article-id pub-id-type="doi">10.1371/currents.RRN1036</article-id><article-categories><subj-group subj-group-type="heading"><subject>Influenza</subject></subj-group></article-categories><title-group><article-title>Social versus independent interest in 'bird flu' and 'swine flu'</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Bentley</surname><given-names>R. Alexander</given-names></name><!--Durham University, UK--><xref ref-type="aff">*</xref></contrib><contrib contrib-type="author"><name><surname>Ormerod</surname><given-names>Paul</given-names></name><!--Volterra Consulting--><xref ref-type="aff">&#x02020;</xref></contrib></contrib-group><aff><sup>*</sup>Anthropology Dept., Durham University and <sup>&#x02020;</sup>Volterra Consulting</aff><pub-date pub-type="epub"><day>3</day><month>9</month><year>2009</year></pub-date><volume>1</volume><elocation-id>RRN1036</elocation-id><history><date date-type="created"><day>26</day><month>8</month><year>2009</year></date><date date-type="accepted"><day>7</day><month>9</month><year>2009</year></date></history><permissions><license><license-p>This research note is distributed under the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License.</ext-link></license-p></license></permissions><abstract><!--WRITE-PARA--><p id="p1">The explosion of interest in H1N1, more popularly called &#x02018;swine flu&#x02019;, across the world, from late April to early May 2009, exemplified how information transmission in modern online society can affect the spread of the disease itself. A simple but effective model based on cultural evolutionary theory can characterise in such data the effective degree of social transmission  versus independent decision.  In a novel approach that applies this model to Google Trends search data, we find significant differences in social transmission of the exact phrase `swine flu' in 2009, compared with &#x02018;bird flu&#x02019; in 2005. The methodology can thus inform policies for addressing public awareness of health issues, which can be more effective with knowledge of how the information is being spread or learned.</p></abstract></article-meta></front><body><sec id="sec1"><title>Introduction</title><!--WRITE-PARA--><p id="p2">The explosion of interests in &#x02018;bird flu&#x02019; during 2005, and &#x02018;swine flu&#x02019; from late April to early May 2009, were remarkable demonstrations of rapid cultural evolution and transmission <xref ref-type="bibr" rid="ref-3781216387">[1]</xref>. This hysteria affected behaviour in real ways (from xenophobia to the closing of schools), and exemplified the importance of cultural transmission in modern globalised society, where such transmission of functional information affects the spread of the disease itself <xref ref-type="bibr" rid="ref-822652519">[2]</xref>.</p><!--WRITE-PARA--><p id="p3">These two cultural phenomena provide an valuable opportunity to study cultural evolution on the global population scale. Basic theory in epidemiology and evolutionary biology can provide useful tools <xref ref-type="bibr" rid="ref-822652519">[2]</xref><xref ref-type="bibr" rid="ref-547202262">[3]</xref><xref ref-type="bibr" rid="ref-607992514">[4]</xref><xref ref-type="bibr" rid="ref-3340603292">[5]</xref>, but often these methods treat the idea itself almost purely as a spreading virus.&#x000a0;</p><!--WRITE-PARA--><p id="p4">We suggest that general approaches of cultural evolutionary theory <xref ref-type="bibr" rid="ref-547202262">[3]</xref><xref ref-type="bibr" rid="ref-3366443478">[6]</xref><xref ref-type="bibr" rid="ref-973244914">[7]</xref>&#x000a0;offer a better way of analysing interest in health issues such as influenza.&#x000a0; A simple, but highly effective, model can characterise the effective degree of social transmission (adopt the idea because other people have adopted it, regardless of what it is) versus independent decision (adopt it because of a conscious decision made independently by the individual). This simple spectrum provides a powerful means of evaluating forms of cultural transmission amongst humans <xref ref-type="bibr" rid="ref-607992514">[4]</xref><xref ref-type="bibr" rid="ref-3836040222">[8]</xref>.</p></sec><sec id="sec2"><title>Model</title><!--WRITE-PARA--><p id="p6">One established formulation (e.g. 8, 9) of this model represents the probability of adoption at time <italic>t</italic> as:</p><p>&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0;&#x000a0;<disp-formula><tex-math id="d20e84">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}p(t) = (\mu + qF(t))(1-F(t)),\end{equation*}\end{document}</tex-math></disp-formula>&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;(1)</p><!--WRITE-PARA--><p id="p8">where the parameters <italic>q </italic>and<italic> &#x000b5; </italic>represent the degree of social transmission and individual decision, respectively. The cumulative fraction of adopters in (1), <italic>F</italic>(<italic>t</italic>),&#x000a0; is given by <xref ref-type="bibr" rid="ref-1996597571">[9]</xref>:</p><p>&#x000a0;&#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0;&#x000a0;<disp-formula><tex-math id="d20e108">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}F(t)=A\frac{1-e^{-(\mu+q)t} }{1+\frac{q}{\mu} e^{-(\mu+q)t} }\end{equation*}\end{document}</tex-math></disp-formula>,&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;(2)</p><!--WRITE-PARA--><p id="p10">where <italic>A </italic>is the maximum cumulative fraction of adopters in the population.</p><!--WRITE-PARA--><p id="p11">At one extreme of this model, we assume that social transmission is much higher than independent selection, i.e. that <italic>&#x000b5; </italic>&#x0003c;&#x0003c; <italic>q</italic>. This yields essentially the standard logistic growth or &#x02018;S&#x02019; curve model, in which the rate of adoption increases initially, peaks, and then decreases as the cumulative number of adopters asymptotically approaches its pre-determined maximum, <italic>A</italic>.</p><!--WRITE-PARA--><p id="p12">The number of new additions per time unit is the partial derivative of <italic>F</italic>(<italic>t</italic>) with respect to <italic>t, </italic>which, when we assume that <italic>&#x000b5; </italic>&#x0003c;&#x0003c; <italic>q</italic>, is:</p><p>&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;<disp-formula><tex-math id="d20e148">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}\frac{\partial F}{\partial t} \approx A\frac{\left( 1+\frac{q}{\mu}e^{-qt} \right)qe^{-qt}+q\frac{q}{\mu}e^{-qt} -\frac{q^2}{\mu}e^{-2qt} }{\left( 1+\frac{q}{\mu}e^{-qt} \right)^2 }\end{equation*}\end{document}</tex-math></disp-formula>&#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; &#x000a0; &#x000a0;(3)</p><!--WRITE-PARA--><p id="p14">which simplifies to:</p><p>&#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0;<disp-formula><tex-math id="d20e157">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}\frac{\partial F}{\partial t} \approx A\frac{qe^{-qt}\left( 1+\frac{q}{\mu} \right) }{\left( 1+\frac{q}{\mu}e^{-qt} \right) ^2}\end{equation*}\end{document}</tex-math></disp-formula>.&#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;(4)</p><!--WRITE-PARA--><p id="p16">Eq. 4 yields a symmetrical pattern of rise and decline in terms of new additions per time unit.</p><!--WRITE-PARA--><p id="p17">The other end of the spectrum has been explored theoretically&#x000a0;<xref ref-type="bibr" rid="ref-851792754">[10]</xref>, but rarely in real-world case studies. At this end, we assume that independent selection of the behaviour is much greater than social transmission, i.e., <italic>&#x000b5; </italic>&#x0003e;&#x0003e; <italic>q</italic>, whereby eq. (2) becomes in the limit as <italic>q</italic> approaches zero :</p><p>&#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0;<disp-formula><tex-math id="d20e181">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}F(t)\approx A(1-e^{-\mu t})\end{equation*}\end{document}</tex-math></disp-formula>,&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;(5)</p><!--WRITE-PARA--><p id="p19">with derivative:</p><p>&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0;&#x000a0;<disp-formula><tex-math id="d20e190">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}\frac{\partial F}{\partial t} \approx A\mu e^{-\mu t}\end{equation*}\end{document}</tex-math></disp-formula>.&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;(6)</p><!--WRITE-PARA--><!--WRITE-PARA--><p id="p22">Hence with purely independent decisions, the adoption rate is most rapid initially, at <italic>t</italic> = 0, followed by a simple exponential decline in the rate of adoption.&#x000a0; This implies instantaneous rise to peak adoption rate i.e. very strong asymmetry in the rise and decline in terms of new additions per time unit.</p></sec><sec id="sec3"><title>Data</title><!--WRITE-PARA--><p id="p24">To observe the relative level of global interest in recent pandemic scares, we make use of the new, powerful online analysis tool, &#x0201c;Google Trends&#x0201d;. This tool provides a calendar timeline of search results for any search term, which is sub-divisible by country (or even regions within each country). Google Trends does not provide the exact numeric data on the volume of searches, but a relative account of search volume over time.&#x000a0; The data are typical of much data in the social sciences, and cannot be regarded as having the precision of a replicable experiment in the natural sciences.&#x000a0; However, these are data to which Google are willing to attach their name, and as such can be regarded as a reliable indicator of movements over time.</p><!--WRITE-PARA--><p id="p25">For April-May 2009, we obtained search data (world-aggregated) for &#x02018;swine flu&#x02019;, and the&#x000a0; related topic &#x02018;bird flu&#x02019;. The period of growth and decline in both terms was defined to be 24 April &#x02013; 4 May 2009. We also collected search data for &#x02018;bird flu&#x02019; from 1 September to 30 December 2005, a period when it was a genuine threat.&#x000a0; The searches in April-May 2009 for &#x02018;swine flu&#x02019; were so abundant that we also had the opportunity to compare the rise and fall of this term in 30 individual countries (which was not possible for &#x02018;bird flu&#x02019;, unfortunately).</p></sec><sec id="sec4"><title>Analysis</title><!--WRITE-PARA--><p id="p27">For each time series of Google search volume &#x02013; &#x02018;swine flu&#x02019; in 2009 and &#x02018;bird flu&#x02019; in 2005 and in 2009 &#x02013; we found the best fit of these data to the model, represented by rate of change in eq. (2), from one &#x02018;day&#x02019; (<italic>t</italic>)to the next (<italic>t </italic>+ 1). In this way, we obtained statistical estimates of the social transmission and independent decision parameters,<italic> q </italic>and <italic>&#x000b5;</italic>, for time series data on each of the phrases aggregated across countries (Table 1).</p><table-wrap id="d20e230"><table border="1" cellspacing="0"><tbody><tr><td rowspan="1" colspan="1" style="width:60px">&#x000a0;<bold>Event</bold><bold>&#x000a0;&#x000a0; &#x000a0;</bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;Model fit (r</bold><sup><bold>2</bold></sup><bold>)</bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;</bold><bold>&#x003bc;</bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;</bold><bold><inline-formula><tex-math id="d20e263">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}q\end{equation*}\end{document}</tex-math></inline-formula></bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;</bold><bold><inline-formula><tex-math id="d20e272">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}\frac{q}{\mu}\end{equation*}\end{document}</tex-math></inline-formula></bold></td></tr><tr><td rowspan="1" colspan="1" style="width:60px">&#x000a0;<bold>Swine flu '09</bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;</bold><bold><inline-formula><tex-math id="d20e287">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}0.86\end{equation*}\end{document}</tex-math></inline-formula></bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;</bold><bold><inline-formula><tex-math id="d20e296">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}0.047\pm 0.028\end{equation*}\end{document}</tex-math></inline-formula></bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;</bold><bold><inline-formula><tex-math id="d20e305">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}0.59 \pm 0.16\end{equation*}\end{document}</tex-math></inline-formula></bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;</bold><bold><inline-formula><tex-math id="d20e314">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}12.6\end{equation*}\end{document}</tex-math></inline-formula></bold></td></tr><tr><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;Bird flu '09</bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;</bold><bold><inline-formula><tex-math id="d20e328">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}0.75\end{equation*}\end{document}</tex-math></inline-formula></bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;</bold><bold><inline-formula><tex-math id="d20e337">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}0.049 \pm0.034\end{equation*}\end{document}</tex-math></inline-formula></bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;</bold><bold><inline-formula><tex-math id="d20e346">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}0.43 \pm 0.17\end{equation*}\end{document}</tex-math></inline-formula></bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;</bold><bold><inline-formula><tex-math id="d20e355">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}9.1\end{equation*}\end{document}</tex-math></inline-formula></bold></td></tr><tr><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;Bird flu '05, to 29 Oct</bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;</bold><bold><inline-formula><tex-math id="d20e369">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}0.93\end{equation*}\end{document}</tex-math></inline-formula></bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;</bold><bold><inline-formula><tex-math id="d20e378">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}&#x0003c;0.001\end{equation*}\end{document}</tex-math></inline-formula></bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;</bold><bold><inline-formula><tex-math id="d20e387">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}0.137 \pm 0.013\end{equation*}\end{document}</tex-math></inline-formula></bold></td><td rowspan="1" colspan="1" style="width:60px"><bold>&#x000a0;</bold><bold><inline-formula><tex-math id="d20e396">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}&#x0003e; 100\end{equation*}\end{document}</tex-math></inline-formula></bold></td></tr><tr><td rowspan="1" colspan="1"><bold>&#x000a0;Bird flu '05, after 29 Oct</bold></td><td rowspan="1" colspan="1">&#x000a0;<inline-formula><tex-math id="d20e408">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}0.86\end{equation*}\end{document}</tex-math></inline-formula></td><td rowspan="1" colspan="1">&#x000a0;<inline-formula><tex-math id="d20e415">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}0.043 \pm 0.007\end{equation*}\end{document}</tex-math></inline-formula></td><td rowspan="1" colspan="1">&#x000a0;<inline-formula><tex-math id="d20e422">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}&#x0003c; 0.001\end{equation*}\end{document}</tex-math></inline-formula></td><td rowspan="1" colspan="1">&#x000a0;<inline-formula><tex-math id="d20e429">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}0\end{equation*}\end{document}</tex-math></inline-formula></td></tr></tbody></table></table-wrap><!--WRITE-PARA--><p id="p53">For the 2005 &#x02018;bird flu&#x02019; phenomenon, we found there were clearly two distinct search successive events (Figure 1a).&#x000a0; The first built up to a peak on 17 October and then fell away steadily until 29 October. This was followed by a clear, rapid surge in searches for &#x02018;bird flu&#x02019;, peaking on 2 November and subsequently declining steadily to the end of the year. The distinction of these two events is robust; with the sample subdivided this way, regression versus the model yields pooled standard errors significantly lower than the model versus the whole period of data.</p><fig id="fig-25"><!--WRITE-PARA--><p id="p54"> <bold>Figure 1: (a) </bold>Daily, world-aggregated Google volume for &#x02018;bird flu&#x02019; in late 2005 (open symbols), versus a two-part model (parameters, Table 1); the second part starting 30 October. <bold>(b) </bold>Google Trends results, for &#x02018;swine flu&#x02019; (filled symbols), and &#x02018;bird flu&#x02019; (open symbols), for the period April-May 2009, versus the imitation-selection model tuned to each case (Table 1). </p><graphic xlink:href="boblfig1"/></fig><!--WRITE-PARA--><p id="p55">These two periods of &#x02018;bird flu&#x02019; searches are not only distinct, but different in character.&#x000a0; In the initial period (up to 29 October 2005), the model fits best (<italic>r<sup>2</sup></italic> = 0.93) with the independent decision parameter <italic>&#x000b5;</italic> effectively at zero, and the social transmission parameter <italic>q </italic>at 0.137 &#x000b1; 0.013 (error denotes 95% confidence interval).&#x000a0; Over the second period (after 29 October), however, the best overall fit (<italic>r<sup>2</sup></italic> = 0.86) is achieved with social transmission parameter <italic>q</italic> effectively zero (Table 1), whereas the independent decision parameter <italic>&#x000b5;</italic>&#x000a0; is 0.043 &#x000b1; 0.007.&#x000a0; Figure 1a shows how the model fits the data using these quite different parameter values for the respective time periods.</p><!--WRITE-PARA--><p id="p56">For the more recent event, over the period 24 April to 4 May 2009, Figure 1b shows the aggregated result from all countries for both &#x02018;swine flu&#x02019; and &#x02018;bird flu&#x02019;. For &#x02018;swine flu&#x02019; the data are fitted reasonably well (<italic>r<sup>2</sup></italic> = 0.86) by the model, with independent decision<italic> &#x000b5;</italic> = 0.047 &#x000b1; 0.028 and social transmission<italic> q</italic> = 0.592 &#x000b1; 0.155.&#x000a0; For 'bird flu' 2009, the best fit (<italic>r<sup>2</sup></italic> = 0.75) occurs with independent decision<italic> &#x000b5;</italic> = 0.049 &#x000b1; 0.034 and social transmission<italic> q</italic> = 0.428 &#x000b1; 0.168.</p><!--WRITE-PARA--><p id="p57">For the 2009 event, the rise and fall of &#x02018;swine flu&#x02019; in 30 different countries individually was observed by recording the date of four key landmarks: (1) initial appearance at a detectable level, (2) climbed to half its peak popularity (3) reached peak popularity, and (4) declined back to half of peak popularity.&#x000a0;&#x000a0; Since the data are reported only on a daily basis, we approximated the &#x02018;half peak&#x02019; date either by rounding to the nearest day, or, in cases where the half peak value was clearly spanned by two successive dates, 26 and 27 April say, we assigned the &#x02018;date&#x02019; of &#x02018;26.5 April&#x02019; to the relevant half peak.&#x000a0; More sophisticated interpolation could certainly be used, but the Google data are not generated by a controlled scientific experiment, and so should not be assigned undue precision.</p><!--WRITE-PARA--><p id="p58">An asymmetry in the rise-decline patterns across the countries is evidenced by an inverse correlation between the rising time (from half peak to the peak) versus decline time (from peak to half-peak level), shown in Figure 2. For these 30 different countries, the simple correlation is -0.74 (<italic>r</italic><sup>2</sup> =&#x000a0; 0.70), with an equation standard error of 0.751 and an optimal effective number of parameters of 2.4 using non-linear least-squares estimation <xref ref-type="bibr" rid="ref-844967155">[11]</xref>.&#x000a0; The null hypothesis that the relationship is linear is rejected at <italic>p</italic> = 0.002.</p><fig id="fig-26"><!--WRITE-PARA--><p id="p59"><bold>Figure 2</bold>:Rise/fall times of&#x02018;swine flu&#x02019; Internet search rates. Each datum represents a different country, showing the number of days between landmarks 2 and 3 (x-axis), versus days between landmarks 3 and 4 (y-axis). The nonlinear regression line is described in the text.</p><graphic xlink:href="boblfig2"/></fig></sec><sec id="sec5"><title>Discussion</title><!--WRITE-PARA--><p id="p60">Fear is contagious <xref ref-type="bibr" rid="ref-2822318455">[12]</xref>, and fitting the model to the aggregated time series suggests social transmission was more important than independent decision in both the pandemic search cases in April/May 2009.&#x000a0; Nonetheless, the estimated <italic>&#x003bc;</italic> values are between 4% and 5%, which is at the high end of the range of values for independent decision in comparable studies of idea diffusion (e.g., 8, 13).&#x000a0; Although 5% may not seem like much, studies of social learning in animals suggest such a minority of independent behaviour can lead an entire group in a cohesive direction <xref ref-type="bibr" rid="ref-965307509">[13]</xref>.&#x000a0;&#x000a0;&#x000a0;</p><!--WRITE-PARA--><p id="p61">For the phrase &#x02018;swine flu&#x02019;, significant independent decision is also evidenced by an asymmetry between the speed of rise and speed of decline in the cross-country observations. Given also the relatively high <italic>&#x003bc;</italic> value, this presumably reflects independent responses to the media portrayal of this strain of influenza. As defined by the time between Landmark 3 (half-down) and the peak, the 'swine flu' searches resonated longer in Asian countries, including Thailand, Singapore, Malaysia, China, the Philippines, and Japan, whereas the buzz had died down most thoroughly in European-American countries (Supplementary Table S1). Given the recent history of avian influenza in Asia, there is reasonable case for genuine concern about it in Asia.</p><!--WRITE-PARA--><p id="p62">In comparing the different case studies, a useful statistic may be the ratio <italic>q/&#x000b5;, </italic>which characterises social transmission relative to independent decision. Table 2 shows that, during the 2009 event, the &#x02018;swine flu&#x02019; had an social/independent ratio of 12.6, whereas for &#x02018;bird flu&#x02019; was 9.1.&#x000a0; These are not substantial differences, but they nevertheless offer support to the hypothesis that the more distinct the related phenomena is from the main, socially-transmitted phenomenon, the more independent decision was involved.&#x000a0;&#x000a0; In other words, people were socially copying each other&#x02019;s interest in &#x02018;swine flu&#x02019;, but making the connection between this and &#x02018;bird flu&#x02019; required knowledge, and therefore more independent selection.&#x000a0;</p><!--WRITE-PARA--><p id="p63">The 2005 &#x02018;bird flu&#x02019; scare provides a remarkable demonstration of the extremes: there was almost pure imitation in September and most of October, followed by almost pure independent decision after 29 October.</p><!--WRITE-PARA--><p id="p64">Alongside the many studies of the actual viruses, evolutionary studies of concern over these health issues could have significant implications for informing the public, where optimal strategies could be quite different depending on whether decisions are made primarily socially, or primarily independently. If decisions are made independently, then informative news can have a powerful effect on people. If decisions are made mainly by social transmission, however, the provision of information in itself, no matter how good, is much less likely to be taken up. </p><sec id="sec7"><title>Acknowledgment&#x000a0;&#x000a0;</title><!--WRITE-PARA--><p id="p65">We thank Rich Colbaugh for valuable comments.</p></sec><sec id="sec8"><title>Competing interests</title><!--WRITE-PARA--><p id="p67">The authors have declared that no competing interests exist.</p><sec id="sec9"><title>Funding information</title><!--WRITE-PARA--><p id="p69">This research was supported by the <ext-link ext-link-type="uri" xlink:href="http://www.dur.ac.uk/ccbc/">Centre for the Coevolution of Biology and Culture</ext-link>, Durham University, UK.</p></sec></sec></sec></body><back><ref-list><ref id="ref-3781216387"><mixed-citation>Ensernik, M. 2009 Swine flu names evolving faster than swine flu itself. Science 324, 871-872.</mixed-citation></ref><ref id="ref-822652519"><mixed-citation>Funk, S., Gilad, E., Watkins, C. &#x00026; Jansen, V. A. A. 2009 The spread of awareness and its impact on epidemic outbreaks. PNAS 106, 6872-6877.</mixed-citation></ref><ref id="ref-547202262"><mixed-citation>Cavalli-Sforza, L. L. &#x00026; Feldman, M. W. 1981  Cultural Transmission and Evolution.  Princeton University Press.</mixed-citation></ref><ref id="ref-607992514"><mixed-citation>Hahn, M.W. &#x00026; Bentley, R. A. 2003 Drift as a mechanism for cultural change, an example from baby names. Proceedings of the Royal Society B 270, S1-S4.</mixed-citation></ref><ref id="ref-3340603292"><mixed-citation>Lachlan, R. F., &#x00026; Servedio, M. R. 2004 Song learning accelerates allopatric speciation  Evolution 58, 2049&#x02013;2063.</mixed-citation></ref><ref id="ref-3366443478"><mixed-citation>Shennan, S.J. 2002 Genes, Memes and Human History. London: Thames and Hudson.</mixed-citation></ref><ref id="ref-973244914"><mixed-citation>Rogers, E.M. 1962 Diffusion of Innovations. New York: Free Press.</mixed-citation></ref><ref id="ref-3836040222"><mixed-citation>Dunnell, R.C. 1978 Style and function: A fundamental dichotomy. American Antiquity 43, 192-202.</mixed-citation></ref><ref id="ref-1996597571"><mixed-citation>Schmittlein D.C. Mahajan, V. 1982 Maximum likelihood estimation for an innovation diffusion model of new product acceptance. Marketing Science 1, 57-78.</mixed-citation></ref><ref id="ref-851792754"><mixed-citation>Henrich, J. 2001 Cultural transmission and the diffusion of innovations.  American Anthropologist 103, 992&#x02013;1013.</mixed-citation></ref><ref id="ref-844967155"><mixed-citation>Cleveland, W.S., &#x00026; Devlin, S.J. 1988 Locally-weighted regression:  an approach to regression analysis by local fitting. Journal of the American Statistical Association 83, 596-610.</mixed-citation></ref><ref id="ref-2822318455"><mixed-citation>Adolphs R. 2002 Neural systems for recognizing emotion. Current Opinion in Neurobiology 12, 169-177.</mixed-citation></ref><ref id="ref-965307509"><mixed-citation>Couzin, I.D., Krause, J., Franks, N.R. &#x00026; Levin, S.A. 2005 Effective leadership and decision-making in animal groups on the move.  Nature 433, 513-516.</mixed-citation></ref></ref-list></back></article>

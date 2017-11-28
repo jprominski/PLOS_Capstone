@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" article-type="rapid-communication"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS Curr</journal-id><journal-title-group><journal-title>PLoS Currents</journal-title></journal-title-group><issn pub-type="epub">2157-3999</issn><publisher><publisher-name>Public Library of Science</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">20025204</article-id><article-id pub-id-type="pmc">2762810</article-id><article-id pub-id-type="knolid">http://knol.google.com/k/-/-/1vf7it3yc9xzl/1</article-id><article-id pub-id-type="accession">RRN1046</article-id><article-id pub-id-type="doi">10.1371/currents.RRN1046</article-id><article-categories><subj-group subj-group-type="heading"><subject>Influenza</subject></subj-group></article-categories><title-group><article-title>Pandemic influenza dynamics and the breakdown of herd immunity</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Katriel</surname><given-names>Guy</given-names></name><!--Researcher--><xref ref-type="aff">*</xref></contrib><contrib contrib-type="author"><name><surname>Stone</surname><given-names>Lewi</given-names></name><!--Scientist--><xref ref-type="aff">&#x02020;</xref></contrib></contrib-group><aff><sup>*</sup>Biomathematics Unit, Faculty of Life Sciences, Tel Aviv University and <sup>&#x02020;</sup>Tel Aviv University</aff><pub-date pub-type="epub"><day>1</day><month>10</month><year>2009</year></pub-date><volume>1</volume><elocation-id>RRN1046</elocation-id><history><date date-type="created"><day>26</day><month>9</month><year>2009</year></date><date date-type="accepted"><day>30</day><month>9</month><year>2009</year></date></history><permissions><license><license-p>This research note is distributed under the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License.</ext-link></license-p></license></permissions><abstract><!--WRITE-PARA--><p id="p1">Few if any attempts have been made to derive forecasts for the ongoing H1N1 pandemic as extrapolated from knowledge of seasonal influenza. Even simple back-of-the-envelope calculations are lacking. In this note  we use first-approximation parameter estimates for the SIR model to compare seasonal and pandemic influenza, and then explore the implications of the existing classical epidemiological theory. In particular, we note the dramatic nonlinear increase in attack rate as a function of the percentage of susceptibles initially present in the population.  This  has severe consequences for the pandemic, given the general lack of immunity in the global population.</p></abstract></article-meta></front><body><!--WRITE-PARA--><!--WRITE-PARA--><p id="p3">While the current understanding of the dynamics of seasonal influenza is far from complete, it is certainly at a more advanced level than that for the new influenza A H1N1 pandemic now sweeping across the globe <xref ref-type="bibr" rid="ref-1451886908">[1]</xref>. Despite this, few if any attempts have been made to derive forecasts for the pandemic as extrapolated from knowledge of seasonal influenza. Even basic back-of-the-envelope calculations are lacking. In this note we explore the implications of the existing classical epidemiological theory.</p><!--WRITE-PARA--><p id="p4">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; Three characteristic properties specific to seasonal influenza are drawn upon (Appendix): a)  The attack rate, or percentage of a region's population infected over the entire influenza season, lies somewhere between 5-15%.&#x000a0; For convenience, the attack rate is approximated as 10%.&#x000a0; b)&#x000a0; The duration of seasonal influenza is approximately three months.&#x000a0; c) The average infectious period of a sick individual is 3 days. By virtue of these three pieces of information, elementary calculations based on the classical SIR epidemic model show that the initial susceptibility of the population must lie in the vicinity of <inline-formula><tex-math id="d20e46">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}S_0=0.32\end{equation*}\end{document}</tex-math></inline-formula> (see Appendix). That is, at the beginning of the season some one third of the population is susceptible and has the potential to be infected. This level of susceptibility seems reasonable given that a large component of the population has most likely gained immunity from previous exposure to related strains of the current influenza virus. </p><!--WRITE-PARA--><p id="p5">&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; The same calculations show that the value of the basic reproductive number&#x000a0;<inline-formula><tex-math id="d20e53">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0\end{equation*}\end{document}</tex-math></inline-formula> <xref ref-type="bibr" rid="ref-448754785">[2]</xref>, which describes the number of infections generated by a typically infected individual in a wholly susceptible population, is approximately <inline-formula><tex-math id="d20e61">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0=3.75\end{equation*}\end{document}</tex-math></inline-formula> for seasonal flu. The effective reproductive number&#x000a0;<inline-formula><tex-math id="d20e66">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_e\end{equation*}\end{document}</tex-math></inline-formula>, which describes the number of infections generated by an infected individual in the partially susceptible population (see eg.,&#x000a0;<xref ref-type="bibr" rid="ref-2343584882">[3]</xref><xref ref-type="bibr" rid="ref-789801360">[4]</xref>) at the beginning of the epidemic, is thus estimated as. <inline-formula><tex-math id="d20e77">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_e(seasonal)=0.32*3.75=1.2\end{equation*}\end{document}</tex-math></inline-formula>. </p><!--WRITE-PARA--><p id="p6">Consider now the arrival of pandemic influenza into a region. In the absence of previous exposure to the pandemic, it is reasonable to assume that a much larger proportion of the population is susceptible than is the case for the seasonal flu. Our working hypothesis is that there are no other relevant epidemiological differences between the two types of influenza. In particular, we assume that <inline-formula><tex-math id="d20e86">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0(pandemic)=R_0(seasonal)=3.75\end{equation*}\end{document}</tex-math></inline-formula>.</p><!--WRITE-PARA--><p id="p7">When modeling pandemic influenza and estimating <inline-formula><tex-math id="d20e93">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0\end{equation*}\end{document}</tex-math></inline-formula>, it is often taken for granted that the entire population is susceptible. This assumption, however, has been shown to be questionable <xref ref-type="bibr" rid="ref-2343584882">[3]</xref><xref ref-type="bibr" rid="ref-789801360">[4]</xref>. Indeed Mathews et al. (personal communication), based on model-fitting, have estimated that in the 1918 pandemic in the UK only 52%  (95% confidence interval 41-66%) of the population were susceptible. Moreover, we argue that by considering the expected duration of an epidemic, calculations based on the SIR model indicate that 100%&#x000a0; population susceptibility is unlikely (Appendix). </p><!--WRITE-PARA--><p id="p8">In the following we begin by assuming there is 64% susceptibility for pandemic influenza, which is twice that we use for seasonal influenza. How then does this simple difference in population susceptibility change the influenza attack rate? A na&#x000ef;ve approach might suggest that if there are twice as many more susceptibles in the population, the attack rate for the pandemic might be expected to be 20% of the population instead of 10% for seasonal influenza. </p><!--WRITE-PARA--><p id="p9">Although well established in epidemiological theory, it is often unappreciated that the attack rate of an epidemic is not determined by&#x000a0;<inline-formula><tex-math id="d20e107">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0\end{equation*}\end{document}</tex-math></inline-formula> alone. The calculation (as based on the SIR model) involves two stages: i) Determining the fraction&#x000a0;<inline-formula><tex-math id="d20e112">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}Z\end{equation*}\end{document}</tex-math></inline-formula>  of susceptibles who become infected during an epidemic as the solution of the &#x0201c;final size equation" <xref ref-type="bibr" rid="ref-3750389866">[5]</xref> <inline-formula><tex-math id="d20e120">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}1-Z=e^{-R_e Z}\end{equation*}\end{document}</tex-math></inline-formula>, where <inline-formula><tex-math id="d20e125">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_e\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0; is the effective reproduction number. ii) Calculating the attack rate as given by&#x000a0;<inline-formula><tex-math id="d20e131">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}A=S_0\cdot Z\end{equation*}\end{document}</tex-math></inline-formula>.</p><!--WRITE-PARA--><p id="p10"> Since we assume that&#x000a0;<inline-formula><tex-math id="d20e138">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}S_0\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0;&#x000a0;&#x000a0; is twice as high for the pandemic influenza as for the seasonal flu, we obtain that <inline-formula><tex-math id="d20e143">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_e(pandemic)=2\cdot R_e(seasonal)=2\cdot 1.2=2.4\end{equation*}\end{document}</tex-math></inline-formula>. From (i&#x00026;ii) above, a larger value of <inline-formula><tex-math id="d20e148">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_e\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0; increases the size of the epidemic in two ways.&#x000a0; Firstly, the quantity <bold><italic>Z</italic></bold>, the fraction of susceptibles who become infected, is much larger. Solving for&#x000a0;<inline-formula><tex-math id="d20e157">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_e=2.4\end{equation*}\end{document}</tex-math></inline-formula>  , we obtain&#x000a0;<inline-formula><tex-math id="d20e163">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}Z=0.88\end{equation*}\end{document}</tex-math></inline-formula> (that is - %88 of susceptibles will be infected during the pandemic),  in contrast to&#x000a0; <inline-formula><tex-math id="d20e168">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}Z=0.31\end{equation*}\end{document}</tex-math></inline-formula> for seasonal flu. Secondly, there are more susceptibles so that the attack rate <bold><italic><inline-formula><tex-math id="d20e175">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}A=S_0\cdot Z=0.88*0.64=0.58\end{equation*}\end{document}</tex-math></inline-formula>. </italic></bold>Thus although the estimated number of susceptibles for the pandemic is twice that for the seasonal flu, the resulting attack rate is 5.8 times higher (and 2.9 times higher than the &#x0201c;na&#x000ef;ve&#x0201d; prediction).</p><!--WRITE-PARA--><p id="p11">It is interesting to note that the na&#x000ef;ve prediction is based on the supposition that doubling the number of susceptibles should double the number of people infected. However the flaw in this logic derives from a collective phenomenon whereby for low levels of susceptibles the population inherits a protection akin to herd immunity <xref ref-type="bibr" rid="ref-448754785">[2]</xref>. That is, large numbers of immune individuals tend to block infection routes and thereby reduce the risks of infection for the entire population. Thus increasing the number of susceptibles leads to a breakdown in herd immunity and effectively amplifies the risks of the epidemic to levels well beyond the na&#x000ef;ve prediction. This is demonstrated in Figure 1 which displays a graph of the true attack rate as a function of&#x000a0;<inline-formula><tex-math id="d20e186">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}S_0\end{equation*}\end{document}</tex-math></inline-formula> and provides a comparison with the na&#x000ef;ve prediction.</p><!--WRITE-PARA--><p id="p12">It should be stressed that the above estimates are subject to the uncertainty in the estimate of the attack rate of seasonal influenza (assumption (a)) as well as to uncertainty&#x000a0; in the actual fraction of the population susceptible to the pandemic influenza (which we took to be&#x000a0; <inline-formula><tex-math id="d20e193">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}S_0=0.64\end{equation*}\end{document}</tex-math></inline-formula>). Nevertheless, the goal here is not to give exact predictions but to convey the conceptual mechanisms involved, and sometimes the nonintuitive outcomes when a pandemic triggers. Most significantly, the epidemic attack rate can reach unexpectedly high levels. While the above SIR modeling analysis provides an outline of the processes at work, it obviously does not take into account a number of subtleties and complexities characteristic to influenza dynamics in heterogeneous populations. However, given that the simple model is known for its unusual robustness, the conclusions reported here regarding the influenza A H1N1 pandemic demand serious attention and at the very minimum serve as a base-line for stimulating&#x000a0; future debate around these important issues.</p><!--WRITE-PARA--><p id="p13"> <fig id="fig-25"><!--WRITE-PARA--><p id="p14">Figure 1.&#x000a0;&#x000a0; Assuming <inline-formula><tex-math id="d20e205">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0=3.75\end{equation*}\end{document}</tex-math></inline-formula>, the attack rate (continuous line) is plotted as a function of the initial fraction&#x000a0;<inline-formula><tex-math id="d20e210">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}S_0\end{equation*}\end{document}</tex-math></inline-formula> of susceptibles in the population. An epidemic will not trigger unless the initial susceptibles are greater than<bold><italic>&#x000a0; </italic></bold><inline-formula><tex-math id="d20e218">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}S_0=0.27\end{equation*}\end{document}</tex-math></inline-formula>, due to herd immunity.&#x000a0;&#x000a0;&#x000a0; The dashed line shows the na&#x000ef;ve prediction for the attack rate,&#x000a0; obtained by extrapolating linearly from the %10 attack rate for&#x000a0;<inline-formula><tex-math id="d20e223">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}S_0=0.32\end{equation*}\end{document}</tex-math></inline-formula>, which can be well below the theoretical estimate. </p><graphic xlink:href="curve"/></fig></p><sec id="sec1"><title><ext-link ext-link-type="uri" xlink:href="http://docs.google.com/fileview?id=0B8qh8GQvAarHZWRkZTE5ZjQtMTVmOC00MmRjLTg3YTUtMjE2NzA2NDQ1Zjc1&#x00026;hl=en">Appendix</ext-link> </title></sec><sec id="sec3"><title>Funding information</title><!--WRITE-PARA--><p id="p15">  We acknowledge the support of EU-FP7 grant Epiwork, the Israel Science Foundation and the Israel Ministry of Health.</p></sec><sec id="sec4"><title>Competing interests</title><!--WRITE-PARA--><p id="p16">  The authors have declared that no competing interests exist. </p></sec></body><back><ref-list><ref id="ref-1451886908"><mixed-citation>Fraser C. et al. Pandemic Potential of a Strain of Influenza A (H1N1): Early Findings  Science  324:1557-1561  2009</mixed-citation></ref><ref id="ref-448754785"><mixed-citation>2. Anderson R.M. and May R.M. Infectious diseases of humans: Dynamics and control.  Oxford University Press, Oxford. 1991</mixed-citation></ref><ref id="ref-2343584882"><mixed-citation>3. Mathews J.D.,   McCaw C.T.,  McVernon J., McBride E.S. &#x00026; McCaw J.M.  A Biological Model for Influenza Transmission: Pandemic Planning Implications of Asymptomatic Infection and Immunity.  PLOSone 11 e1220 (2007).</mixed-citation></ref><ref id="ref-789801360"><mixed-citation>4. McCaw J.M., McVernon J., McBride E.S. &#x00026; Mathews J.D.  Influenza: Accounting for prior immunity.  Science 325: 1071 (2009).</mixed-citation></ref><ref id="ref-3750389866"><mixed-citation>5. O Diekmann O.  and Heesterbeek J.A.P. Mathematical Epidemiology of Infectious Diseases: Model Building Analysis and Interpretation, Wiley, New York, 2000</mixed-citation></ref></ref-list></back></article>

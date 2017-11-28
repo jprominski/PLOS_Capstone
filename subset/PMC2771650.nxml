@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" article-type="rapid-communication"><?properties open_access?>
+
+
+
+
+
+
+
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS Curr</journal-id>
+<journal-title-group>
+<journal-title>PLoS Currents</journal-title>
+</journal-title-group>
+<issn pub-type="epub">2157-3999</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+</publisher>
+</journal-meta>
+<article-meta><article-id pub-id-type="pmid">20029662</article-id><article-id pub-id-type="pmc">2771650</article-id>
+<article-id pub-id-type="knolid">http://knol.google.com/k/-/-/2w8ravcqt8yrj/1</article-id>
+<article-id pub-id-type="art-access-id">RRN1124</article-id>
+<article-id pub-id-type="doi">10.1371/currents.RRN1124</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Influenza</subject>
+</subj-group>
+</article-categories>
+<title-group>
+<article-title>Mining the NCBI Influenza Sequence Database: adaptive grouping of BLAST results using
+precalculated neighbor indexing</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name>
+<surname>Zaslavsky</surname>
+<given-names>Leonid</given-names>
+</name>
+<!--Scientist-->
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Tatusova</surname>
+<given-names>Tatiana</given-names>
+</name>
+<!--Scientist-->
+</contrib>
+</contrib-group>
+<aff id="d22e2">National Center for Biotechnology Information, National Institutes of Health</aff>
+<pub-date pub-type="epub">
+<day>4</day>
+<month>11</month>
+<year>2009</year>
+</pub-date>
+<volume>1</volume>
+<elocation-id>RRN1124</elocation-id>
+<history>
+<date date-type="created">
+<day>26</day>
+<month>10</month>
+<year>2009</year>
+</date>
+<date date-type="accepted">
+<day>30</day>
+<month>10</month>
+<year>2009</year>
+</date>
+</history>
+<permissions>
+<license>
+<license-p>This research note is distributed under the <ext-link ext-link-type="uri"
+xlink:href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0
+License.</ext-link></license-p>
+</license>
+</permissions>
+<abstract>
+<!--WRITE-PARA-->
+<p id="p1">The Influenza Virus Resource and other Virus Variation Resources at NCBI provide enhanced
+visualization web tools for exploratory analysis for influenza sequence data. Despite the
+improvements in data analysis, the initial data retrieval remains unsophisticated, frequently
+producing huge and imbalanced datasets due to the large number of identical and nearly-identical
+sequences in the database.</p>
+<!--WRITE-PARA-->
+<p id="p2">We propose a data mining algorithm to organize reported sequences into groups based on
+their relatedness to the query sequence and to each other. The algorithm uses BLAST to find database
+sequences related to the query. Neighbor lists precalculated from pairwise BLAST alignments between
+database sequences are used to organize results in groups of nearly-identical and strongly related
+sequences. We propose to use a non-symmetric dissimilarity measure well crafted for dealing with
+sequences of different length (fragments).</p>
+<!--WRITE-PARA-->
+<p id="p3">A balanced and representative data set produced by this tool can be used for further
+analysis, i.e. multiple sequence alignment and phylogenetic trees. The algorithm is implemented for
+protein coding sequences and is being integrated with the NCBI Influenza Virus Resource.</p>
+</abstract>
+</article-meta>
+</front>
+<body>
+<sec id="sec1">
+<title>Introduction </title>
+<!--WRITE-PARA-->
+<p id="p4">The amount of influenza sequence data is increasing rapidly due to the collaborative
+genome sequencing efforts&#x000a0;<xref ref-type="bibr" rid="ref-2206916155"
+>[1]</xref>,&#x000a0;<xref ref-type="bibr" rid="ref-1262613323">[2]</xref>. In support of this
+work,&#x000a0;<ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/genomes/FLU">The
+Influenza Virus Resource</ext-link>
+<xref ref-type="bibr" rid="ref-437495663">[3]</xref>&#x000a0;has&#x000a0;been created at NCBI and is
+available for public access. This and other <ext-link ext-link-type="uri"
+xlink:href="http://www.ncbi.nlm.nih.gov/genomes/VirusVariation"
+>Virus&#x000a0;Variation&#x000a0;Resources</ext-link> at NCBI provide enhanced visualization web
+tools for exploratory analysis <xref ref-type="bibr" rid="ref-1802439843">[4]</xref>,&#x000a0;<xref
+ref-type="bibr" rid="ref-4171939747">[5]</xref>,&#x000a0;<xref ref-type="bibr" rid="ref-18220307"
+>[6]</xref>&#x000a0;allowing the representation of phylogenetic trees in an aggregated form with a
+mechanism for refinement. </p>
+<!--WRITE-PARA-->
+<p id="p6">Despite the improvements in data analysis, the initial data retrieval remains
+straightforward in many cases. For example,&#x000a0;a database query to NCBI Influenza database is
+formed as a simple combination of metadata&#x000a0;(type of the virus, serotype, segment/proteins,
+time interval for the date of isolation, etc.) <xref ref-type="bibr" rid="ref-437495663">[3]</xref>
+and returns all the sequences that satisfy the query. With the increased number of sequences, it
+becomes more difficult to operate in this manner: a priori knowledge&#x000a0;and experience are
+required to confirm that all the relevant sequences are included. The dataset extracted&#x000a0;in
+response to the query may be huge and imbalanced due to the large number of identical and
+nearly-identical sequences&#x000a0;in the database (that&#x000a0;may differ in metadata though and
+could not be simply eliminated at the database level).&#x000a0;Manual selection of a representative
+subset is time consuming and difficult. This may create a bottleneck during ongoing pandemic
+(see&#x000a0;<xref ref-type="bibr" rid="ref-2025863927">[7]</xref>&#x000a0;for related analysis and
+references).</p>
+<!--WRITE-PARA-->
+<p id="p8">In this paper, we describe an algorithm allowing to select the sequences with various
+degrees of similarity to the query and group the results based on their relatedness to each other.
+The algorithm uses BLAST scores to find and rate the database sequences related to the query.
+Pre-calculated neighborhood lists based on pair-wise BLAST hits between the database sequences allow
+to report the results in groups of identical and nearly identical sequences.</p>
+<!--WRITE-PARA-->
+<p id="p10">The algorithm is implemented for protein coding sequences and is being integrated with
+the NCBI Influenza Virus Resource.&#x02028; </p>
+</sec>
+<sec id="sec2">
+<title>Method</title>
+<sec id="sec3">
+<title>Neighbor-relationships between sequences</title>
+<!--WRITE-PARA-->
+<p id="p12">The standard nucleotide and protein sequence scoring models satisfy conditions (1) -
+(11) in&#x000a0;<xref ref-type="bibr" rid="ref-4246863739">[8]</xref>, and the Smith-Waterman
+local&#x000a0;alignment scores satisfy the inequality</p>
+<p>
+<disp-formula><tex-math id="d22e119">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} \begin{equation*}S^L({\bf x}, {\bf y}) + S^L({\bf y}, {\bf z}) \leq S^L({\bf y},
+{\bf y}) + S^L({\bf x}, {\bf z}), \end{equation*}\end{document}</tex-math></disp-formula>&#x000a0; </p>
+<!--WRITE-PARA-->
+<p id="p15"> for any three sequences <inline-formula><tex-math id="d22e131"
+>\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts}
+\usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc}
+\usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document} \begin{equation*}\bf
+x\end{equation*}\end{document}</tex-math></inline-formula>, <inline-formula><tex-math id="d22e136"
+>\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts}
+\usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc}
+\usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document} \begin{equation*}\bf
+y\end{equation*}\end{document}</tex-math></inline-formula>, and <inline-formula><tex-math
+id="d22e141">\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym}
+\usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs}
+\usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document} \begin{equation*}\bf
+z\end{equation*}\end{document}</tex-math></inline-formula>, and </p>
+<p>
+<disp-formula><tex-math id="d22e148">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} \begin{equation*}D^L({\bf x}, {\bf y}) = S^L({\bf x}, {\bf x}) + S^L({\bf y}, {\bf
+y}) - 2 S^L({\bf x}, {\bf y})
+\end{equation*}\end{document}</tex-math></disp-formula>&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;
+(1) </p>
+<!--WRITE-PARA-->
+<p id="p17">is a metric. Distance (1) provides an adequate measure of sequence closeness if any
+difference between sequences or absence of data needs to be penalized (two self-scores are
+calculated over the whole length of the corresponding protein, not over the area of pairwise local
+alignment). It is used to remove nearly-redundant sequences from a database&#x000a0;<xref
+ref-type="bibr" rid="ref-4246863739">[8]</xref>. Removing near-neighbor redundancy in protein
+sequence collections is also discussed in <xref ref-type="bibr" rid="ref-4255189571">[9]</xref>, and
+clustered sequence representation is proposed as an alternative in <xref ref-type="bibr"
+rid="ref-3810099671">[10]</xref>. Though a good measure of similarity between sequences, the
+alignment metric (1) does not provide an adequate measure of closeness when, for example, a partial
+sequence is compared to a very similar full-length sequence, and it is not desirable to interpret
+the absence of the data as a difference. Below we introduce a near-neighbor relationship which seems
+to be a better measure for cases like that.</p>
+<!--WRITE-PARA-->
+<p id="p18">Define dissimilarity measure between sequences <inline-formula><tex-math id="d22e169"
+>\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts}
+\usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc}
+\usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document} ${\bf x}$
+\end{document}</tex-math></inline-formula>&#x000a0;and <inline-formula><tex-math id="d22e174"
+>\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts}
+\usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc}
+\usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document} ${\bf
+y}$\end{document}</tex-math></inline-formula>: </p>
+<p>
+<disp-formula><tex-math id="d22e185">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} \begin{equation*}\delta^{L}( {\bf x}, {\bf y} ) = 1 - \frac{ S^L({\bf x}, {\bf y})
+}{ S^L({\bf y}, {\bf y}) } \end{equation*}\end{document}</tex-math></disp-formula>. &#x000a0;
+&#x000a0; &#x000a0; &#x000a0; &#x000a0;(2) &#x000a0;&#x000a0; </p>
+<!--WRITE-PARA-->
+<p id="p22">Sequence <inline-formula><tex-math id="d22e196">\documentclass[10pt]{article}
+\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb}
+\usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek}
+\pagestyle{empty} \begin{document} ${\bf y}$\end{document}</tex-math></inline-formula>&#x000a0;is an
+<inline-formula><tex-math id="d22e201">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} $\epsilon$\end{document}</tex-math></inline-formula>-neighbor to sequence
+<inline-formula><tex-math id="d22e206">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} ${\bf x}$\end{document}</tex-math></inline-formula>&#x000a0;if </p>
+<p>
+<disp-formula><tex-math id="d22e213">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} $\delta^{L}( {\bf x}, {\bf y} ) \leq
+\epsilon$\end{document}</tex-math></disp-formula>,&#x000a0; &#x000a0; &#x000a0; &#x000a0; &#x000a0;
+&#x000a0; &#x000a0; &#x000a0; &#x000a0;&#x000a0; &#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; (3) </p>
+<!--WRITE-PARA-->
+<p id="p25">where <inline-formula><tex-math id="d22e227">\documentclass[10pt]{article}
+\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb}
+\usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek}
+\pagestyle{empty} \begin{document} \begin{equation*}0 &#x0003c; \epsilon &#x0003c;
+1\end{equation*}\end{document}</tex-math></inline-formula>. The maximum value of
+<inline-formula><tex-math id="d22e232">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} $\delta^{L}( {\bf x}, {\bf y}
+)$\end{document}</tex-math></inline-formula>&#x000a0;is <italic>1</italic> and it is realized on two
+unrelated sequences. For identical sequences the value <italic>is 0</italic> .&#x000a0;The
+dissimilarity measure in (2) is non-symmetric: &#x02028;
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;
+<inline-formula><tex-math id="d22e246">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} \begin{equation*}\delta^{L}( {\bf x}, {\bf y} ) \neq \delta^{L}( {\bf y}, {\bf x}
+).\end{equation*}\end{document}</tex-math></inline-formula>
+</p>
+<!--WRITE-PARA-->
+<p id="p26">That allows a short sequence to be an &#x003b5;-neighbor to a long sequence, but not
+vice versa. </p>
+<!--WRITE-PARA-->
+<p id="p28">In practice, the highest BLAST bit score between two sequences ("BLAST score"),
+<inline-formula><tex-math id="d22e264">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} $S^{BLAST}({\bf x}, {\bf y})$\end{document}</tex-math></inline-formula>, will be
+used.&#x000a0;BLAST dissimilarity measure </p>
+<p>
+<disp-formula><tex-math id="d22e275">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} \begin{equation*}\delta^{BLAST}( {\bf x}, {\bf y} ) = 1 - \frac{ S^{BLAST}({\bf x},
+{\bf y}) }{ S^{BLAST}({\bf y}, {\bf y}) }
+\end{equation*}\end{document}</tex-math></disp-formula>&#x000a0;&#x000a0; &#x000a0; &#x000a0;
+&#x000a0; &#x000a0;(4) </p>
+<!--WRITE-PARA-->
+<p id="p32">will be used instead of (2). If BLAST does not find any similarity between
+<inline-formula><tex-math id="d22e286">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} \begin{equation*}x\end{equation*}\end{document}</tex-math></inline-formula> and
+<inline-formula><tex-math id="d22e291">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} \begin{equation*}y\end{equation*}\end{document}</tex-math></inline-formula>,
+<inline-formula><tex-math id="d22e296">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} \begin{equation*}\delta^{BLAST}( {\bf x}, {\bf y} ) =
+1\end{equation*}\end{document}</tex-math></inline-formula>. </p>
+<!--WRITE-PARA-->
+<p id="p33">Since we are interested in close relationships only and do not consider distant
+relatives, using fast BLAST algorithm rather than the Smith-Waterman alignment seems reasonable in
+this context.&#x02028; </p>
+</sec>
+<sec id="sec5">
+<title>Creating display groups</title>
+<!--WRITE-PARA-->
+<p id="p35">A complete list of all reported BLAST hits to a given query sequence may be difficult
+and sometimes impractical to use due to the swarms of identical and nearly-identical sequences in
+the search set. The resulting list may be either too long or incomplete depending on the selected
+threshold. It will be useful to&#x000a0; identify redundant and nearly redundant sequences and
+produce a near-redundant group report rather than a raw list of all BLAST hits. In our calculations,
+both relatedness to the query sequence and&#x000a0; pairwise similarity of the database sequences
+are taken into account.</p>
+<!--WRITE-PARA-->
+<p id="p36">An important requirement to the algorithm is to allow either query or subject sequence
+to be incomplete. For example, comparing a coding sequence of HA1 domain of hemaglutinin with
+complete dataset<xref ref-type="bibr" rid="ref-210131977">[11</xref>.</p>
+<!--WRITE-PARA-->
+<p id="p37">Suppose that the subject sequences <inline-formula><tex-math id="d22e321"
+>\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts}
+\usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc}
+\usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document} \begin{equation*}{\bf
+x}_0\end{equation*}\end{document}</tex-math></inline-formula>, <inline-formula><tex-math
+id="d22e326">\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym}
+\usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs}
+\usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document}
+\begin{equation*}{\bf x}_1\end{equation*}\end{document}</tex-math></inline-formula>,
+...,&#x000a0;<inline-formula><tex-math id="d22e331">\documentclass[10pt]{article}
+\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb}
+\usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek}
+\pagestyle{empty} \begin{document} \begin{equation*}{\bf
+x}_N\end{equation*}\end{document}</tex-math></inline-formula> are ordered by score to the query
+sequence <inline-formula><tex-math id="d22e336">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} \begin{equation*}\bf Q\end{equation*}\end{document}</tex-math></inline-formula>: </p>
+<p>
+<disp-formula>
+<tex-math id="d22e343">\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym}
+\usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs}
+\usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document}
+\begin{equation*}S({\bf x}_0, {\bf Q}) \geq S({\bf x}_1, {\bf Q}) \geq ... \geq S({\bf x}_N, {\bf
+Q}).\end{equation*}\end{document}</tex-math>
+</disp-formula>
+</p>
+<!--WRITE-PARA-->
+<p id="p40">
+<bold>Iterations.</bold> During the steps of the algorithm we select the sequences from the ordered
+list &#x00398;. Initially, set <inline-formula><tex-math id="d22e364">\documentclass[10pt]{article}
+\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb}
+\usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek}
+\pagestyle{empty} \begin{document} \begin{equation*}\Theta=\{1, 2, ...,
+N\}\end{equation*}\end{document}</tex-math></inline-formula>. At each step we select an anchor
+sequence <inline-formula><tex-math id="d22e369">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} \begin{equation*}{\bf
+x}_k\end{equation*}\end{document}</tex-math></inline-formula>. The anchor sequence and all its
+&#x003b5;-neighbors form group &#x0039b;<sub>&#x003ba;</sub> are removed from the
+list&#x000a0;&#x00398;. The procedure is applied until the list &#x00398; becomes empty. </p>
+<!--WRITE-PARA-->
+<p id="p42">
+<bold>Selecting an anchor sequence.</bold> An anchor sequence is selected as follows. A top-score
+sequence <inline-formula><tex-math id="d22e404">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} \begin{equation*}{\bf x}_
+i\end{equation*}\end{document}</tex-math></inline-formula> is considered first
+(e.g.,&#x000a0;<inline-formula><tex-math id="d22e409">\documentclass[10pt]{article}
+\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb}
+\usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek}
+\pagestyle{empty} \begin{document}
+\begin{equation*}i\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0; is the first in
+the&#x000a0; list&#x000a0;&#x00398;) , and the anchor sequence&#x000a0;<inline-formula><tex-math
+id="d22e419">\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym}
+\usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs}
+\usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document}
+\begin{equation*}{\bf x}_k\end{equation*}\end{document}</tex-math></inline-formula> is selected
+among the sequences in&#x000a0;&#x00398; if it is an &#x003b5;-neighbor to <inline-formula><tex-math
+id="d22e435">\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym}
+\usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs}
+\usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document}
+\begin{equation*}{\bf x}_ i\end{equation*}\end{document}</tex-math></inline-formula> . Specifically,
+all sequences <inline-formula><tex-math id="d22e440">\documentclass[10pt]{article}
+\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb}
+\usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek}
+\pagestyle{empty} \begin{document} \begin{equation*}{\bf
+x}_{k^{'}}\end{equation*}\end{document}</tex-math></inline-formula> in the list&#x000a0;&#x00398;
+are selected if&#x000a0; <inline-formula><tex-math id="d22e450">\documentclass[10pt]{article}
+\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb}
+\usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek}
+\pagestyle{empty} \begin{document} \begin{equation*}{\bf
+x}_i\end{equation*}\end{document}</tex-math></inline-formula> is an &#x003b5;-neighbor and satisfy
+the criterion </p>
+<p>
+<disp-formula><tex-math id="d22e463">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} \begin{equation*}S({\bf x}_{k^{'}}, {\bf Q}) \geq S({\bf x}_{k}, {\bf Q}) - \gamma
+S({\bf Q}, {\bf Q})\end{equation*}\end{document}</tex-math></disp-formula>,
+&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; (5) </p>
+<!--WRITE-PARA-->
+<p id="p44">where <inline-formula><tex-math id="d22e474">\documentclass[10pt]{article}
+\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb}
+\usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek}
+\pagestyle{empty} \begin{document} \begin{equation*}0 &#x0003c; \gamma \leq
+\epsilon\end{equation*}\end{document}</tex-math></inline-formula>, are considered. The
+sequence&#x000a0;<inline-formula><tex-math id="d22e479">\documentclass[10pt]{article}
+\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb}
+\usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek}
+\pagestyle{empty} \begin{document} \begin{equation*}{\bf
+x}_k\end{equation*}\end{document}</tex-math></inline-formula> of a&#x000a0; maximum length is
+selected&#x000a0; as an anchor (see Figure 1). </p>
+<!--WRITE-PARA-->
+<p id="p46"> &#x02028; <fig id="fig-47"><!--WRITE-PARA--><p id="p47">
+<bold>Fig. 1.</bold> Selecting an anchor sequence. </p><graphic xlink:href="anchorselection"/></fig>
+</p>
+<!--WRITE-PARA-->
+<p id="p48">
+<bold>Forming a group. </bold>The anchor sequence&#x000a0;<inline-formula><tex-math id="d22e506"
+>\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts}
+\usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc}
+\usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document} \begin{equation*}{\bf
+x}_k\end{equation*}\end{document}</tex-math></inline-formula> is selected, then
+group&#x000a0;<inline-formula><tex-math id="d22e511">\documentclass[10pt]{article}
+\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb}
+\usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek}
+\pagestyle{empty} \begin{document} $\Lambda_k$\end{document}</tex-math></inline-formula> is built:
+all <inline-formula><tex-math id="d22e516">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} $\epsilon$\end{document}</tex-math></inline-formula>-neighbors to sequence
+<inline-formula><tex-math id="d22e521">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} ${\bf x}_k$\end{document}</tex-math></inline-formula> including
+sequence&#x000a0;<inline-formula><tex-math id="d22e527">\documentclass[10pt]{article}
+\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb}
+\usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek}
+\pagestyle{empty} \begin{document} \begin{equation*}{\bf
+x}_k\end{equation*}\end{document}</tex-math></inline-formula> itself are placed in group
+<inline-formula><tex-math id="d22e532">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} $\Lambda_k$\end{document}</tex-math></inline-formula> and removed from the list
+<inline-formula><tex-math id="d22e537">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} $\Theta$\end{document}</tex-math></inline-formula>. The iterations are performed
+until the list&#x000a0;<inline-formula><tex-math id="d22e542">\documentclass[10pt]{article}
+\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb}
+\usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek}
+\pagestyle{empty} \begin{document} $\Theta$\end{document}</tex-math></inline-formula> is empty. </p>
+<boxed-text position="anchor">
+<caption>
+<title>
+<bold>&#x000a0;ALGORITHM.&#x000a0; Creating display groups.&#x000a0; &#x000a0; </bold>
+</title>
+</caption>
+<p>
+<bold> &#x02028;&#x000a0; Sort reported sequences by score:
+</bold>&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; <disp-formula><tex-math
+id="d22e560">\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym}
+\usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs}
+\usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document}
+\begin{equation*}S({\bf x}_0, {\bf Q}) \geq S({\bf x}_1, {\bf Q}) \geq ... \geq S({\bf x}_N, {\bf
+Q}).\end{equation*}\end{document}</tex-math></disp-formula></p>
+<!--WRITE-PARA-->
+<p id="p50">
+<bold>&#x000a0; Set &#x000a0;&#x000a0; <inline-formula><tex-math id="d22e568"
+>\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts}
+\usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc}
+\usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document} \begin{equation*}\Theta=\{1, 2, ...,
+N\}\end{equation*}\end{document}</tex-math></inline-formula>.</bold>
+</p>
+<!--WRITE-PARA-->
+<p id="p51">
+<bold>&#x000a0; While ( <inline-formula><tex-math id="d22e578">\documentclass[10pt]{article}
+\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb}
+\usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek}
+\pagestyle{empty} \begin{document} \begin{equation*}\Theta \neq
+\emptyset\end{equation*}\end{document}</tex-math></inline-formula> ){&#x000a0; &#x000a0; </bold>
+</p>
+<!--WRITE-PARA-->
+<p id="p52">
+<bold>&#x000a0; i. Take the first element <inline-formula><tex-math id="d22e588"
+>\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts}
+\usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc}
+\usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document} \begin{equation*}\bf
+i\end{equation*}\end{document}</tex-math></inline-formula> in the list &#x00398; and consider the
+list &#x000a0;&#x000a0; &#x000a0; &#x000a0;&#x000a0; <inline-formula><tex-math id="d22e598"
+>\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts}
+\usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc}
+\usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document} \begin{equation*}\Pi_i= \{k^{'} \in
+\Theta| \delta({\bf x}_{k^{'}}, {\bf x}_i) \leq \epsilon \;\; &#x00026; \;\; S({\bf x}_{k^{'}}, {\bf
+Q}) \geq S({\bf x}_{i}, {\bf Q}) - \gamma S({\bf Q}, {\bf Q})
+\}\end{equation*}\end{document}</tex-math></inline-formula>. </bold>
+</p>
+<!--WRITE-PARA-->
+<p id="p53">
+<bold>&#x000a0; &#x000a0; &#x000a0; ii. Find the anchor sequence&#x000a0;&#x000a0;
+<inline-formula><tex-math id="d22e608">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} \begin{equation*}{\bf x}_k = \arg \max \{\;l({\bf x}_{k^\prime} ) \; | \; {\bf
+x}_{k^\prime} \in \Pi_i \}\end{equation*}\end{document}</tex-math></inline-formula>. </bold>
+</p>
+<!--WRITE-PARA-->
+<p id="p54">
+<bold>&#x000a0;&#x000a0; &#x000a0;&#x000a0; iii. Create group <inline-formula><tex-math id="d22e620"
+>\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts}
+\usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc}
+\usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document} \begin{equation*}\Lambda_k = \{{\bf
+x}_j \in \Theta | \delta({\bf x_j, x_k) \leq
+\epsilon}\}\end{equation*}\end{document}</tex-math></inline-formula>.</bold>
+</p>
+<!--WRITE-PARA-->
+<p id="p55">
+<bold>&#x000a0;&#x000a0;&#x000a0;&#x000a0;&#x000a0; iv. Reset <inline-formula><tex-math id="d22e631"
+>\documentclass[10pt]{article} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts}
+\usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc}
+\usepackage[Euler]{upgreek} \pagestyle{empty} \begin{document} \begin{equation*}\Theta \leftarrow
+\Theta \backslash \Lambda_k\end{equation*}\end{document}</tex-math></inline-formula>.</bold>
+</p>
+<!--WRITE-PARA-->
+<p id="p56">
+<bold>&#x000a0; } </bold>
+</p>
+</boxed-text>
+<!--WRITE-PARA-->
+<p id="p57"><bold>Regularization.</bold> Taking the longest possible
+sequence&#x000a0;<inline-formula><tex-math id="d22e646">\documentclass[10pt]{article}
+\usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb}
+\usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek}
+\pagestyle{empty} \begin{document} \begin{equation*}{\bf
+x}_k\end{equation*}\end{document}</tex-math></inline-formula>&#x000a0; as an anchor instead of
+sequence <inline-formula><tex-math id="d22e651">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} \begin{equation*}{\bf x}_
+i\end{equation*}\end{document}</tex-math></inline-formula> allows to create big and stable groups
+around anchors and avoid fracturing.</p>
+<!--WRITE-PARA-->
+<p id="p58"><bold>Filtering low-score and low-overlap sequences.</bold> After the groups
+&#x0039b;<sub>&#x003ba;</sub> are created, the members of the group that have low-overlap with the
+query sequence or have much lower score to the query sequence than the anchor, could be filtered
+out. </p>
+<!--WRITE-PARA-->
+<p id="p59"><bold>Indexing.</bold> Steps (i) and (iii) of the Algorithm operate with the sets of
+&#x003b5;-neighbors for a sequence. These lists are pre-calculated for the database for preselected
+values of <inline-formula><tex-math id="d22e674">\documentclass[10pt]{article} \usepackage{amsmath}
+\usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy}
+\usepackage{mathrsfs} \usepackage{pmc} \usepackage[Euler]{upgreek} \pagestyle{empty}
+\begin{document} \begin{equation*}\epsilon
+\end{equation*}\end{document}</tex-math></inline-formula>. As a result, only BLAST scores to the
+query sequence are calculated on-the-fly.&#x02028; </p>
+<sec id="sec6">
+<title>Showing display groups </title>
+<!--WRITE-PARA-->
+<p id="p60"> Each group &#x0039b;<sub>&#x003ba;</sub> can be displayed at various levels of detail:
+an anchor sequence and a number of sequences in the group (default) with or without aggregated
+metadata; groups of identical sequences; and individual sequences. In an aggregated form a group of
+sequences is shown as a row in the table containing aggregated metadata. For Influenza sequences, it
+may be score range, identity range, serotype(s), length range, country/countries.). &#x02028; </p>
+</sec>
+</sec>
+</sec>
+<sec id="sec7">
+<title>Results</title>
+<!--WRITE-PARA-->
+<p id="p62">To demonstrate the work of the algorithm, we performed a search for the protein coding
+sequence of hemagglutinin [Influenza A virus (A/New York/3223/2009(H1N1))], coding for the protein
+with accession number <ext-link ext-link-type="uri"
+xlink:href="http://www.ncbi.nlm.nih.gov/protein/238231107">ACR40288</ext-link> (all data as of
+September 20, 2009). The request interface is shown in Figure 2 (Protein accession
+number&#x000a0;<xref ref-type="bibr" rid="ref-437495663">[3]</xref>
+<xref ref-type="bibr" rid="ref-3840620238">[12]</xref> or protein coding sequence in either text or
+FASTA formats&#x000a0;<xref ref-type="bibr" rid="ref-1144518553">[13]</xref>,&#x000a0;<xref
+ref-type="bibr" rid="ref-3873345059">[14]</xref> can be entered). </p>
+<!--WRITE-PARA-->
+<p id="p63">
+<fig id="fig-70"><!--WRITE-PARA--><p id="p64">
+<bold>Figure 2.</bold> Query Interface.&#x02028; </p><graphic
+xlink:href="influenzablastpreliminary1"/></fig> &#x02028;The results are shown in Figure 3. First
+group contains 943 near-redundant H1N1 2009 hemagglutinin&#x000a0; protein coding sequences with
+identity to the query sequence varying from 100% to 99%. The score to the query sequence is varying
+from 3063 to 1269 due to the sequence length variation from 1701 - 708. While complete sequences in
+the group contain enire HA coding sequences, partial sequences cover coding sequences of either HA1
+or HA2 regions (low-coverage filtering was not turn on in this test). </p>
+<!--WRITE-PARA-->
+<p id="p65">Two levels of resolution are shown in Figure 2: table </p>
+<!--WRITE-PARA-->
+<p id="p66">
+<fig id="fig-71">
+<!--WRITE-PARA-->
+<p id="p67">
+<bold>Figure 3.</bold> Displaying the search results.&#x02028; </p>
+<graphic xlink:href="influenzablastupdated3"/>
+</fig>
+</p>
+</sec>
+<sec id="sec8">
+<title>Discussion</title>
+<!--WRITE-PARA-->
+<p id="p70">The algorithm presented allows the adaptive creation of display groups, taking into
+account both relatedness of the reported sequences to the query and their similarity to each other.
+The groups are built in an efficient manner using pre-calculated &#x003b5;-neighbors for each
+sequences. Moreover, additional filtering can be performed, allowing exclusion of members of each
+group that are less relevant to the query than top members. A balanced and representative set of
+sequences selected using this tool can be passed to the analysis tools within the NCBI Influenza
+Virus Resource for calculating multiple sequence alignment and trees <xref ref-type="bibr"
+rid="ref-437495663">[3]</xref>. We plan to extend the technology to processing other viruses in the
+NCBI Virus Variation Resources <xref ref-type="bibr" rid="ref-1802439843">[4]</xref>.&#x02028; </p>
+<!--WRITE-PARA-->
+<p id="p72">&#x000a0;The developed technology is based on the non-symmetric definition of&#x000a0;
+dissimilarity in (2) and (3). &#x000a0;Measuring dissimilarity in this way is adequate when the
+absence of the data is considered a probable match (a short sequence is very close to a longer one
+over the whole length of the former). In some situations, such assumption would not be valid, and a
+more strict similarity measure, such as the alignment metric (1) should be used <xref
+ref-type="bibr" rid="ref-4246863739">[8]</xref>.</p>
+<!--WRITE-PARA-->
+<p id="p73">We plan to release a production version of the tool on the web site <ext-link
+ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/genomes/FLU/SmartBLAST"
+>http://www.ncbi.nlm.nih.gov/genomes/FLU/SmartBLAST</ext-link>.&#x02028; </p>
+</sec>
+<sec id="sec9">
+<title>Acknowledgements</title>
+<!--WRITE-PARA-->
+<p id="p75">The authors are thankful to David J. Lipman, Stephen Altschul, Yiming Bao, James R.
+Brister, Stacy Ciufo,&#x000a0; William Klimke, Tom Madden, Kathleen O'Neill and Sergey Resenchuk for
+productive discussions. We appreciate work of Sergey Resenchuk on supporting a BLAST database for
+influenza virus protein coding sequences.</p>
+</sec>
+<sec id="sec10">
+<title>Funding Information</title>
+<!--WRITE-PARA-->
+<p id="p76">This research was supported by the Intramural Research Program of the NIH, National
+Library of Medicine.</p>
+</sec>
+<sec id="sec11">
+<title>Competing interests</title>
+<!--WRITE-PARA-->
+<p id="p77">The authors have declared that no competing interests exist.</p>
+</sec>
+</body>
+<back>
+<ref-list>
+<ref id="ref-2206916155">
+<mixed-citation publication-type="other">Fauci AS. Race against time. Nature. 2005 May
+26;435(7041):423-4.<pub-id pub-id-type="pmid">15917781</pub-id></mixed-citation>
+</ref>
+<ref id="ref-1262613323">
+<mixed-citation publication-type="journal">Ghedin E, Sengamalay NA, Shumway M, Zaborsky J, Feldblyum
+T, Subbu V, Spiro DJ, Sitz J, Koo H, Bolotov P, Dernovoy D, Tatusova T, Bao Y, St George K, Taylor
+J, Lipman DJ, Fraser CM, Taubenberger JK, Salzberg SL. Large-scale sequencing of human influenza
+reveals the dynamic nature of viral genome evolution. Nature. 2005 Oct 20;437(7062):1162-6. Epub
+2005 Oct 5.<pub-id pub-id-type="pmid">16208317</pub-id></mixed-citation>
+</ref>
+<ref id="ref-437495663">
+<mixed-citation publication-type="journal">Bao Y, Bolotov P, Dernovoy D, Kiryutin B, Zaslavsky L,
+Tatusova T, Ostell J, Lipman D. The influenza virus resource at the National Center for
+Biotechnology Information. J Virol. 2008 Jan;82(2):596-601. Epub 2007 Oct
+17.<!--<pub-id pub-id-type="pmcid">PMC2224563</pub-id>--><pub-id pub-id-type="pmid"
+>17942553</pub-id></mixed-citation>
+</ref>
+<ref id="ref-1802439843">
+<mixed-citation publication-type="journal">Resch W, Zaslavsky L, Kiryutin B, Rozanov M, Bao Y,
+Tatusova TA. Virus variation resources at the National Center for Biotechnology Information: dengue
+virus. BMC Microbiol. 2009 Apr 2;9:65. PubMed Central PMCID:
+PMC2675532.<!--<pub-id pub-id-type="pmcid">PMC2675532</pub-id>--><pub-id pub-id-type="pmid"
+>19341451</pub-id></mixed-citation>
+</ref>
+<ref id="ref-4171939747">
+<mixed-citation publication-type="journal">Zaslavsky L, Bao Y, Tatusova TA. Visualization of large
+influenza virus sequence datasets using adaptively aggregated trees with sampling-based subscale
+representation. BMC Bioinformatics. 2008 May
+16;9:237.<!--<pub-id pub-id-type="pmcid">PMC2416652</pub-id>--><pub-id pub-id-type="pmid"
+>18485197</pub-id></mixed-citation>
+</ref>
+<ref id="ref-18220307">
+<mixed-citation publication-type="journal">Zaslavsky L, Bao Y, Tatusova TA. An Adaptive Resolution
+Tree Visualization of Large Influenza Virus Sequence Datasets. Lect Notes Comput Sci. 2007 May;LNBI
+4463:192-202.<!--<pub-id pub-id-type="pmcid">PMC2014737</pub-id>--></mixed-citation>
+</ref>
+<ref id="ref-2025863927">
+<mixed-citation publication-type="journal">Smith GJ, Vijaykrishna D, Bahl J, Lycett SJ, Worobey M,
+Pybus OG, Ma SK, Cheung CL, Raghwani J, Bhatt S, Peiris JS, Guan Y, Rambaut A. Origins and
+evolutionary genomics of the 2009 swine-origin H1N1 influenza A epidemic. Nature. 2009 Jun
+25;459(7250):1122-5.<pub-id pub-id-type="pmid">19516283</pub-id></mixed-citation>
+</ref>
+<ref id="ref-4246863739">
+<mixed-citation publication-type="journal">Spiro PA, Macura N. A local alignment metric for
+accelerating biosequence database search. J Comput Biol. 2004;11(1):61-82.<pub-id pub-id-type="pmid"
+>15072689</pub-id></mixed-citation>
+</ref>
+<ref id="ref-4255189571">
+<mixed-citation publication-type="journal">Cameron M, Bernstein Y, Williams HE. Clustered sequence
+representation for fast homology search. J Comput Biol. 2007 Jun;14(5):594-614. Review.<pub-id
+pub-id-type="pmid">17683263</pub-id></mixed-citation>
+</ref>
+<ref id="ref-3810099671">
+<mixed-citation publication-type="journal">Holm L, Sander C. Removing near-neighbour redundancy from
+large protein sequence collections. Bioinformatics. 1998 Jun;14(5):423-9.<pub-id pub-id-type="pmid"
+>9682055</pub-id></mixed-citation>
+</ref>
+<ref id="ref-210131977">
+<mixed-citation publication-type="journal">Taubenberger JK. Influenza virus hemagglutinin cleavage
+into HA1, HA2: no laughing matter. Proc Natl Acad Sci U S A. 1998 Aug 18;95(17):9713-5.
+Review.<!--<pub-id pub-id-type="pmcid">PMC33880</pub-id>--><pub-id pub-id-type="pmid"
+>9707539</pub-id></mixed-citation>
+</ref>
+<ref id="ref-3840620238">
+<mixed-citation publication-type="journal">Benson DA, Karsch-Mizrachi I, Lipman DJ, Ostell J, Sayers
+EW. GenBank. Nucleic Acids Res. 2009 Jan;37(Database issue):D26-31. Epub 2008 Oct
+21.<!--<pub-id pub-id-type="pmcid">PMC2686462</pub-id>--><pub-id pub-id-type="pmid"
+>18940867</pub-id></mixed-citation>
+</ref>
+<ref id="ref-1144518553">
+<mixed-citation publication-type="journal">Lipman DJ, Pearson WR. Rapid and sensitive protein
+similarity searches. Science. 1985 Mar 22;227(4693):1435-41.<pub-id pub-id-type="pmid"
+>2983426</pub-id></mixed-citation>
+</ref>
+<ref id="ref-3873345059">
+<mixed-citation publication-type="journal">Pearson WR, Lipman DJ. Improved tools for biological
+sequence comparison. Proc Natl Acad Sci U S A. 1988
+Apr;85(8):2444-8.<!--<pub-id pub-id-type="pmcid">PMC280013</pub-id>--><pub-id pub-id-type="pmid"
+>3162770</pub-id></mixed-citation>
+</ref>
+</ref-list>
+</back>
+</article>

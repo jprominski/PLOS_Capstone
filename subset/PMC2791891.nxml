@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" article-type="rapid-communication"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">PLoS Curr</journal-id><journal-title-group><journal-title>PLoS Currents</journal-title></journal-title-group><issn pub-type="epub">2157-3999</issn><publisher><publisher-name>Public Library of Science</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">20033093</article-id><article-id pub-id-type="pmc">2791891</article-id><article-id pub-id-type="knolid">http://knol.google.com/k/-/-/3hdphgna5k6zf/1</article-id><article-id pub-id-type="accession">RRN1134</article-id><article-id pub-id-type="doi">10.1371/currents.RRN1134</article-id><article-categories><subj-group subj-group-type="heading"><subject>Influenza</subject></subj-group></article-categories><title-group><article-title>Optimizing allocation for a delayed influenza vaccination campaign</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Medlock</surname><given-names>Jan</given-names></name><!--Applied Mathematician--><xref ref-type="aff">*</xref></contrib><contrib contrib-type="author"><name><surname>Meyers</surname><given-names>Lauren Ancel</given-names></name><xref ref-type="aff">&#x02020;</xref></contrib><contrib contrib-type="author"><name><surname>Galvani</surname><given-names>Alison</given-names></name></contrib></contrib-group><aff><sup>*</sup>Department of Mathematical Sciences, Clemson University and <sup>&#x02020;</sup>The University of Texas at Austin</aff><pub-date pub-type="epub"><day>13</day><month>12</month><year>2009</year></pub-date><volume>1</volume><elocation-id>RRN1134</elocation-id><history><date date-type="created"><day>8</day><month>12</month><year>2009</year></date><date date-type="accepted"><day>11</day><month>12</month><year>2009</year></date></history><permissions><license><license-p>This research note is distributed under the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License.</ext-link></license-p></license></permissions><abstract><!--WRITE-PARA--><p id="p1">During unexpected infectious disease outbreaks, public health agencies must make effective use of limited resources.  Vaccine distribution may be delayed and staggered through time, as underscored by the 2009 H1N1 influenza pandemic.  Using a mathematical model parametrized with data from the 2009 H1N1 pandemic, we found that optimal allocations of vaccine among people in different age groups and people with high-risk conditions depends on the schedule of vaccine availability relative to the progress of the epidemic.  For the projected schedule of H1N1 vaccine availability, the optimal strategy to reduce influenza-related deaths is to initial target high-risk people, followed by school-aged children (5&#x02013;17) and then young adults (18&#x02013;44).  The optimal strategy to minimize hospitalizations, however, is to target ages 5&#x02013;44 throughout the vaccination campaign, with only a tiny amount of vaccine used on high-risk people. We find that optimizing at each vaccine release time independently does not give the overall optimal strategy.  In this manuscript, we derive policy recommendations for 2009 H1N1 vaccine allocation using a mathematical model.  In addition, our optimization procedures, which consider staggered releases over the entire epidemic altogether, are applicable to other outbreaks where not all supplies are available initially.</p></abstract></article-meta></front><body><sec id="sec1"><title>Introduction</title><!--WRITE-PARA--><p id="p2"> Vaccines are critical to controlling the spread of influenza. The development and distribution of effective vaccines for new pandemic strains may take several months, and not all the vaccine doses may be available at the same time. In addition, prior to and throughout the vaccination period, a substantial fraction of the population may become infected and thereby naturally immunized to re-infection. These dynamics change the transmission pattern and need to be considered in order to optimize vaccine allocation.</p><!--WRITE-PARA--><p id="p3"> Such changing dynamics are also the case for the 2009 H1N1 influenza pandemic. The first 2009 H1N1 vaccines were distributed in the US in early October mainly to health care personnel and young children <xref ref-type="bibr" rid="ref-4183810242">[1]</xref>. The Centers for Disease Control and Prevention (CDC) projected that a total of 45 million doses would be available by mid-October, followed by 20 million doses every week thereafter <xref ref-type="bibr" rid="ref-2019199954">[2]</xref>.  The optimal allocation of influenza vaccines when vaccination is delayed and staggered throughout the epidemic period is critical to public health, yet may differ substantially from the optimal allocation of vaccines prior to an epidemic. Here we evaluate age-specific and risk-specific vaccine allocation strategies according to the CDC&#x02019;s projected 2009&#x02013;2010 schedule of vaccine availability for 2009 H1N1.</p><!--WRITE-PARA--><p id="p4"> Public health agencies often consider projected impacts on deaths and hospitalizations when determining intervention policy <xref ref-type="bibr" rid="ref-246299731">[3]</xref>. Severe infections that require hospitalization have the potential to exceed the capacity of health services, particularly at the peak of an outbreak. Averting deaths is also clearly a prime humanitarian goal. We determine the optimal allocation of vaccines according to both of these measures by employing an optimization procedure that explicitly incorporates the transmission dynamics of 2009 H1N1 influenza prior to and throughout the vaccination period.</p><!--WRITE-PARA--><p id="p5"> Our analysis indicates that both deaths and hospitalizations can be minimized by prioritizing the vaccination of school-aged children (5&#x02013;17), young adults (18&#x02013;44), and people at high-risk of severe infections. However, the temporal order of prioritization differs between these two outcome measures when staggered vaccination schedules are considered.  Deaths can be minimized by prioritizing high-risk people first, followed by schoolchildren and young adults. In contrast, hospitalizations are optimally averted by first prioritizing schoolchildren and young adults, followed by high-risk people. In contrast to both optimal strategies, the CDC recommends prioritizing high-risk people and people aged 6 months through 24 years <xref ref-type="bibr" rid="ref-919947137">[4]</xref>.  Both deaths and hospitalizations for the 2009 H1N1 pandemic could be reduced by shifting focus to schoolchildren and young adults. </p></sec><sec id="sec3"><title>Results</title><!--WRITE-PARA--><p id="p6"> To minimize deaths, the optimal policy is for the first two batches of vaccine to be allocated to high-risk people, followed by schoolchildren (ages 5&#x02013;17) and then young adults (ages 18&#x02013;44) (Figure 1A).  To minimize hospitalizations, the first five batches should be allocated to schoolchildren and young adults, with a small amount of vaccine also allocated to high-risk people in the fifth batch (Figure 1B).</p><!--WRITE-PARA--><p id="p7"> <fig id="fig-1"><!--WRITE-PARA--><p id="p8"> <bold>Figure 1. Optimal vaccine allocation for different vaccine delivery schedules, different values of <inline-formula><tex-math id="d20e80">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0\end{equation*}\end{document}</tex-math></inline-formula>, and different objectives.&#x000a0; </bold>The delivery schedule "45M + 4 &#x000d7; 20M doses" corresponds to five batches of vaccine delivery: 45M doses on 15 October and 20M doses each of the following four weeks.&#x000a0; The different shades of blue correspond to the optimal allocation of the different delivery batches. The green and red bars indicate the optimal allocations under hypothetical early delivery scenarios of 125M doses on 15 October and prior to the outbreak, respectively. </p><graphic xlink:href="coverage1417"/></fig>  As the basic reproductive number (<inline-formula><tex-math id="d20e90">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0\end{equation*}\end{document}</tex-math></inline-formula>) increases, optimal allocation to minimize deaths no longer includes schoolchildren (Figure 1C), while optimal allocation for hospitalizations shifts to include high-risk people (Figure 1D).  This is due in part to acquired immunity: for <inline-formula><tex-math id="d20e95">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0 = 1.4\end{equation*}\end{document}</tex-math></inline-formula>, only 11% of schoolchildren have been infected before the first vaccine is available on 15 October, whereas, for <inline-formula><tex-math id="d20e100">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0 = 1.7\end{equation*}\end{document}</tex-math></inline-formula>, 45% of schoolchildren have been infected by 15 October.</p><!--WRITE-PARA--><p id="p9"> The optimal allocation is sensitive to the scheduling of release times. Consequently, evaluation of each batch separately does not generate the allocation strategy that is optimal overall (see Text S1 and Figures S3&#x02013;S10).  For example, when only two total batches are available (45 million doses on 15 October and 20 million on 22 October), deaths can be minimized by allocating the first batch to schoolchildren and the second batch to adults aged 18&#x02013;44 (Figure S3). In contrast, when 3 total batches are available (45 million doses on 15 October and 20 million on each of 22 October and 29 October), the first two batches are optimally split between schoolchildren and high-risk people and the third batch is used exclusively on high-risk people.</p><!--WRITE-PARA--><p id="p10"> The projected reductions in infections, deaths, and hospitalizations are substantial for both sets of optimized vaccination strategies (Figure 2).  The strategy that minimizes hospitalizations is predicted to reduce the total attack rate more effectively than the strategy that minimizes deaths (11.4% versus 15.2% of the population infected, respectively).  Comparing the number of deaths and hospitalizations, the strategy that minimizes deaths results in 8000 fewer deaths (a 23% reduction) and 44,000 more hospitalizations (a 9% increase) than the strategy that minimizes hospitalizations.  Since the strategy that minimizes deaths also greatly reduces hospitalizations, it may be preferred by decision makers.</p><!--WRITE-PARA--><p id="p11"> <fig id="fig-6"><!--WRITE-PARA--><p id="p12"><bold>Figure 2. The impact on infections, deaths, and hospitalizations for different vaccine delivery schedules and different objectives, with <inline-formula><tex-math id="d20e116">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0 = 1.4\end{equation*}\end{document}</tex-math></inline-formula>.</bold> </p><graphic xlink:href="impact14"/></fig> </p><!--WRITE-PARA--><p id="p13"> The staggered vaccine delivery schedule that we considered had a total of 125 million doses in five batches starting on 15 October. To explore the effect of the delay in vaccine delivery, we also calculated the optimal allocations when all 125 million doses were delivered in one batch, either on 15 October or before the outbreak began (Figure 1).  The epidemiological impact of the initial vaccination delay is substantial: the staggered release results in 23% more deaths and 26% more hospitalizations, respectively, compared to optimal allocation of the complete distribution in October. By contrast, the optimal distribution of 125 million doses before the outbreak begins prevented the outbreak entirely (Figure 2).</p></sec><sec id="sec4"><title>Discussion</title><!--WRITE-PARA--><p id="p14"> Vaccination not only protects those who are vaccinated, but also reduces transmission to others in the population. Schoolchildren, and secondarily young adults, are responsible for most of the influenza transmission <xref ref-type="bibr" rid="ref-3657697797">[5]</xref><xref ref-type="bibr" rid="ref-3813374220">[6]</xref><xref ref-type="bibr" rid="ref-2108540185">[7]</xref><xref ref-type="bibr" rid="ref-3431930972">[8]</xref><xref ref-type="bibr" rid="ref-2089295055">[9]</xref><xref ref-type="bibr" rid="ref-4085149301">[10]</xref>, although this may shift late in a pandemic after a large fraction of children have already become immune <xref ref-type="bibr" rid="ref-932277802">[11]</xref>. It has been previously demonstrated that the vaccination of these age classes can optimize multiple outcome measures, including infections averted, deaths averted, economic cost, and years of life saved <xref ref-type="bibr" rid="ref-2950837477">[12]</xref>. However, it was previously assumed that all available vaccines were allocated prior to the outbreak. As is the case for the current 2009 H1N1 pandemic, vaccines may not become available until the midst of an outbreak requiring critical policy decisions under dynamic conditions. Indeed, we find that the temporal dynamics of influenza transmission and vaccine availability affect the optimization of vaccine allocation, and that the optimal allocation changes through time. For example, the importance of reducing transmission declines throughout the outbreak and thus so does the value of vaccinating individuals based on their potential for transmission.</p><!--WRITE-PARA--><p id="p15"> We evaluated the optimal age-specific and risk-specific allocation of 2009 H1N1 influenza vaccine doses based on the schedule of vaccine availability projected by the CDC. In general, our results suggest that low-risk children between 6 months and 4 years of age and adults 65 and older should receive the lowest priority to minimize both hospitalizations and deaths. These groups are the least responsible for transmission, and are estimated to have relatively low case mortality ratios for 2009 H1N1 <xref ref-type="bibr" rid="ref-1836047694">[13]</xref>. Although hospitalization ratios are higher in high-risk people, vaccination of low-risk schoolchildren and young-adult age classes is most effective at minimizing hospitalizations, via reducing transmission, thereby indirectly protecting high-risk people. For staggered vaccine release, after a large fraction of schoolchildren and young adults have been vaccinated, adults aged 45&#x02013;64 years should then be vaccinated. In order to reduce deaths, high-risk people should be given priority, followed by the schoolchildren and then young adults. Deaths are minimized by protecting the high-risk group directly.</p><!--WRITE-PARA--><p id="p16"> Despite the current stage of the 2009 H1N1 outbreak, the vaccination of those most responsible for transmission remains important. For diseases that are more transmissible than the current 2009 H1N1 influenza, and particularly if vaccination is not available early on during the outbreak, control of the outbreak via the reduction of transmission becomes very difficult, increasing the importance of vaccinating high-risk people (e.g. Figures S1 &#x00026; S2 for <inline-formula><tex-math id="d20e158">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0 = 2.0\end{equation*}\end{document}</tex-math></inline-formula>).</p><!--WRITE-PARA--><p id="p17"> The CDC issued 2009 H1N1 vaccine guidelines in late July 2009 <xref ref-type="bibr" rid="ref-919947137">[4]</xref>, which prioritized high-risk people (including pregnant women) and people aged 6 months through 24 years, in addition to health-care workers and the contacts of children under 6 months of age.  Our analysis suggests a different strategy is optimal. If the public health objective is to minimize deaths due to 2009 H1N1, earliest priority should be given to high-risk people, followed by school-aged children and then young adults (18&#x02013;44 years old).  In contrast, if the public health objective is to minimize hospitalizations, only school-aged children and then young adults, with only a small fraction of the supply finally going to high-risk people.  These optimal vaccine allocations differ from the CDC recommendations by excluding children aged 6 months to 4 years and including adults aged 25&#x02013;44.  Even under the early vaccine delivery scenarios, we find that priority should still be given to high-risk people, schoolchildren and young adults, and not to individuals aged 6 months to 4 years and 25&#x02013;44 years. </p><!--WRITE-PARA--><p id="p18"> We have found that the entire epidemic period must be considered in order to determine optimal vaccine allocations when availability is staggered. In contrast to traditional epidemic models, our optimization methodology allows the scheduling of vaccine availability to be taken into account. The methodology developed here is broadly applicable.  It can be used for other infectious-disease outbreaks in which not all supplies, whether vaccines or drugs, are available at the start of the epidemic. </p></sec><sec id="sec6"><title>Methods</title><!--WRITE-PARA--><p id="p19"> We extended the age-structured SEIR (susceptible, latent, infectious, recovered) model of Medlock &#x00026; Galvani <xref ref-type="bibr" rid="ref-2950837477">[12]</xref> to include two levels of risk for complications due to influenza infection. We parametrized this model using data from the 2009 H1N1 influenza pandemic.  We also extended the framework to incorporate staggered delivery of vaccine doses.  We outline the methods here; see Text S1 for more details.</p><!--WRITE-PARA--><p id="p20"> We assumed that the mean latent period was 2 days <xref ref-type="bibr" rid="ref-2298025147">[14]</xref><xref ref-type="bibr" rid="ref-1181480855">[15]</xref> and that the mean infectious period was 7 days <xref ref-type="bibr" rid="ref-2298025147">[14]</xref>.  We also assumed that people aged 50 and older had some residual immunity due to antigenic similarity of 2009 H1N1 with other H1N1 viruses circulating in the past <xref ref-type="bibr" rid="ref-919947137">[4]</xref><xref ref-type="bibr" rid="ref-2399958476">[16]</xref>.  The contact matrix describing potential infectious contacts between individuals of different ages was taken from survey data <xref ref-type="bibr" rid="ref-2950837477">[12]</xref><xref ref-type="bibr" rid="ref-3304717763">[17]</xref>, with the probability of infection given a sufficient contact being chosen so that the basic reproductive number (<inline-formula><tex-math id="d20e203">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0\end{equation*}\end{document}</tex-math></inline-formula>) was <inline-formula><tex-math id="d20e208">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}1.4\end{equation*}\end{document}</tex-math></inline-formula> <xref ref-type="bibr" rid="ref-1580187578">[18]</xref>. We also considered <inline-formula><tex-math id="d20e216">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0 = 1.2\end{equation*}\end{document}</tex-math></inline-formula>, <inline-formula><tex-math id="d20e221">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}1.7\end{equation*}\end{document}</tex-math></inline-formula>, &#x00026; <inline-formula><tex-math id="d20e226">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}2.0\end{equation*}\end{document}</tex-math></inline-formula> (Text S1).</p><!--WRITE-PARA--><p id="p21"> The transmission model was parametrized with a mean of 22.5% of the population defined as at high risk for influenza complications, due to other, preexisting medical conditions, with the proportion at high risk varying among age groups <xref ref-type="bibr" rid="ref-3622452562">[19]</xref>.  We assumed that high-risk people had 9 times higher case mortality ratio and 3 times higher case hospitalization ratio, compared to low-risk people <xref ref-type="bibr" rid="ref-1293084676">[20]</xref>.  For the age-dependent case mortality ratios and case hospitalization ratios, averaged over risk, we used the ratios derived in a statistical analysis of deaths, hospitalizations, and survey-reported H1N1 infections from New York City and Milwaukee <xref ref-type="bibr" rid="ref-1836047694">[13]</xref>.</p></sec><sec id="sec7"><title>Supporting Material </title><!--WRITE-PARA--><p id="p22"> <ext-link ext-link-type="uri" xlink:href="http://www.math.clemson.edu/%7Emedlock/other/SwineFluTextS1.pdf">Text S1: Detailed Methods</ext-link></p><!--WRITE-PARA--><p id="p23"> <fig id="fig-16"><!--WRITE-PARA--><p id="p24"><bold>Figure S1. Optimal vaccine allocation for different vaccine delivery schedules, different values of <inline-formula><tex-math id="d20e258">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0\end{equation*}\end{document}</tex-math></inline-formula>, and different objectives.</bold>&#x000a0; The delivery schedule "45M + 4&#x000a0; 20M doses'' corresponds to 5 batches of vaccine delivery: 45M doses on 15 October and 20M doses each of the following 4 weeks.&#x000a0; The different shades of blue correspond to the optimal allocation of the different delivery batches.&#x000a0; The graphs for <inline-formula><tex-math id="d20e264">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0 = 1.4\end{equation*}\end{document}</tex-math></inline-formula>and <inline-formula><tex-math id="d20e269">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}1.7\end{equation*}\end{document}</tex-math></inline-formula> are in the main text. </p><graphic xlink:href="coverage1220"/></fig> <fig id="fig-19"><!--WRITE-PARA--><p id="p25"><bold>Figure S2. The impact on infections, deaths, and hospitalizations for different vaccine delivery schedules, different values of <inline-formula><tex-math id="d20e283">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0\end{equation*}\end{document}</tex-math></inline-formula>, and different objectives.</bold>&#x000a0; The graphs for&#x000a0;<inline-formula><tex-math id="d20e289">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0 = 1.4\end{equation*}\end{document}</tex-math></inline-formula> are in the main text. </p><graphic xlink:href="impact121720"/></fig> <fig id="fig-21"><!--WRITE-PARA--><p id="p26"><bold>Figure S3. Optimal vaccine allocation for different numbers of vaccine batches for <inline-formula><tex-math id="d20e303">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0 = 1.2\end{equation*}\end{document}</tex-math></inline-formula> and deaths averted.</bold>&#x000a0; The delivery schedules consist of from 1 to 8 batches of vaccine delivered in intervals of 1 week, with the first batch being 45M doses and subsequent batches being 20M doses.&#x000a0; Each graph shows the optimal allocation given the number of batches of vaccine available. </p><graphic xlink:href="coveragedeaths12"/></fig> <fig id="fig-23"><!--WRITE-PARA--><p id="p27"><bold>Figure S4. Optimal vaccine allocation for different numbers of vaccine batches for <inline-formula><tex-math id="d20e318">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0 = 1.2\end{equation*}\end{document}</tex-math></inline-formula> and hospitalizations averted.</bold>&#x000a0; The delivery schedules consist of from 1 to 8 batches of vaccine delivered in intervals of 1 week, with the first batch being 45M doses and subsequent batches being 20M doses.&#x000a0; Each graph shows the optimal allocation given the number of batches of vaccine available. </p><graphic xlink:href="coveragehospitalizations12"/></fig> <fig id="fig-25"><!--WRITE-PARA--><p id="p28"><bold>Figure S5. Optimal vaccine allocation for different numbers of vaccine batches for <inline-formula><tex-math id="d20e333">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0 = 1.4\end{equation*}\end{document}</tex-math></inline-formula> and deaths averted.</bold> The delivery schedules consist of from 1 to 8 batches of vaccine delivered in intervals of 1 week, with the first batch being 45M doses and subsequent batches being 20M doses.&#x000a0; Each graph shows the optimal allocation given the number of batches of vaccine available. </p><graphic xlink:href="coveragedeaths14"/></fig> </p><!--WRITE-PARA--><p id="p29"> <fig id="fig-27"><!--WRITE-PARA--><p id="p30"><bold>Figure S6. Optimal vaccine allocation for different numbers of vaccine batches for <inline-formula><tex-math id="d20e350">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0 = 1.4\end{equation*}\end{document}</tex-math></inline-formula> and hospitalizations averted.</bold> The delivery schedules consist of from 1 to 8 batches of vaccine delivered in intervals of 1 week, with the first batch being 45M doses and subsequent batches being 20M doses.&#x000a0; Each graph shows the optimal allocation given the number of batches of vaccine available. </p><graphic xlink:href="coveragehospitalizations14"/></fig> </p><!--WRITE-PARA--><p id="p31"> <fig id="fig-29"><!--WRITE-PARA--><p id="p32"><bold>Figure S7. Optimal vaccine allocation for different numbers of vaccine batches for <inline-formula><tex-math id="d20e367">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0 = 1.7\end{equation*}\end{document}</tex-math></inline-formula> and deaths averted.</bold>&#x000a0; The delivery schedules consist of from 1 to 8 batches of vaccine delivered in intervals of 1 week, with the first batch being 45M doses and subsequent batches being 20M doses.&#x000a0; Each graph shows the optimal allocation given the number of batches of vaccine available. </p><graphic xlink:href="coveragedeaths17"/></fig> </p><!--WRITE-PARA--><p id="p33"> <fig id="fig-31"><!--WRITE-PARA--><p id="p34"><bold>Figure S8. Optimal vaccine allocation for different numbers of vaccine batches for <inline-formula><tex-math id="d20e384">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0 = 1.7\end{equation*}\end{document}</tex-math></inline-formula> and hospitalizations averted.</bold>&#x000a0; The delivery schedules consist of from 1 to 8 batches of vaccine delivered in intervals of 1 week, with the first batch being 45M doses and subsequent batches being 20M doses.&#x000a0; Each graph shows the optimal allocation given the number of batches of vaccine available. </p><graphic xlink:href="coveragehospitalizations17"/></fig> <fig id="fig-33"><!--WRITE-PARA--><p id="p35"><bold>Figure S9. Optimal vaccine allocation for different numbers of vaccine batches for <inline-formula><tex-math id="d20e399">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0 = 2.0\end{equation*}\end{document}</tex-math></inline-formula> and deaths averted.</bold>&#x000a0; The delivery schedules consist of from 1 to 8 batches of vaccine delivered in intervals of 1 week, with the first batch being 45M doses and subsequent batches being 20M doses.&#x000a0; Each graph shows the optimal allocation given the number of batches of vaccine available. </p><graphic xlink:href="coveragedeaths20"/></fig> <fig id="fig-35"><!--WRITE-PARA--><p id="p36"><bold>Figure S10. Optimal vaccine allocation for different numbers of vaccine batches for <inline-formula><tex-math id="d20e414">\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage{pmc}
+\usepackage[Euler]{upgreek}
+\pagestyle{empty}
+\begin{document}
+\begin{equation*}R_0 = 2.0\end{equation*}\end{document}</tex-math></inline-formula> and hospitalizations averted.</bold>&#x000a0; The delivery schedules consist of from 1 to 8 batches of vaccine delivered in intervals of 1 week, with the first batch being 45M doses and subsequent batches being 20M doses.&#x000a0; Each graph shows the optimal allocation given the number of batches of vaccine available. </p><graphic xlink:href="coveragehospitalizations20"/></fig>  </p></sec><sec id="sec8"><title>Funding Information</title><!--WRITE-PARA--><p id="p37"> Funding was provided in part by NIH grant 1U01GM087719-01.&#x000a0; JM was supported in part by start-up funding from the Clemson University Department of Mathematical Sciences.&#x000a0; The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</p></sec><sec id="sec9"><title>Competing Interests</title><!--WRITE-PARA--><p id="p38"> All of the authors have no competing financial, personal, or professional interests that have influenced this paper.</p></sec></body><back><ref-list><ref id="ref-4183810242"><mixed-citation>US Centers for Disease Control and Prevention (Accessed 20 October, 2009) 2009 H1N1 In&#x0fb02;uenza Vaccine Supply Status<ext-link ext-link-type="uri" xlink:href="http://www.cdc.gov/h1n1flu/vaccination/updates/101609.htm">http://www.cdc.gov/h1n1flu/vaccination/updates/101609.htm</ext-link></mixed-citation></ref><ref id="ref-2019199954"><mixed-citation>US Centers for Disease Control and Prevention (Accessed 20 October, 2009) CDC joint brie&#x0fb01;ng with NIH &#x00026; FDA on 2009 H1N1 In&#x0fb02;uenza, August 21, 2009, 12:00 p.m.<ext-link ext-link-type="uri" xlink:href="http://www.cdc.gov/ media/transcripts/2009/t090821.htm">http://www.cdc.gov/ media/transcripts/2009/t090821.htm</ext-link></mixed-citation></ref><ref id="ref-246299731"><mixed-citation>Robinson R (2009). Personal communication.</mixed-citation></ref><ref id="ref-919947137"><mixed-citation>National Center for Immunization and Respiratory Diseases, Centers
+for Disease Control and Prevention (Accessed 20 October 2009) Use of
+in&#x0fb02;uenza A (H1N1) 2009 monovalent vaccine.<ext-link ext-link-type="uri" xlink:href="http://www.cdc. gov/mmwr/preview/mmwrhtml/rr58e0821a1.htm">http://www.cdc. gov/mmwr/preview/mmwrhtml/rr58e0821a1.htm</ext-link></mixed-citation></ref><ref id="ref-3657697797"><mixed-citation>Monto A, Davenport F, Napier J, Francis T (1969) E&#x0fb00;ect of vaccination of a school-age population upon the course of an A2-Hong Kong
+in&#x0fb02;uenza epidemic. Bull World Health Organ 41: 537&#x02013;542.</mixed-citation></ref><ref id="ref-3813374220"><mixed-citation>Taber L, Paredes A, Glezen W, Couch R (1981) Infection with in&#x0fb02;uenza
+A/Victoria virus in Houston families, 1976. J Hyg (Lond) 86: 303&#x02013;13.</mixed-citation></ref><ref id="ref-2108540185"><mixed-citation>Longini IM Jr, Koopman JS, Monto AS, Fox JP (1982) Estimating household and community transmission parameters for in&#x0fb02;uenza.
+Am J Epidemiol 115: 736&#x02013;751.</mixed-citation></ref><ref id="ref-3431930972"><mixed-citation>Fox JP, Hall CE, Cooney MK, Foy HM (1982) In&#x0fb02;uenzavirus infections
+in Seattle families, 1975-1979: I. Study design, methods, and the occurrence of infections by age and time. Am J Epidemiol 116: 212&#x02013;227.</mixed-citation></ref><ref id="ref-2089295055"><mixed-citation>Monto AS, Koopman JS, Longini IM Jr (1985) Tecumseh study of illness:
+XIII. In&#x0fb02;uenza infection and disease, 1976-1981. Am J Epidemiol 121:
+811&#x02013;822.</mixed-citation></ref><ref id="ref-4085149301"><mixed-citation>Reichert TA, Sugaya N, Fedson DS, Glezen WP, Simonsen L, et al.
+(2001) The Japanese experience with vaccinating schoolchildren against
+in&#x0fb02;uenza. N Engl J Med 344: 889&#x02013;896.</mixed-citation></ref><ref id="ref-932277802"><mixed-citation>Bansal, Shweta; Pourbohloul, Babak; Hupert, Nathaniel; Grenfell, Bryan; Meyers, Lauren Ancel. The Shifting Demographic Landscape of Influenza [Internet]. Version 41. PLoS Currents: Influenza. 2009 Sep 30 [revised 2009 Oct 5]:RRN1047.<ext-link ext-link-type="uri" xlink:href="http://knol.google.com/k/shweta-bansal/the-shifting-demographic-landscape-of/tkwn3sjme3vo/1">http://knol.google.com/k/shweta-bansal/the-shifting-demographic-landscape-of/tkwn3sjme3vo/1</ext-link><pub-id pub-id-type="rrn">RRN1047</pub-id></mixed-citation></ref><ref id="ref-2950837477"><mixed-citation>Medlock J, Galvani AP (2009) Optimizing in&#x0fb02;uenza vaccine distribution.
+Science 325: 1705&#x02013;1708.</mixed-citation></ref><ref id="ref-1836047694"><mixed-citation>Presanis, Anne M; Lipsitch, Marc; Daniela De Angelis; New York City Department of Health and Mental Hygiene, Swine Flu Investigation Team,; Hagy, Angie; Reed, Carrie; Riley, Steven; Cooper, Ben; Biedrzycki, Paul; Finelli, Lyn; Jade. The severity of pandemic H1N1 influenza in the United States, April &#x02013; July 2009 [Internet]. Version 38. PLoS Currents: Influenza. 2009 Sep 25 [revised 2009 Nov 18]:RRN1042.<ext-link ext-link-type="uri" xlink:href="http://knol.google.com/k/anne-m-presanis/the-severity-of-pandemic-h1n1-influenza/agr0htar1u6r/16">http://knol.google.com/k/anne-m-presanis/the-severity-of-pandemic-h1n1-influenza/agr0htar1u6r/16</ext-link><pub-id pub-id-type="rrn">RRN1042</pub-id></mixed-citation></ref><ref id="ref-2298025147"><mixed-citation>Novel Swine-Origin In&#x0fb02;uenza A (H1N1) Virus Investigation Team (2009)
+Emergence of a novel swine-origin in&#x0fb02;uenza A (H1N1) virus in humans.
+N Engl J Med 360: 2605.</mixed-citation></ref><ref id="ref-1181480855"><mixed-citation>Shinde V, Bridges CB, Uyeki TM, Shu B, Balish A, et al. (2009) Triple-reassortant swine in&#x0fb02;uenza A (H1) in humans in the United States,
+2005&#x02013;2009. N Engl J Med 360: 2616&#x02013;2125.</mixed-citation></ref><ref id="ref-2399958476"><mixed-citation>US Centers for Disease Control and Prevention (Accessed 20 October,
+2009) ACIP Presentation Slides: Special July 2009 Meeting. (A
+Klimov: Virology and immunology update, K Neuzil &#x00026; A Fiore: ACIP
+in&#x0fb02;uenza work group considerations).<ext-link ext-link-type="uri" xlink:href="http: //www.cdc.gov/vaccines/recs/acip/slides-july09-flu.htm">http: //www.cdc.gov/vaccines/recs/acip/slides-july09-flu.htm</ext-link></mixed-citation></ref><ref id="ref-3304717763"><mixed-citation>Mossong J, Hens N, Jit M, Beutels P, Auranen K, et al. (2008) Social contacts and mixing patterns relevant to the spread of infectious
+diseases. PLoS Med 5: e74.</mixed-citation></ref><ref id="ref-1580187578"><mixed-citation>Fraser C, Donnelly CA, Cauchemez S, Hanage WP, Van Kerkhove MD,
+et al. (2009) Pandemic potential of a strain of in&#x0fb02;uenza A (H1N1): Early
+&#x0fb01;ndings. Science 324: 1557&#x02013;1561.</mixed-citation></ref><ref id="ref-3622452562"><mixed-citation>MIDAS High-Risk Segmentation Group (2009). Personal communication (Diane Wagener).</mixed-citation></ref><ref id="ref-1293084676"><mixed-citation>Meltzer MI, Cox NJ, Fukuda K (1999) Modeling the economic impact
+of pandemic in&#x0fb02;uenza in the United States: implications for setting
+priorities for intervention: background paper. Technical report, Centers for Disease Control and Prevention. Accessed 28 July, 2007.<ext-link ext-link-type="uri" xlink:href="http://www.cdc.gov/ncidod/ EID/vol5no5/meltzerback.htm">http://www.cdc.gov/ncidod/ EID/vol5no5/meltzerback.htm</ext-link></mixed-citation></ref></ref-list></back></article>
