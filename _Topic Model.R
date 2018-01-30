@@ -22,6 +22,9 @@ introdf <- as.data.frame(intro, stringsAsFactors = FALSE)
 # Clean data - remove Introduction from beginning of document
 introdf <- as.data.frame(sub('Introduction*', "", introdf$intro))
 
+names(introdf) <- 'abstract'
+write.csv(introdf, 'introdf.csv', row.names = FALSE)
+
 # Convert to corpus
 intro_corp = VCorpus(DataframeSource(introdf))
 
@@ -41,9 +44,7 @@ tf.99 = removeSparseTerms(intro_clean.tf, 0.99)
 tf.99
 
 rowTotals <- apply(tf.99 , 1, sum) #Find the sum of words in each Document
-tf_sparse   <- tf.99[rowSums(tf.99)>0,]
-
-
+tf_sparse <- tf.99[rowTotals>0,]
 
 
 # Train topic models
@@ -64,5 +65,12 @@ terms(topic.model25, 10)[,1:10]
 
 # Thematically Coherent Topics
 terms(topic.model10, 10)[,c(2,3,5,8)]
+
+tops = topics(topic.model10)
+tops2 = topics(topic.model10,k = 2)
+tops2 = t(tops2)
+
+
+
 
 
