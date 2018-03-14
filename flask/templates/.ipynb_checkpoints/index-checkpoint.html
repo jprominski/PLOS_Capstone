@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>PLOS Capstone - UVA Data Science Institute</title>
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- DataTables -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+    </head>
+
+    <body class="container">
+
+        <h2 align="center">PLOS Capstone Demo</h2>
+
+        <h3>Similar Articles</h3>
+
+        <form action="{{ url_for('runDOI') }}" method="POST">
+                    Enter a DOI: <input type="text" name="doi_in"> <input type="submit" value="Submit">
+                </form>
+                <br>
+        
+        <form action="{{ url_for('runQuery') }}" method="POST">
+        Enter an abstract: <input type="text" name="query_in"> <input type="submit" value="Submit">
+        </form>
+            
+        <h3>Editor Recommendations</h3>
+
+        <form action="{{ url_for('edRecs') }}" id="q_ed" method="POST">
+        Enter a submission abstract: <input type="text" name="ab_in"> <input type="submit" value="Submit">
+        </form>
+<br>
+        <form action="{{ url_for('rand') }}" method="POST">
+            <input type="submit" value="Get a random article">
+        </form>
+
+        {% block content %}{% endblock %}
+
+ 
+    </body>
+
+    <footer><br>
+        <p align="center" style="color:grey">Developed by <a href="mailto:pvs3vf@virginia.edu">Pragati Shah</a> and <a href="mailto:jmp3mk@virginia.edu">Jack Prominski</a> at the <a href="https://dsi.virginia.edu">UVA Data Science Institute</a><br><a href="https://github.com/jprominski/PLOS_Capstone">github</a></p>
+    </footer>    
+
+
+
+</html>

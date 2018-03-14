@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+{% block content %}
+
+<div>
+    
+            <h4>Random Article</h4>
+            <table class="table" id="table1">
+                <thead>
+                    <tr>
+                        <th>DOI</th>
+                        <th>Title</th>
+                        <th>Abstract</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ random.doi }}</td>
+                        <td>{{ random.title }}</td>
+                        <td>{{ random.abstract }}</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+        </div>
+
+{% endblock %}

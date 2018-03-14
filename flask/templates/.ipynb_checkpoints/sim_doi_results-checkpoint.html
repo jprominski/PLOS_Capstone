@@ -1,0 +1,72 @@
+{% extends "index.html" %}
+{% block content %}
+
+<div>
+            <h3>Results</h3>
+            
+            <h4>Target</h4>
+            <table class="table" id="table1">
+                <thead>
+                    <tr>
+                        <th>DOI</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in target.index %}
+                    {% set row = target.loc[i] %}
+                    <tr>
+                        <td>{{ row.doi }}</td>
+                        <td>{{ row.title }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+    
+    
+            <h4>Doc2Vec</h4>
+            <table class="table" id="table3">
+                <thead>
+                    <tr>
+                        <th>DOI</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in d2voutput.index %}
+                    {% set row = d2voutput.loc[i] %}
+                    <tr>
+                        <td>{{ row.doi }}</td>
+                        <td>{{ row.title }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+    
+    
+            <h4>Latent Semantic Analysis</h4>
+            <table class="table" id="table2">
+                <thead>
+                    <tr>
+                        <th>DOI</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in lsioutput.index %}
+                    {% set row = lsioutput.loc[i] %}
+                    <tr>
+                        <td>{{ row.doi }}</td>
+                        <td>{{ row.title }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            
+
+
+        </div>
+
+{% endblock %}
