@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+{% block content %}
+
+<div>
+            <h3>Results</h3>
+            
+            <h4>Search Query</h4>
+            <p>{{ query }}</p>
+    
+            <h4>Latent Semantic Analysis</h4>
+            <table class="table" id="table2">
+                <thead>
+                    <tr>
+                        <th>DOI</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in lsioutput.index %}
+                    {% set row = lsioutput.loc[i] %}
+                    <tr>
+                        <td>{{ row.doi }}</td>
+                        <td>{{ row.title }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            
+
+
+        </div>
+
+{% endblock %}

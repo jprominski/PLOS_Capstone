@@ -1,0 +1,71 @@
+{% extends "index.html" %}
+{% block content %}
+
+<div>
+            <h3>Results</h3>
+            
+            <h4>Search Query</h4>
+            <p>{{ query }}</p>
+    
+            <h4>Editor Vectors - Doc2Vec</h4>
+            <table class="table" id="table3">
+                <thead>
+                    <tr>
+                        <th>Editor Recommendations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in ed_d2voutput.index %}
+                    {% set row = ed_d2voutput.loc[i] %}
+                    <tr>
+                        <td>{{ row.editors }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+    
+            <h4>Single Article - Doc2Vec</h4>
+            <table class="table" id="table3">
+                <thead>
+                    <tr>
+                        <th>Editor Recommendations</th>
+                        <th>Article Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in d2voutput.index %}
+                    {% set row = d2voutput.loc[i] %}
+                    <tr>
+                        <td>{{ row.editors }}</td>
+                        <td>{{ row.title }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+    
+    
+            <h4>Single Article - Latent Semantic Analysis</h4>
+            <table class="table" id="table2">
+                <thead>
+                    <tr>
+                        <th>Editor Recommendations</th>
+                        <th>Article Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in lsioutput.index %}
+                    {% set row = lsioutput.loc[i] %}
+                    <tr>
+                        <td>{{ row.editors }}</td>
+                        <td>{{ row.title }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            
+
+
+        </div>
+
+{% endblock %}
